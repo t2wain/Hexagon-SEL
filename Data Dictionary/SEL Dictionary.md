@@ -106,6 +106,10 @@ Group describes the whole/part relationship between objects. Examples are:
 
 Each *Relationship* object in the *Path* has a type of relationship defined.
 
+## Engineering Data Editor in SEL
+
+The Engineering Data Editor feature in SEL allows user to query the object's properties and display the data in a grid windows. The available properties are those defined in the *ItemAttributions* table.
+
 ## Parent / child relationship between objects
 
 *SourceDestObjectRels* defines the parent and child relatinonship between objects. Each parent/child relationship has a *Path* that defines a sequence of table joins. Examples for Cable are:
@@ -126,3 +130,7 @@ select T_Cable.*
 from T_RefGland@spelref
    inner join T_Cable@spel on (T_Cable.SP_RefGlandSide1ID = T_RefGland.SP_ID) -- 730, ASSOC_NC
 </pre>
+
+## SEL Reporting
+
+SEL allows user to create complex report that outputs data to an Excel file. The query in the report starts with a base object type, such as Cable, and can include other related object types as specified in the *SourceDestObjectRels* table.
