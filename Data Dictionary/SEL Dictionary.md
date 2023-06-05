@@ -18,13 +18,13 @@ The Data Dictionary defines the following:
     - Attribute_Number -> column
 - Relationships -> 2 related CorrelAtts in an SQL table join
     - Rel_Number
-    - Rel_Type
+    - Rel_Type -> SUBCLASS, ASSOC_NC, GROUP
     - Source_Entity -> table
     - Source_Coratt -> CorrelAtt
-    - Source_Schema
+    - Source_Schema - database schemas
     - Dest_Entity -> table 
     - Dest_Coratt -> CorrelAtt
-    - Dest_Schema
+    - Dest_Schema -> database schemas
 - CorrelAtts -> columns in an SQL table join
     - CorrelAtt_Number
     - Number_Of_Atts
@@ -86,7 +86,7 @@ from T_Motor@spel
    inner join T_ModelItem@spel on (T_ModelItem.SP_ID = T_PlantItem.SP_ID) -- 42, SUBCLASS
 </pre>
 
-## Object relationships
+## Property relationships
 
 Some properties (*ItemAttributions*) defined for an object are about itself while other properties are about its other related objects. There are several type of relationships between objects:
 - Subclass
@@ -105,3 +105,24 @@ Group describes the whole/part relationship between objects. Examples are:
 - Cable -> Conductor
 
 Each *Relationship* object in the *Path* has a type of relationship defined.
+
+## Parent / child relationship between objects
+
+*SourceDestObjectRels* defines the parent and child relatinonship between objects. Each parent/child relationship has a *Path* that defines a sequence of table joins. Examples for Cable are:
+
+<pre>
+Path : 412_419_575_654 -  ( Cable.PowerSource.Equipment )
+select e5.* 
+from T_Cable@spel
+   inner join T_ElectricalConductor@spel on (T_ElectricalConductor.SP_ID = T_Cable.SP_ID) -- 412, SUBCLASS
+   inner join T_WiringEquipment@spel on (T_WiringEquipment.SP_ID = T_ElectricalConductor.SP_ID) -- 419, SUBCLASS
+   inner join T_Equipment@spel on (T_Equipment.SP_ID = T_WiringEquipment.SP_ID) -- 575, SUBCLASS
+   inner join T_Equipment@spel e5 on (e5.SP_ID = T_Equipment.SP_PowerSourceID) -- 654, ASSOC_NC
+</pre>
+
+<pre>
+Path : 730 -  ( RefGland.GlandSide1.Cable )
+select T_Cable.* 
+from T_RefGland@spelref
+   inner join T_Cable@spel on (T_Cable.SP_RefGlandSide1ID = T_RefGland.SP_ID) -- 730, ASSOC_NC
+</pre>
