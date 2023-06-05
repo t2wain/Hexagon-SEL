@@ -43,6 +43,10 @@ The Data Dictionary defines the following:
     - DisplayName
     - AttributionID -> UniqueAtts
     - Path -> sequence of Relationship
+- SourceDestObjectRels
+    - ParentItemID -> Item
+    - ChildItemID -> Item
+    - Path -> sequence of Relationship
 
 ## The logical model
 
@@ -81,3 +85,23 @@ from T_Motor@spel
    inner join T_PlantItem@spel on (T_PlantItem.SP_ID = e5.SP_ID) -- 25, SUBCLASS
    inner join T_ModelItem@spel on (T_ModelItem.SP_ID = T_PlantItem.SP_ID) -- 42, SUBCLASS
 </pre>
+
+## Object relationships
+
+Some properties (*ItemAttributions*) defined for an object are about itself while other properties are about its other related objects. There are several type of relationships between objects:
+- Subclass
+- Association
+- Group
+
+*Subclass* describes the relationship of objects from general to specific type. An example is:
+- Equipment -> Electrical Equipment -> Load -> Motor 
+
+*Association* describes the dependency between objects. Examples are:
+- Equipment -> Equipment (alternate power source)
+- Equipment -> Reference Circuit
+
+Group describes the whole/part relationship between objects. Examples are:
+- PDB Section -> Cell
+- Cable -> Conductor
+
+Each *Relationship* object in the *Path* has a type of relationship defined.
