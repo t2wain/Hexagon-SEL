@@ -1,4 +1,4 @@
-Item : ActiveWSSite
+Item : ActiveWSSite (29), Entity : T_ActiveWSSite (44)
 
 Path : 0
 select
@@ -21,11 +21,11 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_ActiveWSSite@plant
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_ActiveWSSite.SP_WSSiteID) -- 273, GROUP
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_ActiveWSSite.SP_WSSiteID) -- RN(273), RT(GROUP), SC(1), DC(76)
 
 ==========
 
-Item : AppProject
+Item : AppProject (119), Entity : T_AppProject (96)
 
 Path : 0
 select
@@ -39,7 +39,7 @@ from T_AppProject@plant
 
 ==========
 
-Item : Area
+Item : Area (72), Entity : T_Area (72)
 
 Path : 0
 select
@@ -61,7 +61,7 @@ select
    T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
    T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
 from T_Area@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- 205, SUBCLASS
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- RN(205), RT(SUBCLASS), DC(1), SC(1)
 
 Path : 205_272
 select
@@ -77,12 +77,12 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_Area@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- 205, SUBCLASS
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- RN(205), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : DrawingSite
+Item : DrawingSite (40), Entity : T_DrawingSite (75)
 
 Path : 0
 select
@@ -110,7 +110,7 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSite@plant
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- 269, GROUP
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- RN(269), RT(GROUP), SC(1), DC(76)
 
 Path : 276 -  ( PlantGroup.DrawingSite )
 select
@@ -126,7 +126,7 @@ select
    T_PlantGroup.UserDefined PlantGroup_UserDefined, -- T(S1), F(a1), V(T)
    T_PlantGroup.SP_WSSiteID PlantGroup_SP_WSSiteID -- T(S32), F(), V(T)
 from T_DrawingSite@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- 276, GROUP
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
 
 Path : 277 -  ( WSSite.ToWSSite.DrawingSite )
 select
@@ -142,7 +142,7 @@ select
    T_WSSite.DataAccessType ToWSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath ToWSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSite@plant
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- 277, GROUP
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- RN(277), RT(GROUP), SC(1), DC(78)
 
 Path : 276_272
 select
@@ -158,12 +158,12 @@ select
    T_WSSite.DataAccessType PlantGroup_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath PlantGroup_WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSite@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- 276, GROUP
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : DrawingSubscriber
+Item : DrawingSubscriber (25), Entity : T_DrawingSubscriber (40)
 
 Path : 0
 select
@@ -187,7 +187,7 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSubscriber.SP_WSSiteID) -- 274, GROUP
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSubscriber.SP_WSSiteID) -- RN(274), RT(GROUP), SC(1), DC(76)
 
 Path : 275 -  ( DrawingSite.DrawingSubscriber )
 select
@@ -200,7 +200,7 @@ select
    T_DrawingSite.SP_PlantGroupID DrawingSite_SP_PlantGroupID, -- T(S32), F(), V(T)
    T_DrawingSite.SP_ToWSSiteID DrawingSite_SP_ToWSSiteID -- T(S32), F(), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- 275, GROUP
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
 
 Path : 275_269
 select
@@ -216,8 +216,8 @@ select
    T_WSSite.DataAccessType DrawingSite_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath DrawingSite_WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- 275, GROUP
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- 269, GROUP
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- RN(269), RT(GROUP), SC(1), DC(76)
 
 Path : 275_276
 select
@@ -233,8 +233,8 @@ select
    T_PlantGroup.UserDefined DrawingSite_PlantGroup_UserDefined, -- T(S1), F(a1), V(T)
    T_PlantGroup.SP_WSSiteID DrawingSite_PlantGroup_SP_WSSiteID -- T(S32), F(), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- 275, GROUP
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- 276, GROUP
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
 
 Path : 275_277
 select
@@ -250,8 +250,8 @@ select
    T_WSSite.DataAccessType DrawingSite_ToWSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath DrawingSite_ToWSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- 275, GROUP
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- 277, GROUP
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- RN(277), RT(GROUP), SC(1), DC(78)
 
 Path : 275_276_272
 select
@@ -267,13 +267,13 @@ select
    T_WSSite.DataAccessType DrawingSite_PlantGroup_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath DrawingSite_PlantGroup_WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_DrawingSubscriber@plant
-   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- 275, GROUP
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- 276, GROUP
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : FormatTypes
+Item : FormatTypes (130), Entity : T_FormatTypes (106)
 
 Path : 0
 select
@@ -285,7 +285,7 @@ from T_FormatTypes@plant
 
 ==========
 
-Item : Formats
+Item : Formats (146), Entity : T_Formats (122)
 
 Path : 0
 select
@@ -317,11 +317,11 @@ select
    T_FormatTypes.SP_UnitsOfMeasureTypeID FormatTypes_SP_UnitsOfMeasureTypeID, -- T(I4), F(), V(T)
    T_FormatTypes.UpdateCount FormatTypes_UpdateCount -- T(I4), F(Integer), V(F)
 from T_Formats@plant
-   inner join T_FormatTypes@plant on (T_FormatTypes.SP_ID = T_Formats.SP_FormatTypesID) -- 286, GROUP
+   inner join T_FormatTypes@plant on (T_FormatTypes.SP_ID = T_Formats.SP_FormatTypesID) -- RN(286), RT(GROUP), SC(1), DC(93)
 
 ==========
 
-Item : HierarchyLevels
+Item : HierarchyLevels (54), Entity : T_HierarchyLevels (28)
 
 Path : 0
 select
@@ -334,7 +334,7 @@ from T_HierarchyLevels@plant
 
 ==========
 
-Item : InterSiteOPC
+Item : InterSiteOPC (113), Entity : T_InterSiteOPC (89)
 
 Path : 0
 select
@@ -350,7 +350,7 @@ from T_InterSiteOPC@plant
 
 ==========
 
-Item : Plant
+Item : Plant (97), Entity : T_Plant (70)
 
 Path : 0
 select
@@ -372,7 +372,7 @@ select
    T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
    T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
 from T_Plant@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- 126, SUBCLASS
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- RN(126), RT(SUBCLASS), DC(1), SC(1)
 
 Path : 126_272
 select
@@ -388,12 +388,12 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_Plant@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- 126, SUBCLASS
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- RN(126), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : PlantGroup
+Item : PlantGroup (100), Entity : T_PlantGroup (71)
 
 Path : 0
 select
@@ -429,11 +429,11 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_PlantGroup@plant
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : PlantSetting
+Item : PlantSetting (18), Entity : T_PlantSetting (19)
 
 Path : 0
 select
@@ -449,7 +449,7 @@ from T_PlantSetting@plant
 
 ==========
 
-Item : Project
+Item : Project (114), Entity : T_Project (90)
 
 Path : 0
 select
@@ -466,7 +466,7 @@ from T_Project@plant
 
 ==========
 
-Item : ProjectPlantGroup
+Item : ProjectPlantGroup (115), Entity : T_ProjectPlantGroup (91)
 
 Path : 0
 select
@@ -488,7 +488,7 @@ select
    T_Project.SP_RootItemID Project_SP_RootItemID, -- T(S32), F(), V(T)
    T_Project.SP_EFUID Project_SP_EFUID -- T(S40), F(Text), V(T)
 from T_ProjectPlantGroup@plant
-   inner join T_Project@plant on (T_Project.SP_ID = T_ProjectPlantGroup.SP_ProjectID) -- 282, GROUP
+   inner join T_Project@plant on (T_Project.SP_ID = T_ProjectPlantGroup.SP_ProjectID) -- RN(282), RT(GROUP), SC(1), DC(90)
 
 Path : 283
 select
@@ -505,11 +505,11 @@ select
    T_PlantGroup.SP_WSSiteID PlantGroup_SP_WSSiteID, -- T(S32), F(), V(T)
    T_PlantGroup.SP_EFUID PlantGroup_SP_EFUID -- T(S40), F(Text), V(T)
 from T_ProjectPlantGroup@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_ProjectPlantGroup.SP_PlantGroupID) -- 283, GROUP
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_ProjectPlantGroup.SP_PlantGroupID) -- RN(283), RT(GROUP), SC(1), DC(43)
 
 ==========
 
-Item : RoleAccess
+Item : RoleAccess (120), Entity : T_RoleAccess (95)
 
 Path : 0
 select
@@ -522,7 +522,7 @@ from T_RoleAccess@plant
 
 ==========
 
-Item : ShowFieldTypeAttributes
+Item : ShowFieldTypeAttributes (76), Entity : T_ShowFieldTypeAttributes (83)
 
 Path : 0
 select
@@ -536,7 +536,7 @@ from T_ShowFieldTypeAttributes@plant
 
 ==========
 
-Item : ShowFieldTypes
+Item : ShowFieldTypes (75), Entity : T_ShowFieldTypes (82)
 
 Path : 0
 select
@@ -547,7 +547,7 @@ from T_ShowFieldTypes@plant
 
 ==========
 
-Item : ShowFieldUids
+Item : ShowFieldUids (77), Entity : T_ShowFieldUids (84)
 
 Path : 0
 select
@@ -557,7 +557,7 @@ from T_ShowFieldUids@plant
 
 ==========
 
-Item : Unit
+Item : Unit (94), Entity : T_Unit (65)
 
 Path : 0
 select
@@ -580,7 +580,7 @@ select
    T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
    T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
 from T_Unit@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- 123, SUBCLASS
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- RN(123), RT(SUBCLASS), DC(1), SC(1)
 
 Path : 123_272
 select
@@ -596,12 +596,12 @@ select
    T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
    T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
 from T_Unit@plant
-   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- 123, SUBCLASS
-   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- 272, ASSOC_NC
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- RN(123), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
 
 ==========
 
-Item : WSSite
+Item : WSSite (22), Entity : T_WSSite (32)
 
 Path : 0
 select
