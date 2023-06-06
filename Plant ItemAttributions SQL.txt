@@ -1,0 +1,623 @@
+Item : ActiveWSSite (29), Entity : T_ActiveWSSite (44)
+
+Path : 0
+select
+   T_ActiveWSSite.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_ActiveWSSite.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_ActiveWSSite.SP_WSSiteID SP_WSSiteID -- T(S32), F(), V(T)
+from T_ActiveWSSite@plant
+
+Path : 273 -  ( WSSite.ActiveWSSite )
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_ActiveWSSite@plant
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_ActiveWSSite.SP_WSSiteID) -- RN(273), RT(GROUP), SC(1), DC(76)
+
+==========
+
+Item : AppProject (119), Entity : T_AppProject (96)
+
+Path : 0
+select
+   T_AppProject.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_AppProject.SP_AppStatus SP_AppStatus, -- T(C138), F(Text), V(T)
+   T_AppProject.SP_AppID SP_AppID, -- T(C88), F(Text), V(T)
+   T_AppProject.SP_ProjectID SP_ProjectID, -- T(S32), F(), V(T)
+   T_AppProject.SP_ResetDesignBasis SP_ResetDesignBasis, -- T(C73), F(Text), V(T)
+   T_AppProject.SP_LastEFRetrievalTime SP_LastEFRetrievalTime -- T(T), F(General Date), V(T)
+from T_AppProject@plant
+
+==========
+
+Item : Area (72), Entity : T_Area (72)
+
+Path : 0
+select
+   T_Area.SP_ID SP_ID -- T(S32), F(), V(F)
+from T_Area@plant
+
+Path : 205 -  ( PlantGroup.SubClass.Area )
+select
+   T_PlantGroup.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
+from T_Area@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- RN(205), RT(SUBCLASS), DC(1), SC(1)
+
+Path : 205_272
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_Area@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Area.SP_ID) -- RN(205), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : DrawingSite (40), Entity : T_DrawingSite (75)
+
+Path : 0
+select
+   T_DrawingSite.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_DrawingSite.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_DrawingSite.SP_DrawingID SP_DrawingID, -- T(S32), F(), V(F)
+   T_DrawingSite.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_DrawingSite.Name Name, -- T(S80), F(Text), V(T)
+   T_DrawingSite.DrawingNumber DrawingNumber, -- T(S80), F(Text), V(T)
+   T_DrawingSite.SP_PlantGroupID SP_PlantGroupID, -- T(S32), F(), V(T)
+   T_DrawingSite.SP_ToWSSiteID SP_ToWSSiteID -- T(S32), F(), V(T)
+from T_DrawingSite@plant
+
+Path : 269 -  ( WSSite.DrawingSite )
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSite@plant
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- RN(269), RT(GROUP), SC(1), DC(76)
+
+Path : 276 -  ( PlantGroup.DrawingSite )
+select
+   T_PlantGroup.SP_ID PlantGroup_SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name PlantGroup_Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroup_PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description PlantGroup_Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth PlantGroup_Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated PlantGroup_DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount PlantGroup_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path PlantGroup_Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID PlantGroup_ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined PlantGroup_UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID PlantGroup_SP_WSSiteID -- T(S32), F(), V(T)
+from T_DrawingSite@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+
+Path : 277 -  ( WSSite.ToWSSite.DrawingSite )
+select
+   T_WSSite.SP_ID ToWSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount ToWSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name ToWSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer ToWSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername ToWSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword ToWSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress ToWSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType ToWSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse ToWSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType ToWSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath ToWSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSite@plant
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- RN(277), RT(GROUP), SC(1), DC(78)
+
+Path : 276_272
+select
+   T_WSSite.SP_ID PlantGroup_WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount PlantGroup_WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name PlantGroup_WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer PlantGroup_WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername PlantGroup_WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword PlantGroup_WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress PlantGroup_WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType PlantGroup_WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse PlantGroup_WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType PlantGroup_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath PlantGroup_WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSite@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : DrawingSubscriber (25), Entity : T_DrawingSubscriber (40)
+
+Path : 0
+select
+   T_DrawingSubscriber.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_DrawingSubscriber.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_DrawingSubscriber.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_DrawingSubscriber.SP_DrawingSiteID SP_DrawingSiteID -- T(S32), F(), V(T)
+from T_DrawingSubscriber@plant
+
+Path : 274 -  ( WSSite.DrawingSubscriber )
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSubscriber.SP_WSSiteID) -- RN(274), RT(GROUP), SC(1), DC(76)
+
+Path : 275 -  ( DrawingSite.DrawingSubscriber )
+select
+   T_DrawingSite.SP_ID DrawingSite_SP_ID, -- T(S32), F(), V(F)
+   T_DrawingSite.UpdateCount DrawingSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_DrawingSite.SP_DrawingID DrawingSite_SP_DrawingID, -- T(S32), F(), V(F)
+   T_DrawingSite.SP_WSSiteID DrawingSite_SP_WSSiteID, -- T(S32), F(), V(T)
+   T_DrawingSite.Name DrawingSite_Name, -- T(S80), F(Text), V(T)
+   T_DrawingSite.DrawingNumber DrawingSite_DrawingNumber, -- T(S80), F(Text), V(T)
+   T_DrawingSite.SP_PlantGroupID DrawingSite_SP_PlantGroupID, -- T(S32), F(), V(T)
+   T_DrawingSite.SP_ToWSSiteID DrawingSite_SP_ToWSSiteID -- T(S32), F(), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+
+Path : 275_269
+select
+   T_WSSite.SP_ID DrawingSite_WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount DrawingSite_WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name DrawingSite_WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer DrawingSite_WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername DrawingSite_WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword DrawingSite_WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress DrawingSite_WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType DrawingSite_WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse DrawingSite_WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType DrawingSite_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath DrawingSite_WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_WSSiteID) -- RN(269), RT(GROUP), SC(1), DC(76)
+
+Path : 275_276
+select
+   T_PlantGroup.SP_ID DrawingSite_PlantGroup_SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name DrawingSite_PlantGroup_Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType DrawingSite_PlantGroup_PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description DrawingSite_PlantGroup_Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth DrawingSite_PlantGroup_Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated DrawingSite_PlantGroup_DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount DrawingSite_PlantGroup_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path DrawingSite_PlantGroup_Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID DrawingSite_PlantGroup_ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined DrawingSite_PlantGroup_UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID DrawingSite_PlantGroup_SP_WSSiteID -- T(S32), F(), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+
+Path : 275_277
+select
+   T_WSSite.SP_ID DrawingSite_ToWSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount DrawingSite_ToWSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name DrawingSite_ToWSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer DrawingSite_ToWSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername DrawingSite_ToWSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword DrawingSite_ToWSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress DrawingSite_ToWSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType DrawingSite_ToWSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse DrawingSite_ToWSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType DrawingSite_ToWSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath DrawingSite_ToWSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_DrawingSite.SP_ToWSSiteID) -- RN(277), RT(GROUP), SC(1), DC(78)
+
+Path : 275_276_272
+select
+   T_WSSite.SP_ID DrawingSite_PlantGroup_WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount DrawingSite_PlantGroup_WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name DrawingSite_PlantGroup_WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer DrawingSite_PlantGroup_WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername DrawingSite_PlantGroup_WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword DrawingSite_PlantGroup_WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress DrawingSite_PlantGroup_WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType DrawingSite_PlantGroup_WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse DrawingSite_PlantGroup_WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType DrawingSite_PlantGroup_WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath DrawingSite_PlantGroup_WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_DrawingSubscriber@plant
+   inner join T_DrawingSite@plant on (T_DrawingSite.SP_ID = T_DrawingSubscriber.SP_DrawingSiteID) -- RN(275), RT(GROUP), SC(1), DC(77)
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_DrawingSite.SP_PlantGroupID) -- RN(276), RT(GROUP), SC(1), DC(43)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : FormatTypes (130), Entity : T_FormatTypes (106)
+
+Path : 0
+select
+   T_FormatTypes.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_FormatTypes.SP_FormatTypeName SP_FormatTypeName, -- T(S80), F(Text), V(T)
+   T_FormatTypes.SP_UnitsOfMeasureTypeID SP_UnitsOfMeasureTypeID, -- T(I4), F(), V(T)
+   T_FormatTypes.UpdateCount UpdateCount -- T(I4), F(Integer), V(F)
+from T_FormatTypes@plant
+
+==========
+
+Item : Formats (146), Entity : T_Formats (122)
+
+Path : 0
+select
+   T_Formats.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_Formats.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_Formats.SP_FormatName SP_FormatName, -- T(S80), F(Text), V(T)
+   T_Formats.SP_Alignment SP_Alignment, -- T(I4), F(), V(T)
+   T_Formats.SP_FixedStringLength SP_FixedStringLength, -- T(I4), F(), V(T)
+   T_Formats.SP_FractionalAccuracy SP_FractionalAccuracy, -- T(I4), F(), V(T)
+   T_Formats.SP_IfText SP_IfText, -- T(I4), F(), V(T)
+   T_Formats.SP_IndexNumber SP_IndexNumber, -- T(I4), F(), V(T)
+   T_Formats.SP_InsertText SP_InsertText, -- T(S255), F(Text), V(T)
+   T_Formats.SP_MaximumLength SP_MaximumLength, -- T(I4), F(), V(T)
+   T_Formats.SP_MinimumLength SP_MinimumLength, -- T(I4), F(), V(T)
+   T_Formats.SP_PadString SP_PadString, -- T(S20), F(Text), V(T)
+   T_Formats.SP_Precision SP_Precision, -- T(I4), F(), V(T)
+   T_Formats.SP_ReadOut SP_ReadOut, -- T(I4), F(), V(T)
+   T_Formats.SP_SecondaryUnitID SP_SecondaryUnitID, -- T(I4), F(), V(T)
+   T_Formats.SP_TertiaryUnitID SP_TertiaryUnitID, -- T(I4), F(), V(T)
+   T_Formats.SP_UnitOfMeasureID SP_UnitOfMeasureID, -- T(I4), F(), V(T)
+   T_Formats.SP_DisplayUnits SP_DisplayUnits, -- T(S1), F(Text), V(T)
+   T_Formats.SP_FormatTypesID SP_FormatTypesID -- T(S32), F(Text), V(F)
+from T_Formats@plant
+
+Path : 286 -  ( FormatTypes.Formats )
+select
+   T_FormatTypes.SP_ID FormatTypes_SP_ID, -- T(S32), F(), V(F)
+   T_FormatTypes.SP_FormatTypeName FormatTypes_SP_FormatTypeName, -- T(S80), F(Text), V(T)
+   T_FormatTypes.SP_UnitsOfMeasureTypeID FormatTypes_SP_UnitsOfMeasureTypeID, -- T(I4), F(), V(T)
+   T_FormatTypes.UpdateCount FormatTypes_UpdateCount -- T(I4), F(Integer), V(F)
+from T_Formats@plant
+   inner join T_FormatTypes@plant on (T_FormatTypes.SP_ID = T_Formats.SP_FormatTypesID) -- RN(286), RT(GROUP), SC(1), DC(93)
+
+==========
+
+Item : HierarchyLevels (54), Entity : T_HierarchyLevels (28)
+
+Path : 0
+select
+   T_HierarchyLevels.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_HierarchyLevels.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_HierarchyLevels.Depth Depth, -- T(I4), F(Integer), V(T)
+   T_HierarchyLevels.AllowPIDDrawing AllowPIDDrawing, -- T(C73), F(Text), V(T)
+   T_HierarchyLevels.EntityNumber EntityNumber -- T(I4), F(Integer), V(T)
+from T_HierarchyLevels@plant
+
+==========
+
+Item : InterSiteOPC (113), Entity : T_InterSiteOPC (89)
+
+Path : 0
+select
+   T_InterSiteOPC.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_InterSiteOPC.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_InterSiteOPC.ToDrawingSPID ToDrawingSPID, -- T(S32), F(), V(F)
+   T_InterSiteOPC.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_InterSiteOPC.SP_ModelItemID SP_ModelItemID, -- T(S32), F(), V(F)
+   T_InterSiteOPC.TransferState TransferState, -- T(C118), F(Text), V(T)
+   T_InterSiteOPC.SP_FromWSSiteID SP_FromWSSiteID, -- T(S32), F(), V(T)
+   T_InterSiteOPC.SP_pairedWithID SP_pairedWithID -- T(S32), F(), V(F)
+from T_InterSiteOPC@plant
+
+==========
+
+Item : Plant (97), Entity : T_Plant (70)
+
+Path : 0
+select
+   T_Plant.SP_ID SP_ID -- T(S32), F(), V(F)
+from T_Plant@plant
+
+Path : 126 -  ( PlantGroup.SubClass.Plant )
+select
+   T_PlantGroup.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
+from T_Plant@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- RN(126), RT(SUBCLASS), DC(1), SC(1)
+
+Path : 126_272
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_Plant@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Plant.SP_ID) -- RN(126), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : PlantGroup (100), Entity : T_PlantGroup (71)
+
+Path : 0
+select
+   T_PlantGroup.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_PlantGroup.SP_EFUID SP_EFUID, -- T(S40), F(Text), V(T)
+   T_PlantGroup.SP_OldName SP_OldName, -- T(S80), F(Text), V(T)
+   T_PlantGroup.SP_SPPIDRenameStatus SP_SPPIDRenameStatus, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.SP_SPELRenameStatus SP_SPELRenameStatus, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.SP_PIDCopyPlantStatus SP_PIDCopyPlantStatus -- T(I4), F(Integer), V(F)
+from T_PlantGroup@plant
+
+Path : 272 -  ( WSSite.PlantGroup )
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_PlantGroup@plant
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : PlantSetting (18), Entity : T_PlantSetting (19)
+
+Path : 0
+select
+   T_PlantSetting.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_PlantSetting.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantSetting.Name Name, -- T(S80), F(Text), V(T)
+   T_PlantSetting.Value Value, -- T(S4000), F(Text), V(T)
+   T_PlantSetting.DisplayName DisplayName, -- T(S80), F(Text), V(T)
+   T_PlantSetting.SettingType SettingType, -- T(C74), F(Text), V(T)
+   T_PlantSetting.SP_IsUpdatedBySPEM SP_IsUpdatedBySPEM, -- T(C73), F(Text), V(T)
+   T_PlantSetting.SP_BackupType SP_BackupType -- T(C63), F(Text), V(T)
+from T_PlantSetting@plant
+
+==========
+
+Item : Project (114), Entity : T_Project (90)
+
+Path : 0
+select
+   T_Project.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_Project.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_Project.Name Name, -- T(S80), F(Text), V(T)
+   T_Project.Description Description, -- T(S240), F(Text), V(T)
+   T_Project.DateCreated DateCreated, -- T(T), F(General Date), V(T)
+   T_Project.SP_ProjectType SP_ProjectType, -- T(C126), F(Text), V(T)
+   T_Project.SP_ProjectStatus SP_ProjectStatus, -- T(C135), F(Text), V(T)
+   T_Project.SP_RootItemID SP_RootItemID, -- T(S32), F(), V(T)
+   T_Project.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
+from T_Project@plant
+
+==========
+
+Item : ProjectPlantGroup (115), Entity : T_ProjectPlantGroup (91)
+
+Path : 0
+select
+   T_ProjectPlantGroup.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_ProjectPlantGroup.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_ProjectPlantGroup.SP_ProjectID SP_ProjectID, -- T(S32), F(), V(T)
+   T_ProjectPlantGroup.SP_PlantGroupID SP_PlantGroupID -- T(S32), F(), V(T)
+from T_ProjectPlantGroup@plant
+
+Path : 282
+select
+   T_Project.SP_ID Project_SP_ID, -- T(S32), F(), V(F)
+   T_Project.UpdateCount Project_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_Project.Name Project_Name, -- T(S80), F(Text), V(T)
+   T_Project.Description Project_Description, -- T(S240), F(Text), V(T)
+   T_Project.DateCreated Project_DateCreated, -- T(T), F(General Date), V(T)
+   T_Project.SP_ProjectType Project_SP_ProjectType, -- T(C126), F(Text), V(T)
+   T_Project.SP_ProjectStatus Project_SP_ProjectStatus, -- T(C135), F(Text), V(T)
+   T_Project.SP_RootItemID Project_SP_RootItemID, -- T(S32), F(), V(T)
+   T_Project.SP_EFUID Project_SP_EFUID -- T(S40), F(Text), V(T)
+from T_ProjectPlantGroup@plant
+   inner join T_Project@plant on (T_Project.SP_ID = T_ProjectPlantGroup.SP_ProjectID) -- RN(282), RT(GROUP), SC(1), DC(90)
+
+Path : 283
+select
+   T_PlantGroup.SP_ID PlantGroup_SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name PlantGroup_Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroup_PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description PlantGroup_Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth PlantGroup_Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated PlantGroup_DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount PlantGroup_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path PlantGroup_Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID PlantGroup_ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined PlantGroup_UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID PlantGroup_SP_WSSiteID, -- T(S32), F(), V(T)
+   T_PlantGroup.SP_EFUID PlantGroup_SP_EFUID -- T(S40), F(Text), V(T)
+from T_ProjectPlantGroup@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_ProjectPlantGroup.SP_PlantGroupID) -- RN(283), RT(GROUP), SC(1), DC(43)
+
+==========
+
+Item : RoleAccess (120), Entity : T_RoleAccess (95)
+
+Path : 0
+select
+   T_RoleAccess.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_RoleAccess.SP_RoleID SP_RoleID, -- T(S32), F(), V(T)
+   T_RoleAccess.SP_PlantGroupID SP_PlantGroupID, -- T(S32), F(), V(T)
+   T_RoleAccess.SP_AppID SP_AppID, -- T(C88), F(Text), V(T)
+   T_RoleAccess.SP_AccessValue SP_AccessValue -- T(I4), F(Integer), V(T)
+from T_RoleAccess@plant
+
+==========
+
+Item : ShowFieldTypeAttributes (76), Entity : T_ShowFieldTypeAttributes (83)
+
+Path : 0
+select
+   T_ShowFieldTypeAttributes.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_ShowFieldTypeAttributes.SP_ShowFieldTypeID SP_ShowFieldTypeID, -- T(S32), F(), V(T)
+   T_ShowFieldTypeAttributes.SP_AttributeID SP_AttributeID, -- T(I4), F(Integer), V(T)
+   T_ShowFieldTypeAttributes.SP_ColumnWidth SP_ColumnWidth, -- T(D), F(g.3), V(T)
+   T_ShowFieldTypeAttributes.SP_ColumnOrder SP_ColumnOrder, -- T(I4), F(Integer), V(T)
+   T_ShowFieldTypeAttributes.SP_Display SP_Display -- T(C73), F(Text), V(T)
+from T_ShowFieldTypeAttributes@plant
+
+==========
+
+Item : ShowFieldTypes (75), Entity : T_ShowFieldTypes (82)
+
+Path : 0
+select
+   T_ShowFieldTypes.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_ShowFieldTypes.SP_PlantGroupEntityNumber SP_PlantGroupEntityNumber, -- T(I4), F(Integer), V(T)
+   T_ShowFieldTypes.SP_ShowFieldUserID SP_ShowFieldUserID -- T(S32), F(), V(T)
+from T_ShowFieldTypes@plant
+
+==========
+
+Item : ShowFieldUids (77), Entity : T_ShowFieldUids (84)
+
+Path : 0
+select
+   T_ShowFieldUids.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_ShowFieldUids.SP_ShowFieldUser SP_ShowFieldUser -- T(S80), F(Text), V(T)
+from T_ShowFieldUids@plant
+
+==========
+
+Item : Unit (94), Entity : T_Unit (65)
+
+Path : 0
+select
+   T_Unit.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_Unit.UnitCode UnitCode -- T(S40), F(Text), V(T)
+from T_Unit@plant
+
+Path : 123 -  ( PlantGroup.SubClass.Unit )
+select
+   T_PlantGroup.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_PlantGroup.Name Name, -- T(S80), F(Text), V(T)
+   T_PlantGroup.PlantGroupType PlantGroupType, -- T(C90), F(Text), V(T)
+   T_PlantGroup.Description Description, -- T(S240), F(Text), V(T)
+   T_PlantGroup.Depth Depth, -- T(I4), F(Integer), V(T)
+   T_PlantGroup.DateCreated DateCreated, -- T(T), F(General Date), V(T)
+   T_PlantGroup.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_PlantGroup.Dir_Path Dir_Path, -- T(S4000), F(Text), V(T)
+   T_PlantGroup.ParentID ParentID, -- T(S32), F(), V(T)
+   T_PlantGroup.UserDefined UserDefined, -- T(S1), F(a1), V(T)
+   T_PlantGroup.SP_WSSiteID SP_WSSiteID, -- T(S32), F(), V(T)
+   T_PlantGroup.SP_EFUID SP_EFUID -- T(S40), F(Text), V(T)
+from T_Unit@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- RN(123), RT(SUBCLASS), DC(1), SC(1)
+
+Path : 123_272
+select
+   T_WSSite.SP_ID WSSite_SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.Name WSSite_Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer WSSite_FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername WSSite_FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword WSSite_FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress WSSite_SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.UpdateCount WSSite_UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.WSSiteType WSSite_WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse WSSite_InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType WSSite_DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath WSSite_UNCPath -- T(S4000), F(Text), V(T)
+from T_Unit@plant
+   inner join T_PlantGroup@plant on (T_PlantGroup.SP_ID = T_Unit.SP_ID) -- RN(123), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WSSite@plant on (T_WSSite.SP_ID = T_PlantGroup.SP_WSSiteID) -- RN(272), RT(ASSOC_NC), SC(1), DC(76)
+
+==========
+
+Item : WSSite (22), Entity : T_WSSite (32)
+
+Path : 0
+select
+   T_WSSite.SP_ID SP_ID, -- T(S32), F(), V(F)
+   T_WSSite.UpdateCount UpdateCount, -- T(I4), F(Integer), V(F)
+   T_WSSite.Name Name, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPServer FTPServer, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPUsername FTPUsername, -- T(S80), F(Text), V(T)
+   T_WSSite.FTPPassword FTPPassword, -- T(S80), F(Text), V(T)
+   T_WSSite.SiteAdminEmailAddress SiteAdminEmailAddress, -- T(S240), F(Text), V(T)
+   T_WSSite.WSSiteType WSSiteType, -- T(C107), F(Text), V(T)
+   T_WSSite.InUse InUse, -- T(C73), F(Text), V(T)
+   T_WSSite.DataAccessType DataAccessType, -- T(C111), F(Text), V(T)
+   T_WSSite.UNCPath UNCPath, -- T(S4000), F(Text), V(T)
+   T_WSSite.MailServer MailServer -- T(S255), F(Text), V(T)
+from T_WSSite@plant
+
+==========
+
