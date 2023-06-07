@@ -1,0 +1,449 @@
+Item : ActiveWSSite (29), Entity : T_ActiveWSSite (44)
+
+SP_ID - 0
+SP_WSSiteID - 0
+UpdateCount - 0
+WSSite.DataAccessType - 273
+WSSite.FTPPassword - 273
+WSSite.FTPServer - 273
+WSSite.FTPUsername - 273
+WSSite.InUse - 273
+WSSite.Name - 273
+WSSite.SiteAdminEmailAddress - 273
+WSSite.SP_ID - 273
+WSSite.UNCPath - 273
+WSSite.UpdateCount - 273
+WSSite.WSSiteType - 273
+
+==========
+
+Item : AppProject (119), Entity : T_AppProject (96)
+
+SP_AppID - 0
+SP_AppStatus - 0
+SP_ID - 0
+SP_LastEFRetrievalTime - 0
+SP_ProjectID - 0
+SP_ResetDesignBasis - 0
+
+==========
+
+Item : Area (72), Entity : T_Area (72)
+
+DateCreated - 205
+Depth - 205
+Description - 205
+Dir_Path - 205
+Name - 205
+ParentID - 205
+PlantGroupType - 205
+SP_EFUID - 205
+SP_ID - 0
+SP_ID - 205
+SP_WSSiteID - 205
+UpdateCount - 205
+UserDefined - 205
+WSSite.DataAccessType - 205_272
+WSSite.FTPPassword - 205_272
+WSSite.FTPServer - 205_272
+WSSite.FTPUsername - 205_272
+WSSite.InUse - 205_272
+WSSite.Name - 205_272
+WSSite.SiteAdminEmailAddress - 205_272
+WSSite.SP_ID - 205_272
+WSSite.UNCPath - 205_272
+WSSite.UpdateCount - 205_272
+WSSite.WSSiteType - 205_272
+
+==========
+
+Item : DrawingSite (40), Entity : T_DrawingSite (75)
+
+DrawingNumber - 0
+Name - 0
+PlantGroup.DateCreated - 276
+PlantGroup.Depth - 276
+PlantGroup.Description - 276
+PlantGroup.Dir_Path - 276
+PlantGroup.Name - 276
+PlantGroup.ParentID - 276
+PlantGroup.PlantGroupType - 276
+PlantGroup.SP_ID - 276
+PlantGroup.SP_WSSiteID - 276
+PlantGroup.UpdateCount - 276
+PlantGroup.UserDefined - 276
+PlantGroup.WSSite.DataAccessType - 276_272
+PlantGroup.WSSite.FTPPassword - 276_272
+PlantGroup.WSSite.FTPServer - 276_272
+PlantGroup.WSSite.FTPUsername - 276_272
+PlantGroup.WSSite.InUse - 276_272
+PlantGroup.WSSite.Name - 276_272
+PlantGroup.WSSite.SiteAdminEmailAddress - 276_272
+PlantGroup.WSSite.SP_ID - 276_272
+PlantGroup.WSSite.UNCPath - 276_272
+PlantGroup.WSSite.UpdateCount - 276_272
+PlantGroup.WSSite.WSSiteType - 276_272
+SP_DrawingID - 0
+SP_ID - 0
+SP_PlantGroupID - 0
+SP_ToWSSiteID - 0
+SP_WSSiteID - 0
+ToWSSite.DataAccessType - 277
+ToWSSite.FTPPassword - 277
+ToWSSite.FTPServer - 277
+ToWSSite.FTPUsername - 277
+ToWSSite.InUse - 277
+ToWSSite.Name - 277
+ToWSSite.SiteAdminEmailAddress - 277
+ToWSSite.SP_ID - 277
+ToWSSite.UNCPath - 277
+ToWSSite.UpdateCount - 277
+ToWSSite.WSSiteType - 277
+UpdateCount - 0
+WSSite.DataAccessType - 269
+WSSite.FTPPassword - 269
+WSSite.FTPServer - 269
+WSSite.FTPUsername - 269
+WSSite.InUse - 269
+WSSite.Name - 269
+WSSite.SiteAdminEmailAddress - 269
+WSSite.SP_ID - 269
+WSSite.UNCPath - 269
+WSSite.UpdateCount - 269
+WSSite.WSSiteType - 269
+
+==========
+
+Item : DrawingSubscriber (25), Entity : T_DrawingSubscriber (40)
+
+DrawingSite.DrawingNumber - 275
+DrawingSite.Name - 275
+DrawingSite.PlantGroup.DateCreated - 275_276
+DrawingSite.PlantGroup.Depth - 275_276
+DrawingSite.PlantGroup.Description - 275_276
+DrawingSite.PlantGroup.Dir_Path - 275_276
+DrawingSite.PlantGroup.Name - 275_276
+DrawingSite.PlantGroup.ParentID - 275_276
+DrawingSite.PlantGroup.PlantGroupType - 275_276
+DrawingSite.PlantGroup.SP_ID - 275_276
+DrawingSite.PlantGroup.SP_WSSiteID - 275_276
+DrawingSite.PlantGroup.UpdateCount - 275_276
+DrawingSite.PlantGroup.UserDefined - 275_276
+DrawingSite.PlantGroup.WSSite.DataAccessType - 275_276_272
+DrawingSite.PlantGroup.WSSite.FTPPassword - 275_276_272
+DrawingSite.PlantGroup.WSSite.FTPServer - 275_276_272
+DrawingSite.PlantGroup.WSSite.FTPUsername - 275_276_272
+DrawingSite.PlantGroup.WSSite.InUse - 275_276_272
+DrawingSite.PlantGroup.WSSite.Name - 275_276_272
+DrawingSite.PlantGroup.WSSite.SiteAdminEmailAddress - 275_276_272
+DrawingSite.PlantGroup.WSSite.SP_ID - 275_276_272
+DrawingSite.PlantGroup.WSSite.UNCPath - 275_276_272
+DrawingSite.PlantGroup.WSSite.UpdateCount - 275_276_272
+DrawingSite.PlantGroup.WSSite.WSSiteType - 275_276_272
+DrawingSite.SP_DrawingID - 275
+DrawingSite.SP_ID - 275
+DrawingSite.SP_PlantGroupID - 275
+DrawingSite.SP_ToWSSiteID - 275
+DrawingSite.SP_WSSiteID - 275
+DrawingSite.ToWSSite.DataAccessType - 275_277
+DrawingSite.ToWSSite.FTPPassword - 275_277
+DrawingSite.ToWSSite.FTPServer - 275_277
+DrawingSite.ToWSSite.FTPUsername - 275_277
+DrawingSite.ToWSSite.InUse - 275_277
+DrawingSite.ToWSSite.Name - 275_277
+DrawingSite.ToWSSite.SiteAdminEmailAddress - 275_277
+DrawingSite.ToWSSite.SP_ID - 275_277
+DrawingSite.ToWSSite.UNCPath - 275_277
+DrawingSite.ToWSSite.UpdateCount - 275_277
+DrawingSite.ToWSSite.WSSiteType - 275_277
+DrawingSite.UpdateCount - 275
+DrawingSite.WSSite.DataAccessType - 275_269
+DrawingSite.WSSite.FTPPassword - 275_269
+DrawingSite.WSSite.FTPServer - 275_269
+DrawingSite.WSSite.FTPUsername - 275_269
+DrawingSite.WSSite.InUse - 275_269
+DrawingSite.WSSite.Name - 275_269
+DrawingSite.WSSite.SiteAdminEmailAddress - 275_269
+DrawingSite.WSSite.SP_ID - 275_269
+DrawingSite.WSSite.UNCPath - 275_269
+DrawingSite.WSSite.UpdateCount - 275_269
+DrawingSite.WSSite.WSSiteType - 275_269
+SP_DrawingSiteID - 0
+SP_ID - 0
+SP_WSSiteID - 0
+UpdateCount - 0
+WSSite.DataAccessType - 274
+WSSite.FTPPassword - 274
+WSSite.FTPServer - 274
+WSSite.FTPUsername - 274
+WSSite.InUse - 274
+WSSite.Name - 274
+WSSite.SiteAdminEmailAddress - 274
+WSSite.SP_ID - 274
+WSSite.UNCPath - 274
+WSSite.UpdateCount - 274
+WSSite.WSSiteType - 274
+
+==========
+
+Item : FormatTypes (130), Entity : T_FormatTypes (106)
+
+SP_FormatTypeName - 0
+SP_ID - 0
+SP_UnitsOfMeasureTypeID - 0
+UpdateCount - 0
+
+==========
+
+Item : Formats (146), Entity : T_Formats (122)
+
+FormatTypes.SP_FormatTypeName - 286
+FormatTypes.SP_ID - 286
+FormatTypes.SP_UnitsOfMeasureTypeID - 286
+FormatTypes.UpdateCount - 286
+SP_Alignment - 0
+SP_DisplayUnits - 0
+SP_FixedStringLength - 0
+SP_FormatName - 0
+SP_FormatTypesID - 0
+SP_FractionalAccuracy - 0
+SP_ID - 0
+SP_IfText - 0
+SP_IndexNumber - 0
+SP_InsertText - 0
+SP_MaximumLength - 0
+SP_MinimumLength - 0
+SP_PadString - 0
+SP_Precision - 0
+SP_ReadOut - 0
+SP_SecondaryUnitID - 0
+SP_TertiaryUnitID - 0
+SP_UnitOfMeasureID - 0
+UpdateCount - 0
+
+==========
+
+Item : HierarchyLevels (54), Entity : T_HierarchyLevels (28)
+
+AllowPIDDrawing - 0
+Depth - 0
+EntityNumber - 0
+SP_ID - 0
+UpdateCount - 0
+
+==========
+
+Item : InterSiteOPC (113), Entity : T_InterSiteOPC (89)
+
+SP_FromWSSiteID - 0
+SP_ID - 0
+SP_ModelItemID - 0
+SP_pairedWithID - 0
+SP_WSSiteID - 0
+ToDrawingSPID - 0
+TransferState - 0
+UpdateCount - 0
+
+==========
+
+Item : Plant (97), Entity : T_Plant (70)
+
+DateCreated - 126
+Depth - 126
+Description - 126
+Dir_Path - 126
+Name - 126
+ParentID - 126
+PlantGroupType - 126
+SP_EFUID - 126
+SP_ID - 0
+SP_ID - 126
+SP_WSSiteID - 126
+UpdateCount - 126
+UserDefined - 126
+WSSite.DataAccessType - 126_272
+WSSite.FTPPassword - 126_272
+WSSite.FTPServer - 126_272
+WSSite.FTPUsername - 126_272
+WSSite.InUse - 126_272
+WSSite.Name - 126_272
+WSSite.SiteAdminEmailAddress - 126_272
+WSSite.SP_ID - 126_272
+WSSite.UNCPath - 126_272
+WSSite.UpdateCount - 126_272
+WSSite.WSSiteType - 126_272
+
+==========
+
+Item : PlantGroup (100), Entity : T_PlantGroup (71)
+
+DateCreated - 0
+Depth - 0
+Description - 0
+Dir_Path - 0
+Name - 0
+ParentID - 0
+PlantGroupType - 0
+SP_EFUID - 0
+SP_ID - 0
+SP_OldName - 0
+SP_PIDCopyPlantStatus - 0
+SP_SPELRenameStatus - 0
+SP_SPPIDRenameStatus - 0
+SP_WSSiteID - 0
+UpdateCount - 0
+UserDefined - 0
+WSSite.DataAccessType - 272
+WSSite.FTPPassword - 272
+WSSite.FTPServer - 272
+WSSite.FTPUsername - 272
+WSSite.InUse - 272
+WSSite.Name - 272
+WSSite.SiteAdminEmailAddress - 272
+WSSite.SP_ID - 272
+WSSite.UNCPath - 272
+WSSite.UpdateCount - 272
+WSSite.WSSiteType - 272
+
+==========
+
+Item : PlantSetting (18), Entity : T_PlantSetting (19)
+
+DisplayName - 0
+Name - 0
+SettingType - 0
+SP_BackupType - 0
+SP_ID - 0
+SP_IsUpdatedBySPEM - 0
+UpdateCount - 0
+Value - 0
+
+==========
+
+Item : Project (114), Entity : T_Project (90)
+
+DateCreated - 0
+Description - 0
+Name - 0
+SP_EFUID - 0
+SP_ID - 0
+SP_ProjectStatus - 0
+SP_ProjectType - 0
+SP_RootItemID - 0
+UpdateCount - 0
+
+==========
+
+Item : ProjectPlantGroup (115), Entity : T_ProjectPlantGroup (91)
+
+PlantGroup.DateCreated - 283
+PlantGroup.Depth - 283
+PlantGroup.Description - 283
+PlantGroup.Dir_Path - 283
+PlantGroup.Name - 283
+PlantGroup.ParentID - 283
+PlantGroup.PlantGroupType - 283
+PlantGroup.SP_EFUID - 283
+PlantGroup.SP_ID - 283
+PlantGroup.SP_WSSiteID - 283
+PlantGroup.UpdateCount - 283
+PlantGroup.UserDefined - 283
+Project.DateCreated - 282
+Project.Description - 282
+Project.Name - 282
+Project.SP_EFUID - 282
+Project.SP_ID - 282
+Project.SP_ProjectStatus - 282
+Project.SP_ProjectType - 282
+Project.SP_RootItemID - 282
+Project.UpdateCount - 282
+SP_ID - 0
+SP_PlantGroupID - 0
+SP_ProjectID - 0
+UpdateCount - 0
+
+==========
+
+Item : RoleAccess (120), Entity : T_RoleAccess (95)
+
+SP_AccessValue - 0
+SP_AppID - 0
+SP_ID - 0
+SP_PlantGroupID - 0
+SP_RoleID - 0
+
+==========
+
+Item : ShowFieldTypeAttributes (76), Entity : T_ShowFieldTypeAttributes (83)
+
+SP_AttributeID - 0
+SP_ColumnOrder - 0
+SP_ColumnWidth - 0
+SP_Display - 0
+SP_ID - 0
+SP_ShowFieldTypeID - 0
+
+==========
+
+Item : ShowFieldTypes (75), Entity : T_ShowFieldTypes (82)
+
+SP_ID - 0
+SP_PlantGroupEntityNumber - 0
+SP_ShowFieldUserID - 0
+
+==========
+
+Item : ShowFieldUids (77), Entity : T_ShowFieldUids (84)
+
+SP_ID - 0
+SP_ShowFieldUser - 0
+
+==========
+
+Item : Unit (94), Entity : T_Unit (65)
+
+DateCreated - 123
+Depth - 123
+Description - 123
+Dir_Path - 123
+Name - 123
+ParentID - 123
+PlantGroupType - 123
+SP_EFUID - 123
+SP_ID - 0
+SP_ID - 123
+SP_WSSiteID - 123
+UnitCode - 0
+UpdateCount - 123
+UserDefined - 123
+WSSite.DataAccessType - 123_272
+WSSite.FTPPassword - 123_272
+WSSite.FTPServer - 123_272
+WSSite.FTPUsername - 123_272
+WSSite.InUse - 123_272
+WSSite.Name - 123_272
+WSSite.SiteAdminEmailAddress - 123_272
+WSSite.SP_ID - 123_272
+WSSite.UNCPath - 123_272
+WSSite.UpdateCount - 123_272
+WSSite.WSSiteType - 123_272
+
+==========
+
+Item : WSSite (22), Entity : T_WSSite (32)
+
+DataAccessType - 0
+FTPPassword - 0
+FTPServer - 0
+FTPUsername - 0
+InUse - 0
+MailServer - 0
+Name - 0
+SiteAdminEmailAddress - 0
+SP_ID - 0
+UNCPath - 0
+UpdateCount - 0
+WSSiteType - 0
+
+==========
+

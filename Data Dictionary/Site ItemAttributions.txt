@@ -1,0 +1,429 @@
+Item : Area (72), Entity : T_Area (72)
+
+DateCreated - 205
+Depth - 205
+Description - 205
+Dir_Path - 205
+Name - 205
+ParentID - 205
+PlantGroupType - 205
+SP_EFUID - 205
+SP_ID - 0
+SP_ID - 205
+SP_WSSiteID - 205
+UpdateCount - 205
+UserDefined - 205
+WSSite.DataAccessType - 205_272
+WSSite.FTPPassword - 205_272
+WSSite.FTPServer - 205_272
+WSSite.FTPUsername - 205_272
+WSSite.InUse - 205_272
+WSSite.Name - 205_272
+WSSite.SiteAdminEmailAddress - 205_272
+WSSite.SP_ID - 205_272
+WSSite.UNCPath - 205_272
+WSSite.UpdateCount - 205_272
+WSSite.WSSiteType - 205_272
+
+==========
+
+Item : BusinessSector (63), Entity : T_BusinessSector (63)
+
+DateCreated - 201
+Depth - 201
+Description - 201
+Dir_Path - 201
+Name - 201
+ParentID - 201
+PlantGroupType - 201
+SP_EFUID - 201
+SP_ID - 0
+SP_ID - 201
+SP_WSSiteID - 201
+UpdateCount - 201
+UserDefined - 201
+WSSite.DataAccessType - 201_272
+WSSite.FTPPassword - 201_272
+WSSite.FTPServer - 201_272
+WSSite.FTPUsername - 201_272
+WSSite.InUse - 201_272
+WSSite.Name - 201_272
+WSSite.SiteAdminEmailAddress - 201_272
+WSSite.SP_ID - 201_272
+WSSite.UNCPath - 201_272
+WSSite.UpdateCount - 201_272
+WSSite.WSSiteType - 201_272
+
+==========
+
+Item : DB_Data (102), Entity : T_DB_Data (78)
+
+Data_base - 0
+DBServer - 0
+DBType - 0
+Password - 0
+RootItem.DateCreated - 224
+RootItem.Description - 224
+RootItem.Name - 224
+RootItem.Path - 224
+RootItem.PlantGroupTypeName - 224
+RootItem.SP_ID - 224
+RootItem.UpdateCount - 224
+RootItem.WSSiteType - 224
+SP_ID - 0
+SP_RootItemID - 0
+SP_Schema_Type - 0
+SysPassword - 0
+SysUID - 0
+UpdateCount - 0
+Username - 0
+
+==========
+
+Item : FormatTypes (130), Entity : T_FormatTypes (106)
+
+SP_FormatTypeName - 0
+SP_ID - 0
+SP_UnitsOfMeasureTypeID - 0
+UpdateCount - 0
+
+==========
+
+Item : Formats (146), Entity : T_Formats (122)
+
+FormatTypes.SP_FormatTypeName - 286
+FormatTypes.SP_ID - 286
+FormatTypes.SP_UnitsOfMeasureTypeID - 286
+FormatTypes.UpdateCount - 286
+SP_Alignment - 0
+SP_DisplayUnits - 0
+SP_FixedStringLength - 0
+SP_FormatName - 0
+SP_FormatTypesID - 0
+SP_FractionalAccuracy - 0
+SP_ID - 0
+SP_IfText - 0
+SP_IndexNumber - 0
+SP_InsertText - 0
+SP_MaximumLength - 0
+SP_MinimumLength - 0
+SP_PadString - 0
+SP_Precision - 0
+SP_ReadOut - 0
+SP_SecondaryUnitID - 0
+SP_TertiaryUnitID - 0
+SP_UnitOfMeasureID - 0
+UpdateCount - 0
+
+==========
+
+Item : Level (66), Entity : T_Level (66)
+
+DateCreated - 202
+Depth - 202
+Description - 202
+Dir_Path - 202
+Name - 202
+ParentID - 202
+PlantGroupType - 202
+SP_EFUID - 202
+SP_ID - 0
+SP_ID - 202
+SP_WSSiteID - 202
+UpdateCount - 202
+UserDefined - 202
+WSSite.DataAccessType - 202_272
+WSSite.FTPPassword - 202_272
+WSSite.FTPServer - 202_272
+WSSite.FTPUsername - 202_272
+WSSite.InUse - 202_272
+WSSite.Name - 202_272
+WSSite.SiteAdminEmailAddress - 202_272
+WSSite.SP_ID - 202_272
+WSSite.UNCPath - 202_272
+WSSite.UpdateCount - 202_272
+WSSite.WSSiteType - 202_272
+
+==========
+
+Item : Plant (97), Entity : T_Plant (70)
+
+DateCreated - 126
+Depth - 126
+Description - 126
+Dir_Path - 126
+Name - 126
+ParentID - 126
+PlantGroupType - 126
+SP_EFUID - 126
+SP_ID - 0
+SP_ID - 126
+SP_WSSiteID - 126
+UpdateCount - 126
+UserDefined - 126
+WSSite.DataAccessType - 126_272
+WSSite.FTPPassword - 126_272
+WSSite.FTPServer - 126_272
+WSSite.FTPUsername - 126_272
+WSSite.InUse - 126_272
+WSSite.Name - 126_272
+WSSite.SiteAdminEmailAddress - 126_272
+WSSite.SP_ID - 126_272
+WSSite.UNCPath - 126_272
+WSSite.UpdateCount - 126_272
+WSSite.WSSiteType - 126_272
+
+==========
+
+Item : PlantGroup (100), Entity : T_PlantGroup (71)
+
+DateCreated - 0
+Depth - 0
+Description - 0
+Dir_Path - 0
+Name - 0
+ParentID - 0
+PlantGroupType - 0
+SP_EFUID - 0
+SP_ID - 0
+SP_OldName - 0
+SP_PECopyPlantStatus - 0
+SP_PIDCopyPlantStatus - 0
+SP_SPELRenameStatus - 0
+SP_SPPERenameStatus - 0
+SP_SPPIDRenameStatus - 0
+SP_WSSiteID - 0
+UpdateCount - 0
+UserDefined - 0
+WSSite.DataAccessType - 272
+WSSite.FTPPassword - 272
+WSSite.FTPServer - 272
+WSSite.FTPUsername - 272
+WSSite.InUse - 272
+WSSite.Name - 272
+WSSite.SiteAdminEmailAddress - 272
+WSSite.SP_ID - 272
+WSSite.UNCPath - 272
+WSSite.UpdateCount - 272
+WSSite.WSSiteType - 272
+
+==========
+
+Item : PlantSystem (67), Entity : T_PlantSystem (67)
+
+DateCreated - 203
+Depth - 203
+Description - 203
+Dir_Path - 203
+Name - 203
+ParentID - 203
+PlantGroupType - 203
+SP_EFUID - 203
+SP_ID - 0
+SP_ID - 203
+SP_WSSiteID - 203
+UpdateCount - 203
+UserDefined - 203
+WSSite.DataAccessType - 203_272
+WSSite.FTPPassword - 203_272
+WSSite.FTPServer - 203_272
+WSSite.FTPUsername - 203_272
+WSSite.InUse - 203_272
+WSSite.Name - 203_272
+WSSite.SiteAdminEmailAddress - 203_272
+WSSite.SP_ID - 203_272
+WSSite.UNCPath - 203_272
+WSSite.UpdateCount - 203_272
+WSSite.WSSiteType - 203_272
+
+==========
+
+Item : RoleRights (121), Entity : T_RoleRights (97)
+
+Role_ID - 0
+RoleCategory - 0
+RoleValue - 0
+SP_ID - 0
+
+==========
+
+Item : RoleUsers (122), Entity : T_RoleUsers (98)
+
+Role_ID - 0
+RoleUserName - 0
+SP_ID - 0
+
+==========
+
+Item : Roles (120), Entity : T_Roles (96)
+
+Proj_ID - 0
+RoleDescription - 0
+RoleName - 0
+SP_ID - 0
+SP_RoleType - 0
+
+==========
+
+Item : RootItem (103), Entity : T_RootItem (79)
+
+DateCreated - 0
+Description - 0
+Name - 0
+Path - 0
+PlantGroupTypeName - 0
+SP_CopyProjectStatus - 0
+SP_ID - 0
+SP_ParentRootItemID - 0
+UpdateCount - 0
+WSEnabled - 0
+WSSiteServerIni - 0
+WSSiteType - 0
+
+==========
+
+Item : Site (98), Entity : T_Site (69)
+
+Address - 0
+DateCreated - 125
+Depth - 125
+Description - 125
+Dir_Path - 125
+Name - 125
+ParentID - 125
+PlantGroupType - 125
+SP_EFUID - 125
+SP_ID - 0
+SP_ID - 125
+SP_WSSiteID - 125
+UpdateCount - 125
+UserDefined - 125
+WSSite.DataAccessType - 125_272
+WSSite.FTPPassword - 125_272
+WSSite.FTPServer - 125_272
+WSSite.FTPUsername - 125_272
+WSSite.InUse - 125_272
+WSSite.Name - 125_272
+WSSite.SiteAdminEmailAddress - 125_272
+WSSite.SP_ID - 125_272
+WSSite.UNCPath - 125_272
+WSSite.UpdateCount - 125_272
+WSSite.WSSiteType - 125_272
+
+==========
+
+Item : SiteSetting (119), Entity : T_SiteSetting (95)
+
+DisplayName - 0
+Name - 0
+SettingType - 0
+SP_BackupType - 0
+SP_ID - 0
+SP_IsUpdatedBySPEM - 0
+UpdateCount - 0
+Value - 0
+
+==========
+
+Item : SlotUids (123), Entity : T_SlotUids (99)
+
+DdPwd - 0
+DdUid - 0
+PidDdPwd - 0
+PidDdUid - 0
+PidPwd - 0
+PidUid - 0
+PsPwd - 0
+PsUid - 0
+SameInstance - 0
+SignKey - 0
+SP_ID - 0
+SP_RootItemID - 0
+SP_WSSiteID - 0
+SystemOfUnits - 0
+
+==========
+
+Item : SubSystem (68), Entity : T_SubSystem (68)
+
+DateCreated - 204
+Depth - 204
+Description - 204
+Dir_Path - 204
+Name - 204
+ParentID - 204
+PlantGroupType - 204
+SP_EFUID - 204
+SP_ID - 0
+SP_ID - 204
+SP_WSSiteID - 204
+UpdateCount - 204
+UserDefined - 204
+WSSite.DataAccessType - 204_272
+WSSite.FTPPassword - 204_272
+WSSite.FTPServer - 204_272
+WSSite.FTPUsername - 204_272
+WSSite.InUse - 204_272
+WSSite.Name - 204_272
+WSSite.SiteAdminEmailAddress - 204_272
+WSSite.SP_ID - 204_272
+WSSite.UNCPath - 204_272
+WSSite.UpdateCount - 204_272
+WSSite.WSSiteType - 204_272
+
+==========
+
+Item : Unit (94), Entity : T_Unit (65)
+
+DateCreated - 123
+Depth - 123
+Description - 123
+Dir_Path - 123
+Name - 123
+ParentID - 123
+PlantGroupType - 123
+SP_EFUID - 123
+SP_ID - 0
+SP_ID - 123
+SP_WSSiteID - 123
+UnitCode - 0
+UpdateCount - 123
+UserDefined - 123
+WSSite.DataAccessType - 123_272
+WSSite.FTPPassword - 123_272
+WSSite.FTPServer - 123_272
+WSSite.FTPUsername - 123_272
+WSSite.InUse - 123_272
+WSSite.Name - 123_272
+WSSite.SiteAdminEmailAddress - 123_272
+WSSite.SP_ID - 123_272
+WSSite.UNCPath - 123_272
+WSSite.UpdateCount - 123_272
+WSSite.WSSiteType - 123_272
+
+==========
+
+Item : ValidHierarchy (105), Entity : T_ValidHierarchy (81)
+
+Description - 0
+SP_ID - 0
+UpdateCount - 0
+ValidHierarchyName - 0
+
+==========
+
+Item : ValidHierarchyLevel (118), Entity : T_ValidHierarchyLevel (94)
+
+AllowPIDDrawing - 0
+Depth - 0
+PlantGroupType - 0
+SP_ID - 0
+SP_ValidHierarchyID - 0
+UpdateCount - 0
+ValidHierarchy.Description - 255
+ValidHierarchy.SP_ID - 255
+ValidHierarchy.UpdateCount - 255
+ValidHierarchy.ValidHierarchyName - 255
+
+==========
+

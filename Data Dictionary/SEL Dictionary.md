@@ -65,9 +65,7 @@ Motor is a logical object (*Item*) and it has 789 properties (*ItemAttributions*
 
 <pre>
 Item : Motor (159), Entity : T_Motor (135)
-</pre>
 
-<pre>
 Path : 410_377_531_634
 select
    T_RefElectricalEquipment.RatedVoltage RefCircuit_RatedVoltage, -- T(C154), F(Text), V(T)
@@ -77,9 +75,7 @@ from T_Motor@spel
    inner join T_ElectricalEquipment@spel on (T_ElectricalEquipment.SP_ID = T_Load.SP_ID) -- RN(377), RT(SUBCLASS), DC(1), SC(1)
    inner join T_RefCircuit@spelref on (T_RefCircuit.SP_ID = T_ElectricalEquipment.SP_RefCircuitID) -- RN(531), RT(ASSOC_NC), SC(1), DC(88)
    inner join T_RefElectricalEquipment@spelref on (T_RefElectricalEquipment.SP_ID = T_RefCircuit.SP_ID) -- RN(634), RT(SUBCLASS), DC(1), SC(1)
-</pre>
 
-<pre>
 Path : 410_377_576_733_25_42
 select
    T_ModelItem.SP_ID AlternatePowerSourceEquipment_SP_ID, -- T(S32), F(Text), V(F)
@@ -156,20 +152,21 @@ The Engineering Data Editor feature in SEL allows user to query the object's pro
 *SourceDestObjectRels* defines the parent and child relationship between objects. Each parent/child relationship has a *Path* that defines a sequence of table joins. Examples for Cable are:
 
 <pre>
+Item : Cable
+
 Path : 412_419_575_654 -  ( Cable.PowerSource.Equipment )
 select e5.* 
 from T_Cable@spel
-   inner join T_ElectricalConductor@spel on (T_ElectricalConductor.SP_ID = T_Cable.SP_ID) -- 412, SUBCLASS
-   inner join T_WiringEquipment@spel on (T_WiringEquipment.SP_ID = T_ElectricalConductor.SP_ID) -- 419, SUBCLASS
-   inner join T_Equipment@spel on (T_Equipment.SP_ID = T_WiringEquipment.SP_ID) -- 575, SUBCLASS
-   inner join T_Equipment@spel e5 on (e5.SP_ID = T_Equipment.SP_PowerSourceID) -- 654, ASSOC_NC
-</pre>
+   inner join T_ElectricalConductor@spel on (T_ElectricalConductor.SP_ID = T_Cable.SP_ID) -- RN(412), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_WiringEquipment@spel on (T_WiringEquipment.SP_ID = T_ElectricalConductor.SP_ID) -- RN(419), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_Equipment@spel on (T_Equipment.SP_ID = T_WiringEquipment.SP_ID) -- RN(575), RT(SUBCLASS), DC(1), SC(1)
+   inner join T_Equipment@spel e5 on (e5.SP_ID = T_Equipment.SP_PowerSourceID) -- RN(654), RT(ASSOC_NC), SC(1), DC(139)
 
-<pre>
+
 Path : 730 -  ( RefGland.GlandSide1.Cable )
 select T_Cable.* 
 from T_RefGland@spelref
-   inner join T_Cable@spel on (T_Cable.SP_RefGlandSide1ID = T_RefGland.SP_ID) -- 730, ASSOC_NC
+   inner join T_Cable@spel on (T_Cable.SP_RefGlandSide1ID = T_RefGland.SP_ID) -- RN(730), RT(ASSOC_NC), DC(157), SC(1)
 </pre>
 
 ## SEL Reporting
@@ -178,7 +175,19 @@ SEL allows user to create complex report that outputs data to an Excel file. The
 
 ## Reference documents
 
-This repository include the following generated SQL files:
+This repository include the following files.
+
+Items listing:
+- Site Logical Items.txt
+- Plant Logical Items.txt
+- SEL Logical Items.txt
+
+ItemAttributions listing:
+- Site ItemAttributions.txt
+- Plant ItemAttributions.txt
+- SEL ItemAttributions.txt
+
+Generated ItemAttributions SQL:
 - Site ItemAttributions SQL.txt
 - Plant ItemAttributions SQL.txt
 - SEL ItemAttributions SQL.txt
