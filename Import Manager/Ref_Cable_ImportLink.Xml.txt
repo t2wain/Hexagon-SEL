@@ -1,0 +1,101 @@
+File: Ref_Cable_ImportLink.Xml
+
+Groups:
+
+Group Name: Ref_Cables
+   Link: 01_Conductor_Color : Type=SelectList : Seq=0
+   Link: 02_Color_Pattern : Type=Data : Seq=0
+   Link: 03_Color Pattern Instance : Type=Data : Seq=0
+   Link: 04_Color Pattern-Instance : Type=Relation : Seq=0
+   Link: 05_Reference_Cable : Type=Data : Seq=0
+   Link: 06_Cable_Color_Pattern : Type=Relation : Seq=0
+
+==========
+
+Data Links: 
+
+Data Name: 02_Color_Pattern
+Source: ColorPatternInstance
+Target: RefColorPattern
+   Pattern_Name => ItemTag (K)
+   Individual_or_Repetitive_colors => ColorMethod
+
+Data Name: 03_Color Pattern Instance
+Source: ColorPatternInstance
+Target: RefColorInstance
+   Pattern_Name => ItemTag (K)
+   Conductor_sequence_in_pattern => PatternSeq (K)
+   Color => PatternColor
+
+Data Name: 05_Reference_Cable
+Source: CABLE
+Target: RefCable
+   Item_Tag => ItemTag (K)
+   Additional_Ground_conductor_size => SP_AdditionalGndConductorSize
+   Additional_Neutral_conductor_size => AdditionalConductorSize
+   Armor_Type => ArmorType
+   Basic_Ampacity_in_Air => BasicAmpacityInAir
+   Basic_Ampacity_in_Ground => BasicAmpacityInGround
+   Bending_radius => BendingRadius
+   Cable_Category => CableCategory
+   Cable_Set_Type => CableSetType
+   Cable_Specification => CableSpecification
+   Communication_Wire_Flag => CommunicationWireFlag
+   Conductor_Arrangement => ConductorArrangement
+   Material => ConductorMaterial
+   Conductor_OD => SP_ConductorOD
+   Conductor_Size => ConductorSize
+   Explosion_protection => ExplosionProtection
+   Base_frequency => Frequency
+   Ingression_protection => IngressionProtection
+   Cable_Insulation_color => InsulationColor
+   Insulation_Temperature_Rating => InsulationTempRating
+   Insulation_Voltage_Rating => InsulationVoltageRating
+   Jacket_Insulation_Material => JacketInsulationMaterial
+   Jacket_thickness => SP_JacketThickness
+   Manufacturer => Manufacturer
+   Maximum_tension => SP_MaximumTension
+   Model => Model
+   No_of_Sets => NoOfSets
+   Number_Of_Additional_Ground_Conductors => SP_NoAdditionalGndConductor
+   Number_Of_Additional_Neutral_Conductors => NoAdditionalConductor
+   Number_of_Conductors => NoConductor
+   Overall_Shield_Flag => OverAllShieldFlag
+   Overall_Shield_Material => OverAllShieldMaterial
+   Overall_Shield_Size => OverAllShieldSize
+   Pull_tension => PullTension
+   Rated_Voltage => RatedVoltage
+   Reactance => Reactance
+   Resistivity => Resistivity
+
+==========
+
+Relation Links:
+
+Relation Name: 04_Color Pattern-Instance
+Source: ColorPatternInstance
+Parent: RefColorPattern
+   Pattern_Name => ItemTag
+Child: RefColorInstance
+   Pattern_Name => ItemTag
+   Conductor_sequence_in_pattern => PatternSeq
+
+Relation Name: 06_Cable_Color_Pattern
+Source: CABLE
+Parent: RefColorPattern
+   Conductor_Color_Pattern => ItemTag
+Child: RefCable
+   Item_Tag => ItemTag
+
+==========
+
+SelectList Links:
+
+SelectList Name: 01_Conductor_Color
+Source: ColorPatternInstance
+Target: Color
+   Color => Value
+   Color => ShortValue
+
+==========
+

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Links Created="06-07-09 10:27:53" Application="Import Manager" Version="06.02.02.00">
+  <Link ID="59E18B7A4F124C71BAF91684677CB99C" Name="RefCable" UniqueName="REFCABLE" Type="Data" Created="23/08/09 14:17:40" Execute="08/03/18 08:28:53">
+    <Description>Cable Type Name</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Cable_Type_Name &lt;&gt;'')</SourceFilter>
+    <Target>RefCable</Target>
+    <Query>
+      <SQL Source="'Instrumentation'" Target="CableCategory" Key="N" />
+      <SQL Source="'Instrumentation'" Target="CableSpecification" Key="N" />
+      <SQL Source="cable_type_name" Target="ItemTag" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="4B91BD9AD782421CA49F03C83BCE14FD" Name="Cables" UniqueName="CABLES" Type="Data" Created="15/09/09 16:06:51" Execute="08/03/18 08:30:35">
+    <Description></Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>EXCEL 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <Target>Cable</Target>
+    <Query>
+      <SQL Source="'Instrumentation'" Target="CableCategory" Key="N" />
+      <SQL Source="'Instrumentation'" Target="CableSpecification" Key="N" />
+      <SQL Source="cable_num" Target="ItemTag" Key="N" />
+      <SQL Source="pull_area_name" Target="PullingArea" Key="N" />
+      <SQL Source="cable_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="C2B398D4543F4E85955D598D2CE2E50B" Name="RefCables - Cables" UniqueName="REFCABLES - CABLES" Type="Relation" Created="15/09/09 16:07:36" Execute="07/03/18 03:39:11">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>EXCEL 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Cable_Type_Name &lt;&gt; '')</SourceFilter>
+    <Relation>
+      <Parent Entity="RefCable">
+        <Bind Target="ItemTag" Source="cable_type_name" />
+      </Parent>
+      <Child Entity="Cable">
+        <Bind Target="SP_SPIID" Source="cable_id" />
+      </Child>
+    </Relation>
+  </Link>
+  <Link ID="ADDED863D66A4AB6BD66E0736E3DBD03" Name="Cabines From Side" UniqueName="CABINES FROM SIDE" Type="Data" Created="16/09/10 16:13:59" Execute="07/03/18 03:23:14">
+    <Description>Index in SPI 2,3,5,6.
+
+Represents Marshalling Rack, Cabinet, DCS and PLC panels on the FROM side of the cable.</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = 2)  OR  (Panel1_Category = 3) OR (Panel1_Category = 5) OR (Panel1_Category = 6)</SourceFilter>
+    <Target>Cabinet</Target>
+    <Query>
+      <SQL Source="panel_name1" Target="ItemTag" Key="N" />
+      <SQL Source="panel_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="101502CBDAA14A8D8C83DA5F85903EAA" Name="Cabines To Side" UniqueName="CABINES TO SIDE" Type="Data" Created="16/09/10 16:14:18" Execute="07/03/18 03:36:54">
+    <Description>Index in SPI 2,3,5,6
+Represents Marshalling Rack, Cabinet, DCS and PLC panels on the TO side of the cable</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = 2)  OR  (Panel2_Category = 3) OR (Panel2_Category = 5) OR (Panel2_Category = 6)</SourceFilter>
+    <Target>Cabinet</Target>
+    <Query>
+      <SQL Source="Panel_Name2" Target="ItemTag" Key="N" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="F0741555BCBC4712A561736D172C64C7" Name="Instrument From Side" UniqueName="INSTRUMENT FROM SIDE" Type="Data" Created="20/02/11 12:10:02" Execute="07/03/18 03:38:54">
+    <Description>SPI index= 4.
+Represents the Device Panel of an instrument</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = 4)</SourceFilter>
+    <Target>Instrument</Target>
+    <Query>
+      <SQL Source="cmpnt_name" Target="ItemTag" Key="N" />
+      <SQL Source="panel_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="886DB8FF182941EDB69DF97825A08161" Name="Instrument To Side" UniqueName="INSTRUMENT TO SIDE" Type="Data" Created="20/02/11 12:48:00" Execute="07/03/18 03:39:00">
+    <Description>SPI index= 4 
+Represents the Device Panel of an instrument</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = 4)</SourceFilter>
+    <Target>Instrument</Target>
+    <Query>
+      <SQL Source="cmpnt_name" Target="ItemTag" Key="N" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="5EF6657EDD5D445CAC948DDF41BE2F15" Name="JB From Side" UniqueName="JB FROM SIDE" Type="Data" Created="16/09/10 16:15:03" Execute="07/03/18 03:37:14">
+    <Description>SPI Index=1.
+Represents the Junction Box Panel on the FROM side of the cable</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = 1)</SourceFilter>
+    <Target>Junctionbox</Target>
+    <Query>
+      <SQL Source="panel_name1" Target="ItemTag" Key="N" />
+      <SQL Source="panel_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="13FB04933D504A01BE975CB260722BC1" Name="JB To Side" UniqueName="JB TO SIDE" Type="Data" Created="16/09/10 16:15:14" Execute="07/03/18 03:46:23">
+    <Description>SPI Index=1.
+Represents the Junction Box Panel on the TO side of the cable</Description>
+    <Flags>
+      <Flg Name="Override_all_FLG" Value="Y" />
+      <Flg Name="Override_empty_value_only_FLG" Value="N" />
+      <Flg Name="Update_only_FLG" Value="N" />
+      <Flg Name="Apply_calculations_FLG" Value="Y" />
+    </Flags>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = 1)</SourceFilter>
+    <Target>Junctionbox</Target>
+    <Query>
+      <SQL Source="Panel_Name2" Target="ItemTag" Key="N" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="5CB18D0FC2A64D1EB68B172F916D7650" Name="Cable To JB-MR-Cabinet-DCS-PLC" UniqueName="CABLE TO JB-MR-CABINET-DCS-PLC" Type="Relation" Created="16/09/10 16:15:58" Execute="07/03/18 03:45:59">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel_Name2 &lt;&gt; '') AND (Panel2_Category &lt;&gt; 4)</SourceFilter>
+    <Relation>
+      <Parent Entity="Cable">
+        <Bind Target="SP_SPIID" Source="cable_id" />
+      </Parent>
+      <Child Entity="Equipment">
+        <Bind Target="SP_SPIID" Source="Panel_Id" />
+      </Child>
+    </Relation>
+  </Link>
+  <Link ID="5D4E18BB89EC4FBA8A2022921B8C4B9D" Name="JB-MR-Cabinet-DCS-PLC To Cable" UniqueName="JB-MR-CABINET-DCS-PLC TO CABLE" Type="Relation" Created="16/09/10 16:16:18" Execute="07/03/18 03:43:03">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel_Name1 &lt;&gt; '') AND (Panel1_Category &lt;&gt; 4)</SourceFilter>
+    <Relation>
+      <Parent Entity="Equipment">
+        <Bind Target="SP_SPIID" Source="panel_id" />
+      </Parent>
+      <Child Entity="Cable">
+        <Bind Target="SP_SPIID" Source="cable_id" />
+      </Child>
+    </Relation>
+  </Link>
+  <Link ID="03D1879BAEF64CE79E885913FB9AA7BB" Name="PullingArea" UniqueName="PULLINGAREA" Type="SelectList" Created="23/08/09 14:14:20" Execute="08/03/18 08:30:35">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <Target>Pulling Area</Target>
+    <Query>
+      <SQL Source="pull_area_name" Target="Value" />
+      <SQL Source="pull_area_name" Target="ShortValue" />
+    </Query>
+  </Link>
+  <Link ID="5045079979B344AE9BC933EFD82FC9E1" Name="Instrument To Cable" UniqueName="INSTRUMENT TO CABLE" Type="Relation" Created="20/02/11 12:11:35" Execute="07/03/18 03:42:32">
+    <Description>4</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel_Name1 &lt;&gt; '') AND (Panel1_Category = 4) AND (Cmpnt_Name &lt;&gt; '')</SourceFilter>
+    <Relation>
+      <Parent Entity="Equipment">
+        <Bind Target="SP_SPIID" Source="panel_id" />
+      </Parent>
+      <Child Entity="Cable">
+        <Bind Target="SP_SPIID" Source="cable_id" />
+      </Child>
+    </Relation>
+  </Link>
+  <Link ID="FFA4F1446CC6495CA9ACCD2909E1F114" Name="Cable To Instrument" UniqueName="CABLE TO INSTRUMENT" Type="Relation" Created="16/09/10 16:16:44" Execute="07/03/18 03:46:04">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>Excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel_Name2 &lt;&gt; '') AND (Panel2_Category = 4)</SourceFilter>
+    <Relation>
+      <Parent Entity="Cable">
+        <Bind Target="SP_SPIID" Source="cable_id" />
+      </Parent>
+      <Child Entity="Equipment">
+        <Bind Target="SP_SPIID" Source="Panel_Id" />
+      </Child>
+    </Relation>
+  </Link>
+  <Link Name="Ref_Cables" UniqueName="REF_CABLES" Type="Group" Created="08-09-09 12:09:14" Execute="08/03/18 08:28:53">
+    <Import ID="" Name="RefCable" UniqueName="REFCABLE" Type="Data" Sequence="1" />
+  </Link>
+  <Link Name="SPI_Import" UniqueName="SPI_IMPORT" Type="Group" Created="06-07-09 13:37:08" Execute="08/03/18 08:30:35" ID="4FFA18604D8F4AD69F02218929C830DE">
+    <Import ID="" Name="PullingArea" UniqueName="PULLINGAREA" Type="SelectList" Sequence="1" />
+    <Import ID="" Name="Cables" UniqueName="CABLES" Type="Data" Sequence="2" />
+    <Import ID="" Name="Cabines From Side" UniqueName="CABINES FROM SIDE" Type="Data" Sequence="3" />
+    <Import ID="" Name="Cabines To Side" UniqueName="CABINES TO SIDE" Type="Data" Sequence="4" />
+    <Import ID="" Name="Instrument From Side" UniqueName="INSTRUMENT FROM SIDE" Type="Data" Sequence="5" />
+    <Import ID="" Name="Instrument To Side" UniqueName="INSTRUMENT TO SIDE" Type="Data" Sequence="" />
+    <Import ID="" Name="JB From Side" UniqueName="JB FROM SIDE" Type="Data" Sequence="6" />
+    <Import ID="" Name="JB To Side" UniqueName="JB TO SIDE" Type="Data" Sequence="7" />
+    <Import ID="" Name="RefCables - Cables" UniqueName="REFCABLES - CABLES" Type="Relation" Sequence="" />
+    <Import ID="" Name="Cable To JB-MR-Cabinet-DCS-PLC" UniqueName="CABLE TO JB-MR-CABINET-DCS-PLC" Type="Relation" Sequence="8" />
+    <Import ID="" Name="JB-MR-Cabinet-DCS-PLC To Cable" UniqueName="JB-MR-CABINET-DCS-PLC TO CABLE" Type="Relation" Sequence="9" />
+    <Import ID="" Name="Instrument To Cable" UniqueName="INSTRUMENT TO CABLE" Type="Relation" Sequence="10" />
+    <Import ID="" Name="Cable To Instrument" UniqueName="CABLE TO INSTRUMENT" Type="Relation" Sequence="" />
+  </Link>
+  <Link ID="669EFC0A94DB4A768572614BF4DE3596" Name="Cables Data Deletion1" UniqueName="CABLES DATA DELETION1" Type="Delete" Created="15/09/09 15:53:42" Execute="08/03/18 08:30:29">
+    <Description></Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <Target>Cable</Target>
+    <Query>
+      <SQL Source="cable_num" Target="ItemTag" Key="Y" />
+      <SQL Source="cable_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="6E45791B377A47509FB0880AC136D72D" Name="Cabines From Side Data Deletion1" UniqueName="CABINES FROM SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:00:42" Execute="08/03/18 08:30:32">
+    <Description>Index in SPI 2,3,5,6.
+
+Represents Marshalling Rack, Cabinet, DCS and PLC panels on the FROM side of the cable.</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = '2')  OR  (Panel1_Category = '3') OR (Panel1_Category = '5') OR (Panel1_Category = '6')</SourceFilter>
+    <Target>Cabinet</Target>
+    <Query>
+      <SQL Source="panel_name1" Target="ItemTag" Key="Y" />
+      <SQL Source="panel_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="466BF860F88B41E4BBA0DD7CE8E072B4" Name="Cabines To Side Data Deletion1" UniqueName="CABINES TO SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:00:54" Execute="08/03/18 08:30:32">
+    <Description>Index in SPI 2,3,5,6
+Represents Marshalling Rack, Cabinet, DCS and PLC panels on the TO side of the cable</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = '2')  OR  (Panel2_Category = '3') OR (Panel2_Category = '5') OR (Panel2_Category = '6')</SourceFilter>
+    <Target>Cabinet</Target>
+    <Query>
+      <SQL Source="PanelName2" Target="ItemTag" Key="Y" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="0A0C7EE89FF84C07BC1AA60E12974E10" Name="Instrument From Side Data Deletion1" UniqueName="INSTRUMENT FROM SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:00:59" Execute="08/03/18 08:30:32">
+    <Description>SPI index= 4.
+Represents the Device Panel of an instrument</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = '4')</SourceFilter>
+    <Target>Instrument</Target>
+    <Query>
+      <SQL Source="cmpnt_name" Target="ItemTag" Key="Y" />
+      <SQL Source="CmpntId" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="5CD194DD25544BFC90EC269259047E57" Name="Instrument To Side Data Deletion1" UniqueName="INSTRUMENT TO SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:01:04" Execute="08/03/18 08:30:32">
+    <Description>SPI index= 4 
+Represents the Device Panel of an instrument</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = '4')</SourceFilter>
+    <Target>Instrument</Target>
+    <Query>
+      <SQL Source="PanelName2" Target="ItemTag" Key="Y" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="8129758268544A41BC054E0E75E99869" Name="JB From Side Data Deletion1" UniqueName="JB FROM SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:01:07" Execute="08/03/18 08:30:32">
+    <Description>SPI Index=1.
+Represents the Junction Box Panel on the FROM side of the cable</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel1_Category = '1')</SourceFilter>
+    <Target>Junctionbox</Target>
+    <Query>
+      <SQL Source="panel_name1" Target="ItemTag" Key="Y" />
+      <SQL Source="panel_id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link ID="DA50BF885D0D486B804921FCDA9A1452" Name="JB To Side Data Deletion1" UniqueName="JB TO SIDE DATA DELETION1" Type="Delete" Created="15/09/09 16:01:09" Execute="08/03/18 08:30:32">
+    <Description>SPI Index=1.
+Represents the Junction Box Panel on the TO side of the cable</Description>
+    <ConnectionString>
+      <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+      <UserId>Admin</UserId>
+      <Password></Password>
+      <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\SPI Import\DomainCables.xlsx</DataSource>
+      <ExtendedProperties>excel 12.0</ExtendedProperties>
+    </ConnectionString>
+    <Source>SPI_Cables</Source>
+    <SourceFilter>(Panel2_Category = '1')</SourceFilter>
+    <Target>Junctionbox</Target>
+    <Query>
+      <SQL Source="Panel_Name2" Target="ItemTag" Key="Y" />
+      <SQL Source="Panel_Id" Target="SP_SPIID" Key="Y" />
+    </Query>
+  </Link>
+  <Link Name="delete all" UniqueName="DELETE ALL" Type="Group" Created="15-09-09 16:01:21" Execute="08/03/18 08:30:46">
+    <Import ID="" Name="Cables Data Deletion1" UniqueName="CABLES DATA DELETION1" Type="Delete" Sequence="1" />
+    <Import ID="" Name="Cabines From Side Data Deletion1" UniqueName="CABINES FROM SIDE DATA DELETION1" Type="Delete" Sequence="2" />
+    <Import ID="" Name="Cabines To Side Data Deletion1" UniqueName="CABINES TO SIDE DATA DELETION1" Type="Delete" Sequence="3" />
+    <Import ID="" Name="Instrument From Side Data Deletion1" UniqueName="INSTRUMENT FROM SIDE DATA DELETION1" Type="Delete" Sequence="4" />
+    <Import ID="" Name="Instrument To Side Data Deletion1" UniqueName="INSTRUMENT TO SIDE DATA DELETION1" Type="Delete" Sequence="5" />
+    <Import ID="" Name="JB From Side Data Deletion1" UniqueName="JB FROM SIDE DATA DELETION1" Type="Delete" Sequence="6" />
+    <Import ID="" Name="JB To Side Data Deletion1" UniqueName="JB TO SIDE DATA DELETION1" Type="Delete" Sequence="7" />
+  </Link>
+</Links>

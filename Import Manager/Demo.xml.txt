@@ -1,0 +1,372 @@
+File: Demo.xml
+
+Groups:
+
+Group Name: Complete
+   Link: Cable : Type=Data : Seq=1
+   Link: RefCable_Cable : Type=Relation : Seq=2
+   Link: Motor : Type=Data : Seq=3
+   Link: PDB : Type=Data : Seq=4
+   Link: Bus : Type=Data : Seq=5
+   Link: PDB_Bus : Type=Relation : Seq=6
+   Link: Cell : Type=Data : Seq=7
+   Link: Bus_Cell : Type=Relation : Seq=8
+   Link: CouplerCircuit : Type=Data : Seq=9
+   Link: Cell_Coupler : Type=Relation : Seq=10
+   Link: FeederCircuit : Type=Data : Seq=11
+   Link: Cell_Feeder : Type=Relation : Seq=12
+   Link: IncomerCircuit : Type=Data : Seq=13
+   Link: Cell_Incomer : Type=Relation : Seq=14
+   Link: RiserCircuit : Type=Data : Seq=15
+   Link: Cell_Riser : Type=Relation : Seq=16
+   Link: CB : Type=Data : Seq=17
+   Link: Ckt_CB : Type=Relation : Seq=18
+   Link: DS : Type=Data : Seq=19
+   Link: Ckt_DS : Type=Relation : Seq=20
+   Link: Fuse : Type=Data : Seq=21
+   Link: Ckt_Fuse : Type=Relation : Seq=22
+   Link: OR : Type=Data : Seq=23
+   Link: Ckt_OR : Type=Relation : Seq=24
+   Link: Circuit_Cable : Type=Relation : Seq=25
+   Link: Cable_Circuit : Type=Relation : Seq=26
+   Link: Coupler_Riser : Type=Relation : Seq=27
+   Link: Generator : Type=Data : Seq=28
+   Link: Generator_Cable : Type=Relation : Seq=29
+   Link: ControlStation : Type=Data : Seq=30
+   Link: Cable_ControlStation : Type=Relation : Seq=31
+   Link: CS_Load : Type=Relation : Seq=32
+   Link: Transformer : Type=Data : Seq=33
+   Link: Cable_Transformer : Type=Relation : Seq=34
+   Link: Transformer_Cable : Type=Relation : Seq=35
+   Link: MotorHeater : Type=Data : Seq=36
+   Link: Heater_Motor : Type=Relation : Seq=37
+   Link: Cable_Motor : Type=Relation : Seq=38
+
+==========
+
+Data Links: 
+
+Data Name: Cable
+Source: Cable
+Target: Cable
+   T_PLANTITEM_ITEMTAG => ItemTag (K)
+   ADDITIONALCONDUCTORSIZE => AdditionalConductorSize
+   ALLOWVOLTDROPPERCENTRUNNING => AllowVoltDropPercentRunning
+   ALLOWVOLTDROPPERCENTSTART => AllowVoltDropPercentStart
+   ARMORTYPE => ArmorType
+   BASICAMPACITYINAIR => BasicAmpacityInAir
+   BASICAMPACITYINGROUND => BasicAmpacityInGround
+   CABLECATEGORY => CableCategory
+   CABLESIZINGFLAG => CableSizingFlag
+   CABLESPECIFICATION => CableSpecification
+   CONDUCTORARRANGEMENT => ConductorArrangement
+   CONDUCTORSIZE => ConductorSize
+   CUSTOMDERATINGFACTOR => CustomDeratingFactor
+   CUSTOMUTILIZATIONFACTOR => CustomUtilizationFactor
+   DESIGNLENGTH => DesignLength
+   ESTIMATEDCABLELENGTH => EstimatedCableLength
+   FULLLOADCURRENT => FullLoadCurrent
+   INSULATIONVOLTAGERATING => InsulationVoltageRating
+   JACKETINSULATIONMATERIAL => JacketInsulationMaterial
+   NOADDITIONALCONDUCTOR => NoAdditionalConductor
+   NOCONDUCTOR => NoConductor
+   NOOFPHASES => NoOfPhases
+   POWERFACTORATSTARTING => PowerFactorAtStarting
+   POWERFACTORFULLLOAD => PowerFactorFullLoad
+   RATEDVOLTAGE => RatedVoltage
+   REACTANCE => Reactance
+   RESISTIVITY => Resistivity
+   ROUTING => Routing
+   STARTINGCURRENT => StartingCurrent
+   SUPPLYACDCFLAG => SupplyAcDcFlag
+
+Data Name: Motor
+Source: Motor
+Target: Motor
+   ITEMTAG => ItemTag (K)
+   BRAKEPOWER => BrakePower
+   DESCRIPTION => Description
+   EFFICIENCY75LOAD => Efficiency75Load
+   EFFICIENCYFULLLOAD => EfficiencyFullLoad
+   EFFICIENCYHALFLOAD => EfficiencyHalfLoad
+   EFFICIENCYOPERATING => EfficiencyOperating
+   FLACALCULATIONFLAG => FLACalculationFlag
+   FREQUENCY => Frequency
+   ISLOAD => IsLoad
+   ISSLD => IsSLD
+   ITEMTAGFULLNAME => ItemTagFullName
+   LRCTOFLARATIO => LRCToFLARatio
+   MOTORRATEDPOWER => MotorRatedPower
+   OPERATINGFACTOR => OperatingFactor
+   OPERATINGMODE => OperatingMode
+   POWERFACTOR75LOAD => PowerFactor75Load
+   POWERFACTORATSTARTING => PowerFactorAtStarting
+   POWERFACTORFULLLOAD => PowerFactorFullLoad
+   POWERFACTORHALFLOAD => PowerFactorHalfLoad
+   POWERFACTOROPERATING => PowerFactorOperating
+   RATEDVOLTAGE => RatedVoltage
+   STARTINGCURRENT => StartingCurrent
+
+Data Name: PDB
+Source: PDBCell
+Target: PowerDistributionBoard
+   PDB_Name => ItemTag (K)
+
+Data Name: Bus
+Source: PDBCell
+Target: Bus
+   Bus_Name => ItemTag (K)
+
+Data Name: Cell
+Source: PDBCell
+Target: Cell
+   Cell_Name => ItemTag (K)
+   Bus_Name => Name (K)
+
+Data Name: CouplerCircuit
+Source: BusCoupler
+Target: Circuit
+   Circuit_Name => ItemTag (K)
+   'Coupler' => CircuitType
+
+Data Name: FeederCircuit
+Source: BusFeeder
+Target: Circuit
+   Circuit_Name => ItemTag (K)
+   'Feeder' => CircuitType
+
+Data Name: IncomerCircuit
+Source: IncomerBus
+Target: Circuit
+   Circuit_Name => ItemTag (K)
+   'InComer' => CircuitType
+
+Data Name: RiserCircuit
+Source: RiserBus
+Target: Circuit
+   Circuit_Name => ItemTag (K)
+   'Bus Riser' => CircuitType
+
+Data Name: CB
+Source: DisconnectEquipCB
+Target: CircuitBreaker
+   CB_Name => ItemTag (K)
+   Circuit_Name => Name (K)
+   CURRENTRATING => CurrentRating
+   'True' => IsCircuitInternal
+   ISSLD => IsSLD
+   SEQUENCEINGROUP => SequenceInGroup
+
+Data Name: DS
+Source: DisconnectEquipDS
+Target: DisconnectSwitch
+   DS_Name => ItemTag (K)
+   Circuit_Name => Name (K)
+   CURRENTRATING => CurrentRating
+   'True' => IsCircuitInternal
+   ISSLD => IsSLD
+   SEQUENCEINGROUP => SequenceInGroup
+
+Data Name: Fuse
+Source: DisconnectEquipFuse
+Target: Fuse
+   Fuse_Name => ItemTag (K)
+   Circuit_Name => Name (K)
+   CURRENTRATING => CurrentRating
+   'True' => IsCircuitInternal
+   FUSESIZE => FuseSize
+
+Data Name: OR
+Source: DisconnectEquipOR
+Target: OverloadRelay
+   OR_Name => ItemTag (K)
+   Circuit_Name => Name (K)
+   CURRENTRATING => CurrentRating
+   'True' => IsCircuitInternal
+
+Data Name: Generator
+Source: CableFromGenerator
+Target: Generator
+   Generator_Name => ItemTag (K)
+
+Data Name: ControlStation
+Source: CableToControlStation
+Target: ControlStation
+   CS_Name => ItemTag (K)
+
+Data Name: Transformer
+Source: CableToTransformer
+Target: Transformer
+   Transformer_Name => ItemTag (K)
+   '2' => NumberOfSecondaries
+   'X' => Secondary1ItemTag
+   'Y' => Secondary2ItemTag
+
+Data Name: MotorHeater
+Source: MotorHeater
+Target: Heater
+   Heater_Name => ItemTag (K)
+   'True' => SpaceHeaterFlag
+
+==========
+
+Relation Links:
+
+Relation Name: Cable_Motor
+Source: CableToMotor
+Parent: Cable
+   Cable_Name => ItemTag
+Child: Motor
+   Motor_Name => ItemTag
+
+Relation Name: PDB_Bus
+Source: PDBCell
+Parent: PowerDistributionBoard
+   PDB_Name => ItemTag
+Child: Bus
+   Bus_Name => ItemTag
+
+Relation Name: Bus_Cell
+Source: PDBCell
+Parent: Bus
+   Bus_Name => ItemTag
+Child: Cell
+   Cell_Name => ItemTag
+
+Relation Name: Cell_Coupler
+Source: BusCoupler
+Parent: Cell
+   Cell_Name => ItemTag
+   Bus_Name => Name
+Child: Circuit
+   Circuit_Name => ItemTag
+
+Relation Name: Cell_Feeder
+Source: BusFeeder
+Parent: Cell
+   Cell_Name => ItemTag
+   Bus_Name => Name
+Child: Circuit
+   Circuit_Name => ItemTag
+
+Relation Name: Cell_Incomer
+Source: IncomerBus
+Parent: Cell
+   Cell_Name => ItemTag
+   Bus_Name => Name
+Child: Circuit
+   Circuit_Name => ItemTag
+
+Relation Name: Cell_Riser
+Source: RiserBus
+Parent: Cell
+   Cell_Name => ItemTag
+   Bus_Name => Name
+Child: Circuit
+   Circuit_Name => ItemTag
+
+Relation Name: Circuit_Cable
+Source: CableFromCircuit
+Parent: Circuit
+   Circuit_Name => ItemTag
+Child: Cable
+   Cable_Name => ItemTag
+
+Relation Name: Cable_Circuit
+Source: CableToCircuit
+Parent: Cable
+   Cable_Name => ItemTag
+Child: Circuit
+   Circuit_Name => ItemTag
+
+Relation Name: RefCable_Cable
+Source: Cable
+Parent: RefCable
+   T_REFPLANTITEM_ITEMTAG => ItemTag
+Child: Cable
+   T_PLANTITEM_ITEMTAG => ItemTag
+
+Relation Name: Coupler_Riser
+Source: CouplerRiser
+Parent: Circuit
+   Coupler_Name => ItemTag
+Child: Circuit
+   Riser_Name => ItemTag
+
+Relation Name: Generator_Cable
+Source: CableFromGenerator
+Parent: Generator
+   Generator_Name => ItemTag
+Child: Cable
+   Cable_Name => ItemTag
+
+Relation Name: Cable_ControlStation
+Source: CableToControlStation
+Parent: ControlStation
+   CS_Name => ItemTag
+Child: Cable
+   Cable_Name => ItemTag
+
+Relation Name: CS_Load
+Source: CableToControlStation
+Parent: Motor
+   Motor_Name => ItemTag
+Child: ControlStation
+   CS_Name => ItemTag
+
+Relation Name: Cable_Transformer
+Source: CableToTransformer
+Parent: Cable
+   Cable_Name => ItemTag
+Child: Transformer
+   Transformer_Name => ItemTag
+
+Relation Name: Transformer_Cable
+Source: CableFromTransformerComponent
+Parent: TransformerComponent
+   Secondary_Name => ItemTag
+   Transformer_Name => Name
+Child: Cable
+   Cable_Name => ItemTag
+
+Relation Name: Heater_Motor
+Source: MotorHeater
+Parent: Heater
+   Heater_Name => ItemTag
+Child: Motor
+   Motor_Name => ItemTag
+
+Relation Name: Ckt_CB
+Source: DisconnectEquipCB
+Parent: Circuit
+   Circuit_Name => ItemTag
+Child: CircuitBreaker
+   CB_Name => ItemTag
+   Circuit_Name => Name
+
+Relation Name: Ckt_Fuse
+Source: DisconnectEquipFuse
+Parent: Circuit
+   Circuit_Name => ItemTag
+Child: Fuse
+   Fuse_Name => ItemTag
+   Circuit_Name => Name
+
+Relation Name: Ckt_DS
+Source: DisconnectEquipDS
+Parent: Circuit
+   Circuit_Name => ItemTag
+Child: DisconnectSwitch
+   DS_Name => ItemTag
+   Circuit_Name => Name
+
+Relation Name: Ckt_OR
+Source: DisconnectEquipOR
+Parent: Circuit
+   Circuit_Name => ItemTag
+Child: OverloadRelay
+   OR_Name => ItemTag
+   Circuit_Name => Name
+
+==========
+

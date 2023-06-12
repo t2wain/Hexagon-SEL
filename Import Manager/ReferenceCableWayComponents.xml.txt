@@ -1,0 +1,53 @@
+File: ReferenceCableWayComponents.xml
+
+Groups:
+
+Group Name: CWC
+   Link: Conduit : Type=Data : Seq=0
+   Link: Tray : Type=Data : Seq=0
+
+==========
+
+Data Links: 
+
+Data Name: Conduit
+Source: Conduit
+Target: RefConduit
+   ITEMTAG => ItemTag (K)
+   ACTUALLENGTH => ActualLength
+   BENDINGRADIUS => BendingRadius
+   CABLEWAYFILLFACTOR => CableWayFillFactor
+   COUNTQUANTITY => CountQuantity
+   DESCRIPTION => Description
+   INNERDIAMETER => InnerDiameter
+   'False' => IsConduitFlexibility
+   'True' => IsMetallic
+   'False' => IsVentilated
+   MAXWEIGHTPERLENGTH => MaxWeightPerLength
+   NORMALSPAN => NormalSpan
+   'Straight run' => RaceWayComponentType
+   RACEWAYNOMINALSIZE => RacewayNominalSize
+   WEIGHTFACTOR => WeightFactor
+
+Data Name: Tray
+Source: Tray
+Target: RefTray
+   ITEMTAG => ItemTag (K)
+   ACTUALLENGTH => ActualLength
+   BENDINGRADIUS => BendingRadius
+   BOTTOMCONSTRUCTION => BottomConstruction
+   CABLETRAYCONSTRUCTION => SP_CableTrayConstruction
+   '1' => CableWayFillFactor
+   'Length' => CountQuantity
+   DESCRIPTION => Description
+   'True' => IsMetallic
+   MAXWEIGHTPERLENGTH => MaxWeightPerLength
+   NORMALSPAN => NormalSpan
+   RACEWAYCOMPONENTTYPE => RaceWayComponentType
+   RACEWAYDEPTH => RacewayDepth
+   RACEWAYNOMINALSIZE => RacewayNominalSize
+   RACEWAYWIDTH => RacewayWidth
+   WEIGHTFACTOR => WeightFactor
+
+==========
+

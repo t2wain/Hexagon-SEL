@@ -1,0 +1,919 @@
+<Links>
+	<Link Name="Complete" UniqueName="COMPLETE" Type="Group" Created="26/09/02 10:59:46" Execute="07/09/14 09:10:31">
+		<Import Name="Cable" UniqueName="CABLE" Type="Data" Sequence="1"/>
+		<Import Name="RefCable_Cable" UniqueName="REFCABLE_CABLE" Type="Relation" Sequence="2"/>
+		<Import Name="Motor" UniqueName="MOTOR" Type="Data" Sequence="3"/>
+		<Import Name="PDB" UniqueName="PDB" Type="Data" Sequence="4"/>
+		<Import Name="Bus" UniqueName="BUS" Type="Data" Sequence="5"/>
+		<Import Name="PDB_Bus" UniqueName="PDB_BUS" Type="Relation" Sequence="6"/>
+		<Import Name="Cell" UniqueName="CELL" Type="Data" Sequence="7"/>
+		<Import Name="Bus_Cell" UniqueName="BUS_CELL" Type="Relation" Sequence="8"/>
+		<Import Name="CouplerCircuit" UniqueName="COUPLERCIRCUIT" Type="Data" Sequence="9"/>
+		<Import Name="Cell_Coupler" UniqueName="CELL_COUPLER" Type="Relation" Sequence="10"/>
+		<Import Name="FeederCircuit" UniqueName="FEEDERCIRCUIT" Type="Data" Sequence="11"/>
+		<Import Name="Cell_Feeder" UniqueName="CELL_FEEDER" Type="Relation" Sequence="12"/>
+		<Import Name="IncomerCircuit" UniqueName="INCOMERCIRCUIT" Type="Data" Sequence="13"/>
+		<Import Name="Cell_Incomer" UniqueName="CELL_INCOMER" Type="Relation" Sequence="14"/>
+		<Import Name="RiserCircuit" UniqueName="RISERCIRCUIT" Type="Data" Sequence="15"/>
+		<Import Name="Cell_Riser" UniqueName="CELL_RISER" Type="Relation" Sequence="16"/>
+		<Import Name="CB" UniqueName="CB" Type="Data" Sequence="17"/>
+		<Import ID="" Name="Ckt_CB" UniqueName="CKT_CB" Type="Relation" Sequence="18"/>
+		<Import Name="DS" UniqueName="DS" Type="Data" Sequence="19"/>
+		<Import ID="" Name="Ckt_DS" UniqueName="CKT_DS" Type="Relation" Sequence="20"/>
+		<Import Name="Fuse" UniqueName="FUSE" Type="Data" Sequence="21"/>
+		<Import ID="" Name="Ckt_Fuse" UniqueName="CKT_FUSE" Type="Relation" Sequence="22"/>
+		<Import Name="OR" UniqueName="OR" Type="Data" Sequence="23"/>
+		<Import ID="" Name="Ckt_OR" UniqueName="CKT_OR" Type="Relation" Sequence="24"/>
+		<Import Name="Circuit_Cable" UniqueName="CIRCUIT_CABLE" Type="Relation" Sequence="25"/>
+		<Import Name="Cable_Circuit" UniqueName="CABLE_CIRCUIT" Type="Relation" Sequence="26"/>
+		<Import Name="Coupler_Riser" UniqueName="COUPLER_RISER" Type="Relation" Sequence="27"/>
+		<Import Name="Generator" UniqueName="GENERATOR" Type="Data" Sequence="28"/>
+		<Import Name="Generator_Cable" UniqueName="GENERATOR_CABLE" Type="Relation" Sequence="29"/>
+		<Import Name="ControlStation" UniqueName="CONTROLSTATION" Type="Data" Sequence="30"/>
+		<Import Name="Cable_ControlStation" UniqueName="CABLE_CONTROLSTATION" Type="Relation" Sequence="31"/>
+		<Import Name="CS_Load" UniqueName="CS_LOAD" Type="Relation" Sequence="32"/>
+		<Import Name="Transformer" UniqueName="TRANSFORMER" Type="Data" Sequence="33"/>
+		<Import Name="Cable_Transformer" UniqueName="CABLE_TRANSFORMER" Type="Relation" Sequence="34"/>
+		<Import Name="Transformer_Cable" UniqueName="TRANSFORMER_CABLE" Type="Relation" Sequence="35"/>
+		<Import Name="MotorHeater" UniqueName="MOTORHEATER" Type="Data" Sequence="36"/>
+		<Import Name="Heater_Motor" UniqueName="HEATER_MOTOR" Type="Relation" Sequence="37"/>
+		<Import Name="Cable_Motor" UniqueName="CABLE_MOTOR" Type="Relation" Sequence="38"/>
+	</Link>
+	<Link ID="0BD7B4CE8070478E8544C85B56033BBB" Name="Cable" UniqueName="CABLE" Type="Data" Created="25/08/04 16:57:36" Execute="07/09/14 09:10:31">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>Cable</Source>
+		<Target>Cable</Target>
+		<Query>
+			<SQL Source="ADDITIONALCONDUCTORSIZE" Target="AdditionalConductorSize" Key="N"/>
+			<SQL Source="ALLOWVOLTDROPPERCENTRUNNING" Target="AllowVoltDropPercentRunning" Key="N"/>
+			<SQL Source="ALLOWVOLTDROPPERCENTSTART" Target="AllowVoltDropPercentStart" Key="N"/>
+			<SQL Source="ARMORTYPE" Target="ArmorType" Key="N"/>
+			<SQL Source="BASICAMPACITYINAIR" Target="BasicAmpacityInAir" Key="N"/>
+			<SQL Source="BASICAMPACITYINGROUND" Target="BasicAmpacityInGround" Key="N"/>
+			<SQL Source="CABLECATEGORY" Target="CableCategory" Key="N"/>
+			<SQL Source="CABLESIZINGFLAG" Target="CableSizingFlag" Key="N"/>
+			<SQL Source="CABLESPECIFICATION" Target="CableSpecification" Key="N"/>
+			<SQL Source="CONDUCTORARRANGEMENT" Target="ConductorArrangement" Key="N"/>
+			<SQL Source="CONDUCTORSIZE" Target="ConductorSize" Key="N"/>
+			<SQL Source="CUSTOMDERATINGFACTOR" Target="CustomDeratingFactor" Key="N"/>
+			<SQL Source="CUSTOMUTILIZATIONFACTOR" Target="CustomUtilizationFactor" Key="N"/>
+			<SQL Source="DESIGNLENGTH" Target="DesignLength" Key="N"/>
+			<SQL Source="ESTIMATEDCABLELENGTH" Target="EstimatedCableLength" Key="N"/>
+			<SQL Source="FULLLOADCURRENT" Target="FullLoadCurrent" Key="N"/>
+			<SQL Source="INSULATIONVOLTAGERATING" Target="InsulationVoltageRating" Key="N"/>
+			<SQL Source="T_PLANTITEM_ITEMTAG" Target="ItemTag" Key="Y"/>
+			<SQL Source="JACKETINSULATIONMATERIAL" Target="JacketInsulationMaterial" Key="N"/>
+			<SQL Source="NOADDITIONALCONDUCTOR" Target="NoAdditionalConductor" Key="N"/>
+			<SQL Source="NOCONDUCTOR" Target="NoConductor" Key="N"/>
+			<SQL Source="NOOFPHASES" Target="NoOfPhases" Key="N"/>
+			<SQL Source="POWERFACTORATSTARTING" Target="PowerFactorAtStarting" Key="N"/>
+			<SQL Source="POWERFACTORFULLLOAD" Target="PowerFactorFullLoad" Key="N"/>
+			<SQL Source="RATEDVOLTAGE" Target="RatedVoltage" Key="N"/>
+			<SQL Source="REACTANCE" Target="Reactance" Key="N"/>
+			<SQL Source="RESISTIVITY" Target="Resistivity" Key="N"/>
+			<SQL Source="ROUTING" Target="Routing" Key="N"/>
+			<SQL Source="STARTINGCURRENT" Target="StartingCurrent" Key="N"/>
+			<SQL Source="SUPPLYACDCFLAG" Target="SupplyAcDcFlag" Key="N"/>
+		</Query>
+	</Link>
+	<Link ID="2AF9705EC9C047DEBF19D30FC399DAA3" Name="Motor" UniqueName="MOTOR" Type="Data" Created="20/08/14 09:02:52" Execute="07/09/14 09:11:40">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>Motor</Source>
+		<Target>Motor</Target>
+		<Query>
+			<SQL Source="BRAKEPOWER" Target="BrakePower" Key="N"/>
+			<SQL Source="DESCRIPTION" Target="Description" Key="N"/>
+			<SQL Source="EFFICIENCY75LOAD" Target="Efficiency75Load" Key="N"/>
+			<SQL Source="EFFICIENCYFULLLOAD" Target="EfficiencyFullLoad" Key="N"/>
+			<SQL Source="EFFICIENCYHALFLOAD" Target="EfficiencyHalfLoad" Key="N"/>
+			<SQL Source="EFFICIENCYOPERATING" Target="EfficiencyOperating" Key="N"/>
+			<SQL Source="FLACALCULATIONFLAG" Target="FLACalculationFlag" Key="N"/>
+			<SQL Source="FREQUENCY" Target="Frequency" Key="N"/>
+			<SQL Source="ISLOAD" Target="IsLoad" Key="N"/>
+			<SQL Source="ISSLD" Target="IsSLD" Key="N"/>
+			<SQL Source="ITEMTAG" Target="ItemTag" Key="Y"/>
+			<SQL Source="ITEMTAGFULLNAME" Target="ItemTagFullName" Key="N"/>
+			<SQL Source="LRCTOFLARATIO" Target="LRCToFLARatio" Key="N"/>
+			<SQL Source="MOTORRATEDPOWER" Target="MotorRatedPower" Key="N"/>
+			<SQL Source="OPERATINGFACTOR" Target="OperatingFactor" Key="N"/>
+			<SQL Source="OPERATINGMODE" Target="OperatingMode" Key="N"/>
+			<SQL Source="POWERFACTOR75LOAD" Target="PowerFactor75Load" Key="N"/>
+			<SQL Source="POWERFACTORATSTARTING" Target="PowerFactorAtStarting" Key="N"/>
+			<SQL Source="POWERFACTORFULLLOAD" Target="PowerFactorFullLoad" Key="N"/>
+			<SQL Source="POWERFACTORHALFLOAD" Target="PowerFactorHalfLoad" Key="N"/>
+			<SQL Source="POWERFACTOROPERATING" Target="PowerFactorOperating" Key="N"/>
+			<SQL Source="RATEDVOLTAGE" Target="RatedVoltage" Key="N"/>
+			<SQL Source="STARTINGCURRENT" Target="StartingCurrent" Key="N"/>
+		</Query>
+	</Link>
+	<Link Name="Cable_Motor" UniqueName="CABLE_MOTOR" Type="Relation" Created="17/11/02 13:04:51" Execute="07/09/14 09:14:26">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToMotor</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Parent>
+			<Child Entity="Motor">
+				<Bind Target="ItemTag" Source="Motor_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="PDB" UniqueName="PDB" Type="Data" Created="12/11/02 15:21:02" Execute="07/09/14 09:11:48">
+		<Description>Power Distribution Board</Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>PDBCell</Source>
+		<SourceFilter/>
+		<Target>PowerDistributionBoard</Target>
+		<Query>
+			<SQL Source="PDB_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Bus" UniqueName="BUS" Type="Data" Created="12/11/02 15:30:20" Execute="07/09/14 09:11:50">
+		<Description/>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>PDBCell</Source>
+		<SourceFilter/>
+		<Target>Bus</Target>
+		<Query>
+			<SQL Source="Bus_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="PDB_Bus" UniqueName="PDB_BUS" Type="Relation" Created="12/11/02 15:39:07" Execute="07/09/14 09:11:53">
+		<Description/>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>PDBCell</Source>
+		<SourceFilter/>
+		<Relation>
+			<Parent Entity="PowerDistributionBoard">
+				<Bind Target="ItemTag" Source="PDB_Name"/>
+			</Parent>
+			<Child Entity="Bus">
+				<Bind Target="ItemTag" Source="Bus_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Cell" UniqueName="CELL" Type="Data" Created="12/11/02 15:38:01" Execute="07/09/14 09:11:58">
+		<Description/>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>PDBCell</Source>
+		<SourceFilter/>
+		<Target>Cell</Target>
+		<Query>
+			<SQL Source="Cell_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="Bus_Name" Target="Name" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Bus_Cell" UniqueName="BUS_CELL" Type="Relation" Created="12/11/02 15:40:04" Execute="07/09/14 09:12:09">
+		<Description/>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>PDBCell</Source>
+		<SourceFilter/>
+		<Relation>
+			<Parent Entity="Bus">
+				<Bind Target="ItemTag" Source="Bus_Name"/>
+			</Parent>
+			<Child Entity="Cell">
+				<Bind Target="ItemTag" Source="Cell_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="CouplerCircuit" UniqueName="COUPLERCIRCUIT" Type="Data" Created="12/11/02 16:01:36" Execute="07/09/14 09:12:23">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>BusCoupler</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Circuit</Target>
+		<Query>
+			<SQL Source="'Coupler'" Target="CircuitType" Key="N"/>
+			<SQL Source="Circuit_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Cell_Coupler" UniqueName="CELL_COUPLER" Type="Relation" Created="12/11/02 16:00:34" Execute="07/09/14 09:12:24">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>BusCoupler</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cell">
+				<Bind Target="ItemTag" Source="Cell_Name"/>
+				<Bind Target="Name" Source="Bus_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="FeederCircuit" UniqueName="FEEDERCIRCUIT" Type="Data" Created="12/11/02 16:06:50" Execute="07/09/14 09:12:27">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>BusFeeder</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Circuit</Target>
+		<Query>
+			<SQL Source="'Feeder'" Target="CircuitType" Key="N"/>
+			<SQL Source="Circuit_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Cell_Feeder" UniqueName="CELL_FEEDER" Type="Relation" Created="12/11/02 16:06:18" Execute="07/09/14 09:12:34">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>BusFeeder</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cell">
+				<Bind Target="ItemTag" Source="Cell_Name"/>
+				<Bind Target="Name" Source="Bus_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="IncomerCircuit" UniqueName="INCOMERCIRCUIT" Type="Data" Created="12/11/02 16:14:21" Execute="07/09/14 09:12:47">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>IncomerBus</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Circuit</Target>
+		<Query>
+			<SQL Source="'InComer'" Target="CircuitType" Key="N"/>
+			<SQL Source="Circuit_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Cell_Incomer" UniqueName="CELL_INCOMER" Type="Relation" Created="12/11/02 16:13:44" Execute="07/09/14 09:12:50">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>IncomerBus</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cell">
+				<Bind Target="ItemTag" Source="Cell_Name"/>
+				<Bind Target="Name" Source="Bus_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="RiserCircuit" UniqueName="RISERCIRCUIT" Type="Data" Created="12/11/02 16:25:04" Execute="07/09/14 09:12:54">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>RiserBus</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Circuit</Target>
+		<Query>
+			<SQL Source="'Bus Riser'" Target="CircuitType" Key="N"/>
+			<SQL Source="Circuit_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Cell_Riser" UniqueName="CELL_RISER" Type="Relation" Created="12/11/02 16:15:51" Execute="07/09/14 09:12:55">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>RiserBus</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cell">
+				<Bind Target="ItemTag" Source="Cell_Name"/>
+				<Bind Target="Name" Source="Bus_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="FB943B71993E45D0B2C94FB84D9C9FAA" Name="CB" UniqueName="CB" Type="Data" Created="04/11/10 09:30:39" Execute="07/09/14 09:12:57">
+		<Description>Circuit Breaker - Disconnect Electrical Equipment</Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipCB</Source>
+		<Target>CircuitBreaker</Target>
+		<Query>
+			<SQL Source="CURRENTRATING" Target="CurrentRating" Key="N"/>
+			<SQL Source="'True'" Target="IsCircuitInternal" Key="N"/>
+			<SQL Source="ISSLD" Target="IsSLD" Key="N"/>
+			<SQL Source="CB_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="Circuit_Name" Target="Name" Key="Y"/>
+			<SQL Source="SEQUENCEINGROUP" Target="SequenceInGroup" Key="N"/>
+		</Query>
+	</Link>
+	<Link ID="FBAB3BE8C2ED423E8E60B5E65519C390" Name="DS" UniqueName="DS" Type="Data" Created="25/08/04 14:49:25" Execute="07/09/14 09:13:05">
+		<Description>Disconnect Switch - Disconnect Electrical Equipment</Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipDS</Source>
+		<Target>DisconnectSwitch</Target>
+		<Query>
+			<SQL Source="CURRENTRATING" Target="CurrentRating" Key="N"/>
+			<SQL Source="'True'" Target="IsCircuitInternal" Key="N"/>
+			<SQL Source="ISSLD" Target="IsSLD" Key="N"/>
+			<SQL Source="DS_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="Circuit_Name" Target="Name" Key="Y"/>
+			<SQL Source="SEQUENCEINGROUP" Target="SequenceInGroup" Key="N"/>
+		</Query>
+	</Link>
+	<Link ID="9161BE2505A042F88BA3C0491638A016" Name="Fuse" UniqueName="FUSE" Type="Data" Created="25/08/04 14:52:11" Execute="07/09/14 09:13:25">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipFuse</Source>
+		<Target>Fuse</Target>
+		<Query>
+			<SQL Source="CURRENTRATING" Target="CurrentRating" Key="N"/>
+			<SQL Source="'True'" Target="IsCircuitInternal" Key="N"/>
+			<SQL Source="FUSESIZE" Target="FuseSize" Key="N"/>
+			<SQL Source="Fuse_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="Circuit_Name" Target="Name" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="OR" UniqueName="OR" Type="Data" Created="17/11/02 13:45:54" Execute="07/09/14 09:13:36">
+		<Description>Overload Relay - Disconnect Electrical Equipment</Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+			<Flg Name="Use_index_for_select_list_value_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipOR</Source>
+		<SourceFilter></SourceFilter>
+		<Target>OverloadRelay</Target>
+		<Query>
+			<SQL Source="CURRENTRATING" Target="CurrentRating" Key="N"/>
+			<SQL Source="'True'" Target="IsCircuitInternal" Key="N"/>
+			<SQL Source="OR_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="Circuit_Name" Target="Name" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Circuit_Cable" UniqueName="CIRCUIT_CABLE" Type="Relation" Created="17/11/02 13:16:16" Execute="07/09/14 09:13:43">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableFromCircuit</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Parent>
+			<Child Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Cable_Circuit" UniqueName="CABLE_CIRCUIT" Type="Relation" Created="17/11/02 13:18:13" Execute="07/09/14 09:13:47">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToCircuit</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="43FC818E72A241ADB0FAE39301DEDF05" Name="RefCable_Cable" UniqueName="REFCABLE_CABLE" Type="Relation" Created="25/08/04 17:13:25" Execute="07/09/14 09:11:06">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>Cable</Source>
+		<Relation>
+			<Parent Entity="RefCable">
+				<Bind Target="ItemTag" Source="T_REFPLANTITEM_ITEMTAG"/>
+			</Parent>
+			<Child Entity="Cable">
+				<Bind Target="ItemTag" Source="T_PLANTITEM_ITEMTAG"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Coupler_Riser" UniqueName="COUPLER_RISER" Type="Relation" Created="17/11/02 13:19:50" Execute="07/09/14 09:13:52">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CouplerRiser</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Coupler_Name"/>
+			</Parent>
+			<Child Entity="Circuit">
+				<Bind Target="ItemTag" Source="Riser_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Generator" UniqueName="GENERATOR" Type="Data" Created="12/11/02 16:29:18" Execute="07/09/14 09:13:54">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableFromGenerator</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Generator</Target>
+		<Query>
+			<SQL Source="Generator_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Generator_Cable" UniqueName="GENERATOR_CABLE" Type="Relation" Created="12/11/02 16:29:56" Execute="07/09/14 09:13:55">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableFromGenerator</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Generator">
+				<Bind Target="ItemTag" Source="Generator_Name"/>
+			</Parent>
+			<Child Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="ControlStation" UniqueName="CONTROLSTATION" Type="Data" Created="17/11/02 09:28:13" Execute="07/09/14 09:13:57">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToControlStation</Source>
+		<SourceFilter></SourceFilter>
+		<Target>ControlStation</Target>
+		<Query>
+			<SQL Source="CS_Name" Target="ItemTag" Key="Y"/>
+		</Query>
+	</Link>
+	<Link Name="Cable_ControlStation" UniqueName="CABLE_CONTROLSTATION" Type="Relation" Created="17/11/02 09:29:06" Execute="07/09/14 09:14:00">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToControlStation</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="ControlStation">
+				<Bind Target="ItemTag" Source="CS_Name"/>
+			</Parent>
+			<Child Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="2B3B0A0C9A004112A097D1FE7C32DB88" Name="CS_Load" UniqueName="CS_LOAD" Type="Relation" Created="03/11/10 17:37:42" Execute="07/09/14 09:14:05">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToControlStation</Source>
+		<Relation>
+			<Parent Entity="Motor">
+				<Bind Target="ItemTag" Source="Motor_Name"/>
+			</Parent>
+			<Child Entity="ControlStation">
+				<Bind Target="ItemTag" Source="CS_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Transformer" UniqueName="TRANSFORMER" Type="Data" Created="17/11/02 13:00:23" Execute="07/09/14 09:14:09">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToTransformer</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Transformer</Target>
+		<Query>
+			<SQL Source="Transformer_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="'2'" Target="NumberOfSecondaries" Key="N">
+				<SUB Text="2" Attribute="" Start="0" Length="0"/>
+			</SQL>
+			<SQL Source="'X'" Target="Secondary1ItemTag" Key="N">
+				<SUB Text="X" Attribute="" Start="0" Length="0"/>
+			</SQL>
+			<SQL Source="'Y'" Target="Secondary2ItemTag" Key="N">
+				<SUB Text="Y" Attribute="" Start="0" Length="0"/>
+			</SQL>
+		</Query>
+	</Link>
+	<Link Name="Cable_Transformer" UniqueName="CABLE_TRANSFORMER" Type="Relation" Created="17/11/02 13:01:04" Execute="07/09/14 09:14:15">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableToTransformer</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Parent>
+			<Child Entity="Transformer">
+				<Bind Target="ItemTag" Source="Transformer_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="Transformer_Cable" UniqueName="TRANSFORMER_CABLE" Type="Relation" Created="17/11/02 13:03:20" Execute="07/09/14 09:14:18">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>CableFromTransformerComponent</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="TransformerComponent">
+				<Bind Target="ItemTag" Source="Secondary_Name"/>
+				<Bind Target="Name" Source="Transformer_Name"/>
+			</Parent>
+			<Child Entity="Cable">
+				<Bind Target="ItemTag" Source="Cable_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link Name="MotorHeater" UniqueName="MOTORHEATER" Type="Data" Created="19/12/02 15:37:50" Execute="07/09/14 09:14:24">
+		<Description></Description>
+		<Flags>
+			<Flg Name="Override_all_FLG" Value="Y"/>
+			<Flg Name="Override_empty_value_only_FLG" Value="N"/>
+			<Flg Name="Update_only_FLG" Value="N"/>
+			<Flg Name="Apply_calculations_FLG" Value="Y"/>
+			<Flg Name="Use_index_for_select_list_value_FLG" Value="N"/>
+		</Flags>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>MotorHeater</Source>
+		<SourceFilter></SourceFilter>
+		<Target>Heater</Target>
+		<Query>
+			<SQL Source="Heater_Name" Target="ItemTag" Key="Y"/>
+			<SQL Source="'True'" Target="SpaceHeaterFlag" Key="N"/>
+		</Query>
+	</Link>
+	<Link Name="Heater_Motor" UniqueName="HEATER_MOTOR" Type="Relation" Created="17/11/02 09:34:34" Execute="07/09/14 09:14:25">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>MotorHeater</Source>
+		<SourceFilter></SourceFilter>
+		<Relation>
+			<Parent Entity="Heater">
+				<Bind Target="ItemTag" Source="Heater_Name"/>
+			</Parent>
+			<Child Entity="Motor">
+				<Bind Target="ItemTag" Source="Motor_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="5E23F919DCBA41DB857CAA27BBE8204F" Name="Ckt_CB" UniqueName="CKT_CB" Type="Relation" Created="18/10/04 11:11:36" Execute="07/09/14 09:13:01">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipCB</Source>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Parent>
+			<Child Entity="CircuitBreaker">
+				<Bind Target="ItemTag" Source="CB_Name"/>
+				<Bind Target="Name" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="82AC2290E158430980563B94501A251A" Name="Ckt_Fuse" UniqueName="CKT_FUSE" Type="Relation" Created="18/10/04 11:12:40" Execute="07/09/14 09:13:30">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipFuse</Source>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Parent>
+			<Child Entity="Fuse">
+				<Bind Target="ItemTag" Source="Fuse_Name"/>
+				<Bind Target="Name" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="60A5586D4C594634840E26C538A7EE5F" Name="Ckt_DS" UniqueName="CKT_DS" Type="Relation" Created="18/10/04 11:13:34" Execute="07/09/14 09:13:17">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipDS</Source>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Parent>
+			<Child Entity="DisconnectSwitch">
+				<Bind Target="ItemTag" Source="DS_Name"/>
+				<Bind Target="Name" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+	<Link ID="EB7FC6726ACD4B4AA9CFEFAC6C37D7CF" Name="Ckt_OR" UniqueName="CKT_OR" Type="Relation" Created="18/10/04 11:15:37" Execute="07/09/14 09:13:39">
+		<Description></Description>
+		<ConnectionString>
+			<Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+			<UserId>Admin</UserId>
+			<Password></Password>
+			<DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\Demo.accdb</DataSource>
+			<ExtendedProperties></ExtendedProperties>
+		</ConnectionString>
+		<Source>DisconnectEquipOR</Source>
+		<Relation>
+			<Parent Entity="Circuit">
+				<Bind Target="ItemTag" Source="Circuit_Name"/>
+			</Parent>
+			<Child Entity="OverloadRelay">
+				<Bind Target="ItemTag" Source="OR_Name"/>
+				<Bind Target="Name" Source="Circuit_Name"/>
+			</Child>
+		</Relation>
+	</Link>
+</Links>

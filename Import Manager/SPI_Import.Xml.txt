@@ -1,0 +1,184 @@
+File: SPI_Import.Xml
+
+Groups:
+
+Group Name: Ref_Cables
+   Link: RefCable : Type=Data : Seq=1
+
+Group Name: SPI_Import
+   Link: Cable To Instrument : Type=Relation : Seq=0
+   Link: Instrument To Side : Type=Data : Seq=0
+   Link: RefCables - Cables : Type=Relation : Seq=0
+   Link: PullingArea : Type=SelectList : Seq=1
+   Link: Cables : Type=Data : Seq=2
+   Link: Cabines From Side : Type=Data : Seq=3
+   Link: Cabines To Side : Type=Data : Seq=4
+   Link: Instrument From Side : Type=Data : Seq=5
+   Link: JB From Side : Type=Data : Seq=6
+   Link: JB To Side : Type=Data : Seq=7
+   Link: Cable To JB-MR-Cabinet-DCS-PLC : Type=Relation : Seq=8
+   Link: JB-MR-Cabinet-DCS-PLC To Cable : Type=Relation : Seq=9
+   Link: Instrument To Cable : Type=Relation : Seq=10
+
+Group Name: delete all
+   Link: Cables Data Deletion1 : Type=Delete : Seq=1
+   Link: Cabines From Side Data Deletion1 : Type=Delete : Seq=2
+   Link: Cabines To Side Data Deletion1 : Type=Delete : Seq=3
+   Link: Instrument From Side Data Deletion1 : Type=Delete : Seq=4
+   Link: Instrument To Side Data Deletion1 : Type=Delete : Seq=5
+   Link: JB From Side Data Deletion1 : Type=Delete : Seq=6
+   Link: JB To Side Data Deletion1 : Type=Delete : Seq=7
+
+==========
+
+Data Links: 
+
+Data Name: RefCable
+Source: SPI_Cables
+Target: RefCable
+   cable_type_name => ItemTag (K)
+   'Instrumentation' => CableCategory
+   'Instrumentation' => CableSpecification
+
+Data Name: Cables
+Source: SPI_Cables
+Target: Cable
+   cable_id => SP_SPIID (K)
+   'Instrumentation' => CableCategory
+   'Instrumentation' => CableSpecification
+   cable_num => ItemTag
+   pull_area_name => PullingArea
+
+Data Name: Cabines From Side
+Source: SPI_Cables
+Target: Cabinet
+   panel_id => SP_SPIID (K)
+   panel_name1 => ItemTag
+
+Data Name: Cabines To Side
+Source: SPI_Cables
+Target: Cabinet
+   Panel_Id => SP_SPIID (K)
+   Panel_Name2 => ItemTag
+
+Data Name: Instrument From Side
+Source: SPI_Cables
+Target: Instrument
+   panel_id => SP_SPIID (K)
+   cmpnt_name => ItemTag
+
+Data Name: Instrument To Side
+Source: SPI_Cables
+Target: Instrument
+   Panel_Id => SP_SPIID (K)
+   cmpnt_name => ItemTag
+
+Data Name: JB From Side
+Source: SPI_Cables
+Target: Junctionbox
+   panel_id => SP_SPIID (K)
+   panel_name1 => ItemTag
+
+Data Name: JB To Side
+Source: SPI_Cables
+Target: Junctionbox
+   Panel_Id => SP_SPIID (K)
+   Panel_Name2 => ItemTag
+
+==========
+
+Relation Links:
+
+Relation Name: RefCables - Cables
+Source: SPI_Cables
+Parent: RefCable
+   cable_type_name => ItemTag
+Child: Cable
+   cable_id => SP_SPIID
+
+Relation Name: Cable To JB-MR-Cabinet-DCS-PLC
+Source: SPI_Cables
+Parent: Cable
+   cable_id => SP_SPIID
+Child: Equipment
+   Panel_Id => SP_SPIID
+
+Relation Name: JB-MR-Cabinet-DCS-PLC To Cable
+Source: SPI_Cables
+Parent: Equipment
+   panel_id => SP_SPIID
+Child: Cable
+   cable_id => SP_SPIID
+
+Relation Name: Instrument To Cable
+Source: SPI_Cables
+Parent: Equipment
+   panel_id => SP_SPIID
+Child: Cable
+   cable_id => SP_SPIID
+
+Relation Name: Cable To Instrument
+Source: SPI_Cables
+Parent: Cable
+   cable_id => SP_SPIID
+Child: Equipment
+   Panel_Id => SP_SPIID
+
+==========
+
+Delete Links: 
+
+Delete Name: Cables Data Deletion1
+Source: SPI_Cables
+Target: Cable
+   cable_num => ItemTag (K)
+   cable_id => SP_SPIID (K)
+
+Delete Name: Cabines From Side Data Deletion1
+Source: SPI_Cables
+Target: Cabinet
+   panel_name1 => ItemTag (K)
+   panel_id => SP_SPIID (K)
+
+Delete Name: Cabines To Side Data Deletion1
+Source: SPI_Cables
+Target: Cabinet
+   PanelName2 => ItemTag (K)
+   Panel_Id => SP_SPIID (K)
+
+Delete Name: Instrument From Side Data Deletion1
+Source: SPI_Cables
+Target: Instrument
+   cmpnt_name => ItemTag (K)
+   CmpntId => SP_SPIID (K)
+
+Delete Name: Instrument To Side Data Deletion1
+Source: SPI_Cables
+Target: Instrument
+   PanelName2 => ItemTag (K)
+   Panel_Id => SP_SPIID (K)
+
+Delete Name: JB From Side Data Deletion1
+Source: SPI_Cables
+Target: Junctionbox
+   panel_name1 => ItemTag (K)
+   panel_id => SP_SPIID (K)
+
+Delete Name: JB To Side Data Deletion1
+Source: SPI_Cables
+Target: Junctionbox
+   Panel_Name2 => ItemTag (K)
+   Panel_Id => SP_SPIID (K)
+
+==========
+
+SelectList Links:
+
+SelectList Name: PullingArea
+Source: SPI_Cables
+Target: Pulling Area
+   pull_area_name => Value
+   pull_area_name => ShortValue
+
+==========
+

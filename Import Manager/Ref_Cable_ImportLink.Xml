@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Links Created="22-10-15 16:11:26" Application="Import Manager" Version="07.01.00.0075">
+    <Link ID="5913293FB9DB4637B58CCCD42240474D" Name="02_Color_Pattern" UniqueName="02_COLOR_PATTERN" Type="Data" Created="22/10/15 16:12:11" Execute="05/11/15 09:38:56">
+        <Description></Description>
+        <Flags>
+            <Flg Name="Override_all_FLG" Value="Y"/>
+            <Flg Name="Override_empty_value_only_FLG" Value="N"/>
+            <Flg Name="Update_only_FLG" Value="N"/>
+            <Flg Name="Apply_calculations_FLG" Value="Y"/>
+        </Flags>
+        <ConnectionString>
+            <Provider>MSDASQL.1</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource></DataSource>
+            <ExtendedProperties>DSN=Excel Files;DBQ=C:\Import\Reference_Cable_List.xlsx;DefaultDir=C:\Import;DriverId=1046;MaxBufferSize=2048;PageTimeout=5;</ExtendedProperties>
+        </ConnectionString>
+        <Source>ColorPatternInstance</Source>
+        <Target>RefColorPattern</Target>
+        <Query>
+            <SQL Source="Individual_or_Repetitive_colors" Target="ColorMethod" Key="N"/>
+            <SQL Source="Pattern_Name" Target="ItemTag" Key="Y"/>
+        </Query>
+    </Link>
+    <Link ID="78625A7C50E1445D848C5E9D850BA44A" Name="03_Color Pattern Instance" UniqueName="03_COLOR PATTERN INSTANCE" Type="Data" Created="22/10/15 16:12:11" Execute="05/11/15 09:38:59">
+        <Description></Description>
+        <Flags>
+            <Flg Name="Override_all_FLG" Value="Y"/>
+            <Flg Name="Override_empty_value_only_FLG" Value="N"/>
+            <Flg Name="Update_only_FLG" Value="N"/>
+            <Flg Name="Apply_calculations_FLG" Value="Y"/>
+        </Flags>
+        <ConnectionString>
+            <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource>c:\Import\Reference_Cable_List.xlsx</DataSource>
+            <ExtendedProperties>Excel 12.0</ExtendedProperties>
+        </ConnectionString>
+        <Source>ColorPatternInstance</Source>
+        <Target>RefColorInstance</Target>
+        <Query>
+            <SQL Source="Pattern_Name" Target="ItemTag" Key="Y"/>
+            <SQL Source="Color" Target="PatternColor" Key="N"/>
+            <SQL Source="Conductor_sequence_in_pattern" Target="PatternSeq" Key="Y"/>
+        </Query>
+    </Link>
+    <Link ID="15904E1EAC044F8598507BF4FC04B713" Name="05_Reference_Cable" UniqueName="05_REFERENCE_CABLE" Type="Data" Created="05/11/15 09:24:56" Execute="05/11/15 10:08:51">
+        <Description></Description>
+        <Flags>
+            <Flg Name="Override_all_FLG" Value="Y"/>
+            <Flg Name="Override_empty_value_only_FLG" Value="N"/>
+            <Flg Name="Update_only_FLG" Value="N"/>
+            <Flg Name="Apply_calculations_FLG" Value="Y"/>
+        </Flags>
+        <ConnectionString>
+            <Provider>MSDASQL.1</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource></DataSource>
+            <ExtendedProperties>DSN=Excel Files;DBQ=C:\Import\Reference_Cable_List.xlsx;DefaultDir=C:\Import;DriverId=1046;MaxBufferSize=2048;PageTimeout=5;</ExtendedProperties>
+        </ConnectionString>
+        <Source>CABLE</Source>
+        <Target>RefCable</Target>
+        <Query>
+            <SQL Source="Additional_Ground_conductor_size" Target="SP_AdditionalGndConductorSize" Key="N"/>
+            <SQL Source="Additional_Neutral_conductor_size" Target="AdditionalConductorSize" Key="N"/>
+            <SQL Source="Armor_Type" Target="ArmorType" Key="N"/>
+            <SQL Source="Basic_Ampacity_in_Air" Target="BasicAmpacityInAir" Key="N"/>
+            <SQL Source="Basic_Ampacity_in_Ground" Target="BasicAmpacityInGround" Key="N"/>
+            <SQL Source="Bending_radius" Target="BendingRadius" Key="N"/>
+            <SQL Source="Cable_Category" Target="CableCategory" Key="N"/>
+            <SQL Source="Cable_Set_Type" Target="CableSetType" Key="N"/>
+            <SQL Source="Cable_Specification" Target="CableSpecification" Key="N"/>
+            <SQL Source="Communication_Wire_Flag" Target="CommunicationWireFlag" Key="N"/>
+            <SQL Source="Conductor_Arrangement" Target="ConductorArrangement" Key="N"/>
+            <SQL Source="Material" Target="ConductorMaterial" Key="N"/>
+            <SQL Source="Conductor_OD" Target="SP_ConductorOD" Key="N"/>
+            <SQL Source="Conductor_Size" Target="ConductorSize" Key="N"/>
+            <SQL Source="Explosion_protection" Target="ExplosionProtection" Key="N"/>
+            <SQL Source="Base_frequency" Target="Frequency" Key="N"/>
+            <SQL Source="Ingression_protection" Target="IngressionProtection" Key="N"/>
+            <SQL Source="Cable_Insulation_color" Target="InsulationColor" Key="N"/>
+            <SQL Source="Insulation_Temperature_Rating" Target="InsulationTempRating" Key="N"/>
+            <SQL Source="Insulation_Voltage_Rating" Target="InsulationVoltageRating" Key="N"/>
+            <SQL Source="Item_Tag" Target="ItemTag" Key="Y"/>
+            <SQL Source="Jacket_Insulation_Material" Target="JacketInsulationMaterial" Key="N"/>
+            <SQL Source="Jacket_thickness" Target="SP_JacketThickness" Key="N"/>
+            <SQL Source="Manufacturer" Target="Manufacturer" Key="N"/>
+            <SQL Source="Maximum_tension" Target="SP_MaximumTension" Key="N"/>
+            <SQL Source="Model" Target="Model" Key="N"/>
+            <SQL Source="No_of_Sets" Target="NoOfSets" Key="N"/>
+            <SQL Source="Number_Of_Additional_Ground_Conductors" Target="SP_NoAdditionalGndConductor" Key="N"/>
+            <SQL Source="Number_Of_Additional_Neutral_Conductors" Target="NoAdditionalConductor" Key="N"/>
+            <SQL Source="Number_of_Conductors" Target="NoConductor" Key="N"/>
+            <SQL Source="Overall_Shield_Flag" Target="OverAllShieldFlag" Key="N"/>
+            <SQL Source="Overall_Shield_Material" Target="OverAllShieldMaterial" Key="N"/>
+            <SQL Source="Overall_Shield_Size" Target="OverAllShieldSize" Key="N"/>
+            <SQL Source="Pull_tension" Target="PullTension" Key="N"/>
+            <SQL Source="Rated_Voltage" Target="RatedVoltage" Key="N"/>
+            <SQL Source="Reactance" Target="Reactance" Key="N"/>
+            <SQL Source="Resistivity" Target="Resistivity" Key="N"/>
+        </Query>
+    </Link>
+    <Link ID="62789FE71DEB45BCAFBDF957DE2E3CC9" Name="04_Color Pattern-Instance" UniqueName="04_COLOR PATTERN-INSTANCE" Type="Relation" Created="22/10/15 16:12:11" Execute="05/11/15 09:39:00">
+        <Description></Description>
+        <ConnectionString>
+            <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource>c:\Import\Reference_Cable_List.xlsx</DataSource>
+            <ExtendedProperties>Excel 12.0</ExtendedProperties>
+        </ConnectionString>
+        <Source>ColorPatternInstance</Source>
+        <Relation>
+            <Parent Entity="RefColorPattern">
+                <Bind Target="ItemTag" Source="Pattern_Name"/>
+            </Parent>
+            <Child Entity="RefColorInstance">
+                <Bind Target="ItemTag" Source="Pattern_Name"/>
+                <Bind Target="PatternSeq" Source="Conductor_sequence_in_pattern"/>
+            </Child>
+        </Relation>
+    </Link>
+    <Link ID="7EEE561E21AD40039E360E0419BB55B6" Name="06_Cable_Color_Pattern" UniqueName="06_CABLE_COLOR_PATTERN" Type="Relation" Created="22/10/15 16:12:12" Execute="05/11/15 09:39:20">
+        <Description></Description>
+        <ConnectionString>
+            <Provider>MSDASQL.1</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource></DataSource>
+            <ExtendedProperties>DSN=Excel Files;DBQ=C:\Import\Reference_Cable_List.xlsx;DefaultDir=C:\Import;DriverId=1046;MaxBufferSize=2048;PageTimeout=5;</ExtendedProperties>
+        </ConnectionString>
+        <Source>CABLE</Source>
+        <SourceFilter> (Conductor_Color_Pattern &lt;&gt; '''')</SourceFilter>
+        <Relation>
+            <Parent Entity="RefColorPattern">
+                <Bind Target="ItemTag" Source="Conductor_Color_Pattern"/>
+            </Parent>
+            <Child Entity="RefCable">
+                <Bind Target="ItemTag" Source="Item_Tag"/>
+            </Child>
+        </Relation>
+    </Link>
+    <Link ID="8E121EBA2AA3490A82585F22706AE7AC" Name="01_Conductor_Color" UniqueName="01_CONDUCTOR_COLOR" Type="SelectList" Created="22/10/15 16:12:12" Execute="05/11/15 09:38:55">
+        <Description></Description>
+        <ConnectionString>
+            <Provider>MSDASQL.1</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource></DataSource>
+            <ExtendedProperties>DSN=Excel Files;DBQ=C:\Import\Reference_Cable_List.xlsx;DefaultDir=C:\Import;DriverId=1046;MaxBufferSize=2048;PageTimeout=5;</ExtendedProperties>
+        </ConnectionString>
+        <Source>ColorPatternInstance</Source>
+        <Target>Color</Target>
+        <Query>
+            <SQL Source="Color" Target="Value"/>
+            <SQL Source="Color" Target="ShortValue"/>
+        </Query>
+    </Link>
+    <Link Name="Ref_Cables" UniqueName="REF_CABLES" Type="Group" Created="22/10/15 16:12:12" Execute="05/11/15 09:38:55">
+        <Import ID="" Name="01_Conductor_Color" UniqueName="01_CONDUCTOR_COLOR" Type="SelectList" Sequence=""/>
+        <Import ID="" Name="02_Color_Pattern" UniqueName="02_COLOR_PATTERN" Type="Data" Sequence=""/>
+        <Import ID="" Name="03_Color Pattern Instance" UniqueName="03_COLOR PATTERN INSTANCE" Type="Data" Sequence=""/>
+        <Import ID="" Name="04_Color Pattern-Instance" UniqueName="04_COLOR PATTERN-INSTANCE" Type="Relation" Sequence=""/>
+        <Import ID="" Name="05_Reference_Cable" UniqueName="05_REFERENCE_CABLE" Type="Data" Sequence=""/>
+        <Import ID="" Name="06_Cable_Color_Pattern" UniqueName="06_CABLE_COLOR_PATTERN" Type="Relation" Sequence=""/>
+    </Link>
+</Links>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<RELATIONS>
+		<RELATION PARENT="Bus" CHILD="UPS">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="CurrentLimitingReactor">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="UPS">Cell.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="CurrentLimitingReactor">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="UPS">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="CurrentLimitingReactor">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Transformer">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="Transformer">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Transformer">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="BatteryCharger">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="BatteryCharger">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="BatteryCharger">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="VariableFrequencyDrive">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="VariableFrequencyDrive">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="VariableFrequencyDrive">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="OtherConvertingEquipment">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="OtherConvertingEquipment">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="OtherConvertingEquipment">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Motor">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Load">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="Motor">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Motor">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Heater">Bus.Equipment</RELATION>
+		<!-- <RELATION PARENT="Cell" CHILD="Heater">Cell.Equipment</RELATION> -->
+		<!-- <RELATION PARENT="PowerDistributionBoard" CHILD="Heater">PowerDistributionBoard.Equipment</RELATION> -->
+		<RELATION PARENT="Bus" CHILD="HeatTrace">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="HeatTrace">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="HeatTrace">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="BatteryBank ">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="BatteryBank ">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="BatteryBank ">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Capacitor">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="Capacitor">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Capacitor">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="HarmonicFilter">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="HarmonicFilter">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="HarmonicFilter">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Resistor">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="Resistor">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Resistor">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="OtherElectEquipment">Bus.Equipment</RELATION>
+		<RELATION PARENT="Cell" CHILD="OtherElectEquipment">Cell.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="OtherElectEquipment">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Motor">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Heater">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="HeatTrace">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="BatteryBank">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Capacitor">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="HarmonicFilter">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Resistor">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="OtherElectEquipment">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="UPS">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="CurrentLimitingReactor">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Load">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Transformer">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="BatteryCharger">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="VariableFrequencyDrive">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="OtherConvertingEquipment">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Instrument">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Cable" CHILD="Motor" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Generator" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Heater" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="HeatTrace" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="BatteryBank" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Capacitor" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="HarmonicFilter" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Resistor" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="OtherElectEquipment" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Instrument" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="VariableFrequencyDrive" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<!-- D-44075 - Propagate STATUS TYPE for PANELS property to CABLE associated to these panel-->
+		<RELATION PARENT="Cable" CHILD="Cabinet" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<!--<RELATION PARENT="Cable" CHILD="Cabinet" DBCHILD="Cabinet">PlantItem.ConnectionSide2.Cable</RELATION>-->
+		<RELATION PARENT="Cabinet" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Generator" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="UPS" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="CurrentLimitingReactor" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="UPS" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Load" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Transformer" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="TransformerComponent" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="BatteryCharger" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="OtherConvertingEquipment" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Contactor" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Contactor" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="OverloadRelay" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="ProtectionRelay" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="ProtectionRelay" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="DisconnectSwitch" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="CircuitBreaker" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Fuse" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Fuse" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Starter" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Starter" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="OtherDisconnectEquip" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="ControlStation" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="LocalPanel" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="LocalPanel" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Junctionbox" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Junctionbox" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Cable" DBCHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="LocalPanel" CHILD="Circuit" DBCHILD="Circuit">Panel.Circuit</RELATION>
+		<RELATION PARENT="Junctionbox" CHILD="Circuit" DBCHILD="Circuit">Panel.Circuit</RELATION>
+		<RELATION PARENT="Panel" CHILD="Circuit" DBCHILD="Circuit">Panel.Circuit</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Cable">PlantItem.ConnectionSide1.Cable</RELATION>
+		<RELATION PARENT="Cable" CHILD="Circuit" DBCHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="Motor" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Heater" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Resistor" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="StaticElectricalEquipment" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Load" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="UPS" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Transformer" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Contactor" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="ProtectionRelay" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Fuse" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Starter" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="ElectricalEquipment" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="Bus" CHILD="DisconnectSwitch">bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Fuse">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="CircuitBreaker">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Starter">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="OtherDisconnectEquip">Bus.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="DisconnectElectEquip">Bus.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Contactor">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="OverloadRelay">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="ProtectionRelay">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="DisconnectSwitch">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="CircuitBreaker">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Fuse">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Starter">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="OtherDisconnectEquip">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="DisconnectElectEquip">Circuit.Equipment</RELATION>
+		<!-- Circuit - Metering  -->
+		<RELATION PARENT="Circuit" CHILD="CurrentTransformer">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="PotentialTransformer">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Ammeter">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Voltmeter">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="Multimeter">Circuit.Equipment</RELATION>
+		<RELATION PARENT="Circuit" CHILD="MeteringEquipment">Circuit.Equipment</RELATION>
+		<!-- Circuit - Metering  -->
+		<RELATION PARENT="Cell" CHILD="Circuit">Cell.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Circuit">Bus.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Cell">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Bus">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Circuit">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Cell">Bus.Equipment</RELATION>
+		<!-- Strip  
+
+      <RELATION CHILD="Strip" PARENT="Heater">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="HeatTrace">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Capacitor">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="HarmonicFilter">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Resistor">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Heater">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="HeatTrace">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Contactor">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="OverloadRelay">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="ProtectionRelay">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="DisconnectSwitch">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="CircuitBreaker">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Fuse">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Starter">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="OtherDisconnectEquip">ElectricalEquipment.Strip</RELATION>
+      
+      <RELATION CHILD="Strip" PARENT="OtherElectEquipment">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Instrument">ElectricalEquipment.Strip</RELATION>
+      <RELATION CHILD="Strip" PARENT="Circuit">Circuit.Equipment</RELATION>
+     
+      
+     <RELATION CHILD="Strip" PARENT="OffSitePower">Equipment.Strip</RELATION>
+     <RELATION CHILD="Strip" PARENT="TransformerComponent">Equipment.Strip</RELATION>
+     <RELATION CHILD="Strip" PARENT="OtherConvertingEquipment">Equipment.Strip</RELATION>
+     <RELATION CHILD="Strip" PARENT="Instrument">Equipment.Strip</RELATION>
+     <RELATION CHILD="Strip" PARENT="Cabinet">Equipment.Strip</RELATION>
+     
+     
+     <RELATION CHILD="RefStrip" PARENT="RefOffSitePower">RefEquipment.RefStrip</RELATION>
+     
+-->
+		<RELATION CHILD="Strip" PARENT="CurrentTransformer">Equipment.Strip</RELATION>
+		<RELATION CHILD="Strip" PARENT="PotentialTransformer">Equipment.Strip</RELATION>
+
+
+		<RELATION CHILD="RefStrip" PARENT="RefCurrentTransformer">RefDisconnectElectEquip.RefStrip</RELATION>
+		<RELATION CHILD="RefStrip" PARENT="RefPotentialTransformer">RefDisconnectElectEquip.RefStrip</RELATION>
+		<RELATION CHILD="RefStrip" PARENT="RefVoltmeter">RefDisconnectElectEquip.RefStrip</RELATION>
+		<RELATION CHILD="RefStrip" PARENT="RefAmmeter">RefDisconnectElectEquip.RefStrip</RELATION>
+		<RELATION CHILD="RefStrip" PARENT="RefMultimeter">RefDisconnectElectEquip.RefStrip</RELATION>
+		<RELATION CHILD="RefStrip" PARENT="RefProtectionRelay">RefDisconnectElectEquip.RefStrip</RELATION>
+		<!-- 
+      <RELATION CHILD="RefStrip" PARENT="RefRelayFunctionLib">RefDisconnectElectEquip.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefInstrument">RefDisconnectElectEquip.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefCircuit">RefCircuit.RefEquipment</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefCabinet">RefPanel.RefStrip</RELATION>    
+      <RELATION CHILD="RefStrip" PARENT="RefOffSitePower">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefContactor">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefOverloadRelay">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefProtectionRelay">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefDisconnectSwitch">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefCircuitBreaker">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefFuse">RefElectricalEquipment.RefStrip</RELATION>
+      <RELATION CHILD="RefStrip" PARENT="RefStarter">RefElectricalEquipment.RefStrip</RELATION>
+
+	RefStrip -->
+		<RELATION PARENT="Transformer" CHILD="TransformerComponent">ConvertingEquipComponent.ConvertingEquipComponent</RELATION>
+		<RELATION PARENT="RefTransformer" CHILD="RefTransformerComponent">RefConvertingEquipCompt.RefConvertingEquipCompt</RELATION>
+		<!--<RELATION PARENT="RefCircuit" CHILD="RefStrip">RefCircuit.RefElectricalEquipment</RELATION>-->
+		<RELATION PARENT="RefCircuit" CHILD="RefContactor">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefOverloadRelay">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefProtectionRelay">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefDisconnectSwitch">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefCircuitBreaker">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefFuse">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefStarter">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefOtherDisconnectEquip">RefCircuit.RefEquipment</RELATION>
+		<!-- New -->
+		<RELATION PARENT="RefCircuit" CHILD="RefUPS">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefBatteryCharger">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefOtherConvertingEquip">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefVariableFrequencyDrive">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefTransformer">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefCurrentTransformer">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefPotentialTransformer">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefAmmeter">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefVoltmeter">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefMultimeter">RefCircuit.RefEquipment</RELATION>
+		<!-- New -->
+		<RELATION PARENT="RefCell" CHILD="RefCircuit">RefCell.RefEquipment</RELATION>
+		<RELATION PARENT="RefBus" CHILD="RefCircuit">RefBus.RefEquipment</RELATION>
+		<RELATION PARENT="RefPowerDistributionBoard" CHILD="RefCell">RefPowerDistributionBoard.RefEquipment</RELATION>
+		<RELATION PARENT="RefPowerDistributionBoard" CHILD="RefBus">RefPowerDistributionBoard.RefEquipment</RELATION>
+		<RELATION PARENT="Motor" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefMotor" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Heater" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefHeater" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefHeatTrace" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefCapacitor" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefHarmonicFilter" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Resistor" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefResistor" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefOtherElectEquipment" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Circuit" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="ControlStation" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefControlStation" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="UPS" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefCurrentLimitingReactor" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="RefTypicalSchematic" CHILD="Equipment">RefTypicalSchematic.Equipment</RELATION>
+		<RELATION PARENT="RefUPS" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Transformer" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefTransformer" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefBatteryCharger" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefVariableFrequencyDrive" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefOtherConvertingEquip" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="RefJunctionbox" CHILD="RefCircuit">RefPanel.RefCircuit</RELATION>
+		<RELATION PARENT="RefLocalPanel" CHILD="RefCircuit">RefPanel.RefCircuit</RELATION>
+		<RELATION PARENT="RefCable" CHILD="Cable">RefEquipment.Equipment</RELATION>
+		<RELATION PARENT="RefGenerator" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="RefBatteryBank" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="Generator" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Generator" CHILD="ControlStation">ElectricalEquipment.Panel</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Contactor" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="ProtectionRelay" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Fuse" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Starter" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Instrument" CHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="RefInstrument" CHILD="RefSignalRun">RefEquipment.RefSignalRun</RELATION>
+		<RELATION PARENT="ControlStation" CHILD="Cable">PlantItem.ConnectionSide2.Cable</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Motor">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Heater">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="HeatTrace">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Capacitor">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="HarmonicFilter">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Resistor">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="OtherElectEquipment">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Generator">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="BatteryBank">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="UPS">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="CurrentLimitingReactor">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Transformer">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="BatteryCharger">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="VariableFrequencyDrive">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="OtherConvertingEquipment">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Circuit">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Contactor">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="OverloadRelay">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="ProtectionRelay">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="DisconnectSwitch">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="CircuitBreaker">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Fuse">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Starter">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="OtherDisconnectEquip">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="Instrument">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="Motor" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Generator" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Load" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Resistor" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Heater" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="UPS" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="Equipment" CHILD="Instrument">Equipment.Instrument</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Instrument">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Instrument">Bus.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Cabinet">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="Bus" CHILD="Cabinet">Bus.Equipment</RELATION>
+		<RELATION PARENT="RefSignalGroup" CHILD="ControlStation">RefSignalGroup.Equipment</RELATION>
+		<RELATION PARENT="Resistor" CHILD="Transformer">Rsistor.ElectricalEquipment</RELATION>
+		<RELATION PARENT="Resistor" CHILD="TransformerComponent">Rsistor.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="Motor">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="Heater">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="HeatTrace">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="Capacitor">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="Resistor">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="HarmonicFilter">ProcessEquipment.ElectricalEquipment</RELATION>
+		<RELATION PARENT="ProcessEquipment" CHILD="OtherElectEquipment">ProcessEquipment.ElectricalEquipment</RELATION>
+		<!-- Equipment.DisconnectElectEquip  BEGIN -->
+		<RELATION PARENT="Motor" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Motor" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Heater" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HeatTrace" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Capacitor" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="HarmonicFilter" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Resistor" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherElectEquipment" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Generator" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Transformer" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="UPS" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="TransformerComponent" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Cell" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Bus" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Contactor" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OverloadRelay" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="DisconnectSwitch" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="CircuitBreaker" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Fuse" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Starter" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="OtherDisconnectEquip" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="ProtectionRelay">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Load" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="SignalRun" CHILD="Equipment" DBCHILD="SignalRun">Equipment.SignalRun</RELATION>
+		<RELATION PARENT="Circuit" CHILD="ConvertingElectEquip">Circuit.Equipment</RELATION>
+		<!-- Equipment.DisconnectElectEquip  END -->
+		<RELATION PARENT="Equipment" CHILD="CurrentTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Equipment" CHILD="PotentialTransformer">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Equipment" CHILD="Ammeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Equipment" CHILD="Voltmeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Equipment" CHILD="Multimeter">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="Equipment" CHILD="MeteringEquipment">Equipment.DisconnectElectEquip</RELATION>
+		<RELATION PARENT="SLDDrawing" CHILD="PlantItemDocJoin">Document.PlantItemDocJoin</RELATION>
+		<RELATION PARENT="SchematicDrawing" CHILD="PlantItemDocJoin">Document.PlantItemDocJoin</RELATION>
+		<RELATION PARENT="ExternalDocument" CHILD="PlantItemDocJoin">Document.PlantItemDocJoin</RELATION>
+		<RELATION PARENT="CableWaySegment" CHILD="SegmentPartition">CableWaySegment.CableSegment</RELATION>
+
+		<!-- TR PB 102911   -->
+		<RELATION PARENT="CableWaySegment" CHILD="Cable">CableWaySegment.Cable</RELATION>
+
+		<RELATION PARENT="CBDDrawing" CHILD="Symbol">Representation.Document</RELATION>
+		<RELATION PARENT="CBDDrawing" CHILD="Connector">Representation.Document</RELATION>
+		<RELATION PARENT="WiringDrawing" CHILD="Symbol">Representation.Document</RELATION>
+		<RELATION PARENT="WiringDrawing" CHILD="Group">Representation.Document</RELATION>
+		<RELATION PARENT="WiringDrawing" CHILD="Connector">Representation.Document</RELATION>
+		<!-- TR PB 90963   -->
+		<RELATION PARENT="SystemReport" CHILD="Revision">Document.Revision</RELATION>
+		<RELATION PARENT="CBDDrawing" CHILD="Revision">Document.Revision</RELATION>
+		<RELATION PARENT="WiringDrawing" CHILD="Revision">Document.Revision</RELATION>
+		<!-- TR PB 90963   -->
+		<RELATION PARENT="PlantItemGroup" CHILD="Cable">PlantItemGroup.PlantItem</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="PDBRow">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="PowerDistributionBoard" CHILD="PDBSection">PowerDistributionBoard.Equipment</RELATION>
+		<RELATION PARENT="PDBLayoutDrawing" CHILD="Symbol">Representation.Document</RELATION>
+
+		<!-- Relations for PowerSource -->
+		<RELATION PARENT="UPS" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="Load">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="OtherElectEquipment">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="HarmonicFilter">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="Resistor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="Capacitor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="HeatTrace">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="UPS" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="Motor">Equipment.PowerSource.Equipment</RELATION>
+		<!--
+    <RELATION PARENT="UPS" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Transformer" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryCharger" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="VariableFrequencyDrive" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OtherConvertingEquipment" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="CurrentLimitingReactor" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="BatteryBank" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="Generator" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="OffSitePower" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+		<RELATION PARENT="ConvertingElectEquip" CHILD="Heater">Equipment.PowerSource.Equipment</RELATION>
+    -->
+		<RELATION PARENT="RefConduit" CHILD="CableWaySegment">RefRaceWayComponent.CableWaySegment</RELATION>
+		<RELATION PARENT="RefTray" CHILD="CableWaySegment">RefRaceWayComponent.CableWaySegment</RELATION>
+		<RELATION PARENT="RefRaceWayMiscellaneous" CHILD="CableWaySegment">RefRaceWayComponent.CableWaySegment</RELATION>
+
+
+		<!-- Relations for PowerSource -->
+		<!-- Relation for resolving ref aux contacts-->
+		<RELATION PARENT="RefCircuit" CHILD="RefDisconnectElectEquip">RefCircuit.RefEquipment</RELATION>
+		<RELATION PARENT="RefCircuit" CHILD="Circuit">RefEquipment.Equipment</RELATION>
+		<!-- Correction for Heater.Motor -->
+		<RELATION PARENT="Heater" CHILD="Motor" DBCHILD="Heater">Motor.Heater</RELATION>
+		<RELATION PARENT="RefHeater" CHILD="RefMotor" DBCHILD="RefHeater">RefMotor.RefHeater</RELATION>
+
+
+	</RELATIONS>
+</ROOT>

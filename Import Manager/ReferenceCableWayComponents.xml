@@ -1,0 +1,79 @@
+<Links Created="01-08-06 10:02:37" Application="Import Manager" Version="04.00.00.00">
+    <Link ID="F08CE3051CAE4D22BF8439E8783B14CE" Name="Conduit" UniqueName="CONDUIT" Type="Data" Created="01/08/06 10:17:29" Execute="23/08/06 13:23:46">
+        <Description></Description>
+        <Flags>
+            <Flg Name="Override_all_FLG" Value="Y"/>
+            <Flg Name="Override_empty_value_only_FLG" Value="N"/>
+            <Flg Name="Update_only_FLG" Value="N"/>
+            <Flg Name="Apply_calculations_FLG" Value="Y"/>
+        </Flags>
+        <ConnectionString>
+            <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\ReferenceCableWayComponents.xlsx</DataSource>
+            <ExtendedProperties>"EXCEL 12.0"</ExtendedProperties>
+        </ConnectionString>
+        <Source>Conduit</Source>
+        <Target>RefConduit</Target>
+        <Query>
+            <SQL Source="ACTUALLENGTH" Target="ActualLength" Key="N"/>
+            <SQL Source="BENDINGRADIUS" Target="BendingRadius" Key="N"/>
+            <SQL Source="CABLEWAYFILLFACTOR" Target="CableWayFillFactor" Key="N"/>
+            <SQL Source="COUNTQUANTITY" Target="CountQuantity" Key="N"/>
+            <SQL Source="DESCRIPTION" Target="Description" Key="N"/>
+            <SQL Source="INNERDIAMETER" Target="InnerDiameter" Key="N"/>
+            <SQL Source="'False'" Target="IsConduitFlexibility" Key="N"/>
+            <SQL Source="'True'" Target="IsMetallic" Key="N"/>
+            <SQL Source="'False'" Target="IsVentilated" Key="N"/>
+            <SQL Source="MAXWEIGHTPERLENGTH" Target="MaxWeightPerLength" Key="N"/>
+            <SQL Source="NORMALSPAN" Target="NormalSpan" Key="N"/>
+            <SQL Source="'Straight run'" Target="RaceWayComponentType" Key="N"/>
+            <SQL Source="RACEWAYNOMINALSIZE" Target="RacewayNominalSize" Key="N"/>
+            <SQL Source="ITEMTAG" Target="ItemTag" Key="Y"/>
+            <SQL Source="WEIGHTFACTOR" Target="WeightFactor" Key="N"/>
+        </Query>
+    </Link>
+    <Link ID="AA46BAA2C738424EA0807DAC7F72C551" Name="Tray" UniqueName="TRAY" Type="Data" Created="01/08/06 11:16:07" Execute="23/08/06 13:23:48">
+        <Description></Description>
+        <Flags>
+            <Flg Name="Override_all_FLG" Value="Y"/>
+            <Flg Name="Override_empty_value_only_FLG" Value="N"/>
+            <Flg Name="Update_only_FLG" Value="N"/>
+            <Flg Name="Apply_calculations_FLG" Value="Y"/>
+        </Flags>
+        <ConnectionString>
+            <Provider>Microsoft.ACE.OLEDB.12.0</Provider>
+            <UserId>Admin</UserId>
+            <Password></Password>
+            <DataSource>C:\Program Files (x86)\SmartPlant\Electrical\Import Demo\ReferenceCableWayComponents.xlsx</DataSource>
+            <ExtendedProperties>"EXCEL 12.0"</ExtendedProperties>
+        </ConnectionString>
+        <Source>Tray</Source>
+        <Target>RefTray</Target>
+        <Query>
+            <SQL Source="ACTUALLENGTH" Target="ActualLength" Key="N"/>
+            <SQL Source="BENDINGRADIUS" Target="BendingRadius" Key="N"/>
+            <SQL Source="BOTTOMCONSTRUCTION" Target="BottomConstruction" Key="N"/>
+            <SQL Source="CABLETRAYCONSTRUCTION" Target="SP_CableTrayConstruction" Key="N"/>
+            <SQL Source="'1'" Target="CableWayFillFactor" Key="N">
+                <SUB Text="1" Attribute="" Start="0" Length="0"/>
+            </SQL>
+            <SQL Source="'Length'" Target="CountQuantity" Key="N"/>
+            <SQL Source="DESCRIPTION" Target="Description" Key="N"/>
+            <SQL Source="'True'" Target="IsMetallic" Key="N"/>
+            <SQL Source="MAXWEIGHTPERLENGTH" Target="MaxWeightPerLength" Key="N"/>
+            <SQL Source="NORMALSPAN" Target="NormalSpan" Key="N"/>
+            <SQL Source="RACEWAYCOMPONENTTYPE" Target="RaceWayComponentType" Key="N"/>
+            <SQL Source="RACEWAYDEPTH" Target="RacewayDepth" Key="N"/>
+            <SQL Source="RACEWAYNOMINALSIZE" Target="RacewayNominalSize" Key="N"/>
+            <SQL Source="RACEWAYWIDTH" Target="RacewayWidth" Key="N"/>
+            <SQL Source="ITEMTAG" Target="ItemTag" Key="Y"/>
+            <SQL Source="WEIGHTFACTOR" Target="WeightFactor" Key="N"/>
+        </Query>
+    </Link>
+    <Link Name="CWC" UniqueName="CWC" Type="Group" Created="01-08-06 11:26:24" Execute="23/08/06 13:23:46">
+        <Import ID="" Name="Conduit" UniqueName="CONDUIT" Type="Data" Sequence=""/>
+        <Import ID="" Name="Tray" UniqueName="TRAY" Type="Data" Sequence=""/>
+    </Link>
+</Links>
