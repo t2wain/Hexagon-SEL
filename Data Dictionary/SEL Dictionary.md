@@ -13,45 +13,45 @@ There are 3 different Data Dictionaries in a SEL application:
 
 ## DD tables that define the physical model
 
-- Entities -> Database table
+- Entities -> describe database table
     - Entity_Number -> ID
-    - Entity_Apps -> database schemas
-- Attributes -> Database column
+    - Entity_Apps -> ref. database schemas
+- Attributes -> describe database column
     - Attribute_Number -> ID
-- UniqueAtts -> column in table
-    - Entity_Number -> table
-    - Attribute_Number -> column
-- Relationships -> 2 related CorrelAtts in an SQL table join
+- UniqueAtts -> describe column in table
+    - Entity_Number -> ref. table
+    - Attribute_Number -> ref. column
+- Relationships -> describe 2 database columns in an SQL table join
     - Rel_Number
     - Rel_Type -> SUBCLASS, ASSOC_NC, GROUP
-    - Source_Entity -> table
-    - Source_Coratt -> CorrelAtt
-    - Source_Schema - database schemas
-    - Dest_Entity -> table 
-    - Dest_Coratt -> CorrelAtt
-    - Dest_Schema -> database schemas
-- CorrelAtts -> columns in an SQL table join
+    - Source_Entity -> ref. table
+    - Source_Coratt -> ref. CorrelAtt
+    - Source_Schema - ref. database schemas
+    - Dest_Entity -> ref. table 
+    - Dest_Coratt -> ref. CorrelAtt
+    - Dest_Schema -> ref. database schemas
+- CorrelAtts -> describe columns in an SQL table join
     - CorrelAtt_Number
     - Number_Of_Atts
-    - Attributes -> columns
+    - Attributes -> ref. database columns
 
 ## DD tables that define the logical model
 
-- Item
+- Item -> describe logical object
     - ID
     - Name
-    - SourceTable -> Entity
-    - AppSchemas -> database schema
- - ItemAttributions
-    - ItemID -> Item
+    - SourceTable -> ref. Entity
+    - AppSchemas -> ref. database schema
+ - ItemAttributions -> describe item properties
+    - ItemID -> ref. Item
     - Name
     - DisplayName
-    - AttributionID -> UniqueAtts
-    - Path -> sequence of Relationship
-- SourceDestObjectRels
-    - ParentItemID -> Item
-    - ChildItemID -> Item
-    - Path -> sequence of Relationship
+    - AttributionID -> ref. UniqueAtts
+    - Path -> ref. sequence of Relationship
+- SourceDestObjectRels -> describe more relationships of objects
+    - ParentItemID -> ref. Item
+    - ChildItemID -> ref. Item
+    - Path -> ref. sequence of Relationship
 
 ## The logical model
 
