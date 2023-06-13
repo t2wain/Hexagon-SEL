@@ -2,7 +2,7 @@
 
 ## Import Manager project demos
 
-The SEL installation folder has the following sample import project files:
+The SEL application folder has the following sample import project files:
 
 - Demo.xml
 - Ref_Cable_ImportLink.xml
@@ -18,7 +18,7 @@ The import project file is an XML document and can be view in a text editor appl
 
 ## Association (Relation) links
 
-Among the import link types (Data, Association, Delete, SelectList, etc.), the Association link type is the most ambigous. Which item types can be associated with one another, which item type should be the parent, which item type should the child, and what is the result of the association are not always intuitive. Perhaps, these documents in the SEL installation folder can provide some hints:
+Among the import link types (Data, Association, Delete, SelectList, etc.), the Association link type is the most ambigous. Which item types can be associated with one another, which item type should be the parent, which item type should the child, and what is the result of the association are not always intuitive. Perhaps, these documents in the SEL application folder can provide some hints:
 
 - RelationTemplate.xml
 - SpelImportManagerItemTypes.xml
@@ -27,6 +27,6 @@ Among the import link types (Data, Association, Delete, SelectList, etc.), the A
 
 ItemHierachy is an item property that refers to the plant unit of which the item belongs to. It seems this property exists only in the Import Manager application. You can map to this property inside the Data link type and the Association link type. 
 
-In the Association link, if the items belong to different plant units, ItemHierachy property must be mapped for both items.
+In the Association link, if the parent/child items belong to different plant units, ItemHierachy property must be mapped for both items.
 
-The typical data format of ItemHierachy property is "\area\unit". The plant hierachy data is stored in the database table/column T_PLANTGROUP.DIR_PATH of the Plant Data Dictionary schema.
+The typical data format of ItemHierachy property is "\area\unit". The plant hierachy data is stored in the database table/column T_PLANTGROUP.DIR_PATH of the Plant schema.
