@@ -1,0 +1,4238 @@
+Item : Ammeter
+
+
+Child :
+
+   MeteringEquipment.SubClass.Ammeter - 712
+
+==========
+
+Item : AuxiliaryContact
+
+Parent :
+
+   AuxiliaryContact.Alternate.Circuit - 786_396_650_576_734
+   AuxiliaryContact.AlternatePowerSource.Equipment - 786_396_650_576_733
+   AuxiliaryContact.ConnectionSide1.Cable - 786_396_650_576_25_518
+   AuxiliaryContact.ConnectionSide2.Cable - 786_396_650_576_25_513
+   AuxiliaryContact.Document - 786_396_650_576_25_496_497
+   AuxiliaryContact.Panel - 786_396_650_670
+   AuxiliaryContact.PlantItemJoin1.PlantItem - 786_396_650_576_25_374_375
+   AuxiliaryContact.PlantItemJoin2.PlantItem - 786_396_650_576_25_375_374
+   AuxiliaryContact.PowerSource.Equipment - 786_396_650_576_654
+   AuxiliaryContact.SchematicBlock - 786_396_650_576_25_597
+   AuxiliaryContact.SchematicMacro - 786_396_650_576_25_614
+   AuxiliaryContact.Strip - 786_396_650_576_763
+
+Child :
+
+   CircuitBreaker.AuxiliaryContact - 414_787
+   Contactor.AuxiliaryContact - 383_787
+   DisconnectElectEquip.AuxiliaryContact - 787
+   DisconnectElectEquip.SubClass.AuxiliaryContact - 786
+   DisconnectSwitch.AuxiliaryContact - 406_787
+   Fuse.AuxiliaryContact - 413_787
+   OtherDisconnectEquip.AuxiliaryContact - 581_787
+   OverloadRelay.AuxiliaryContact - 385_787
+   Starter.AuxiliaryContact - 408_787
+
+==========
+
+Item : BatteryBank
+
+Parent :
+
+   BatteryBank.Alternate.Circuit - 622_576_734
+   BatteryBank.AlternatePowerSource.Equipment - 622_576_733
+   BatteryBank.ConnectionSide1.Cable - 622_576_25_518
+   BatteryBank.ConnectionSide2.Cable - 622_576_25_513
+   BatteryBank.Document - 622_576_25_496_497
+   BatteryBank.Heater - 622_576_793
+   BatteryBank.Panel - 622_670
+   BatteryBank.PlantItemJoin1.PlantItem - 622_576_25_374_375
+   BatteryBank.PlantItemJoin2.PlantItem - 622_576_25_375_374
+   BatteryBank.PowerSource.Equipment - 622_576_654
+   BatteryBank.SchematicBlock - 622_576_25_597
+   BatteryBank.SchematicMacro - 622_576_25_614
+   BatteryBank.Strip - 622_576_763
+
+Child :
+
+   ElectricalEquipment.SubClass.BatteryBank - 622
+
+==========
+
+Item : BatteryCharger
+
+Parent :
+
+   BatteryCharge.Panel - 386_397_670
+   BatteryCharger.Alternate.Circuit - 386_397_576_734
+   BatteryCharger.AlternatePowerSource.Equipment - 386_397_576_733
+   BatteryCharger.ConnectionSide1.Cable - 386_397_576_25_518
+   BatteryCharger.ConnectionSide2.Cable - 386_397_576_25_513
+   BatteryCharger.ConvertingEquipComponent - 386_625
+   BatteryCharger.Document - 386_397_576_25_496_497
+   BatteryCharger.Heater - 386_397_576_793
+   BatteryCharger.PlantItemJoin1.PlantItem - 386_397_576_25_374_375
+   BatteryCharger.PlantItemJoin2.PlantItem - 386_397_576_25_375_374
+   BatteryCharger.PowerSource.Equipment - 386_397_576_654
+   BatteryCharger.SchematicBlock - 386_397_576_25_597
+   BatteryCharger.SchematicMacro - 386_397_576_25_614
+   BatteryCharger.Strip - 386_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.BatteryCharger - 386
+
+==========
+
+Item : Bus
+
+Parent :
+
+   Bus.AlternatePowerSource.Equipment - 411_419_575_733
+   Bus.Circuit - 603_576_633
+   Bus.ConnectionSide1.Cable - 411_419_575_25_518
+   Bus.ConnectionSide2.Cable - 411_419_575_25_513
+   Bus.Document - 411_419_575_25_496_497
+   Bus.Equipment - 603
+   Bus.Load - 603_576_377
+   Bus.PlantItemJoin1.PlantItem - 411_419_575_25_374_375
+   Bus.PlantItemJoin2.PlantItem - 411_419_575_25_375_374
+   Bus.PowerSource.Equipment - 411_419_575_654
+   Bus.SchematicBlock - 411_419_575_25_597
+   Bus.SchematicMacro - 411_419_575_25_614
+
+Child :
+
+   ElectricalConductor.SubClass.Bus - 411
+   PowerDistributionBoard.Bus - 601_575_419_411
+
+==========
+
+Item : Busway
+
+Parent :
+
+   Busway.PlantItemJoin1.PlantItem - 703_419_575_25_374_375
+   Busway.PlantItemJoin2.PlantItem - 703_419_575_25_375_374
+
+Child :
+
+   ElectricalConductor.SubClass.BusWay - 703
+
+==========
+
+Item : CBDDrawing
+
+
+Child :
+
+   Document.SubClass.CBDDrawing - 751
+
+==========
+
+Item : Cabinet
+
+Parent :
+
+   Cabinet.Heater - 683_402_575_793
+   Cabinet.Strip - 683_402_575_763
+
+Child :
+
+   Panel.SubClass.Cabinet - 683
+
+==========
+
+Item : Cable
+
+Parent :
+
+   Cable.AlternatePowerSource.Equipment - 412_419_575_733
+   Cable.CableDrum - 764_765
+   Cable.CableSegmentPartition - 694
+   Cable.CableSet - 678
+   Cable.CableSpliceDrum - 764
+   Cable.Conductor - 524
+   Cable.ConnectionSide1.Cable - 412_419_575_25_518
+   Cable.ConnectionSide2.Cable - 412_419_575_25_513
+   Cable.Document - 412_419_575_25_496_497
+   Cable.PlantItemJoin1.PlantItem - 412_419_575_25_374_375
+   Cable.PlantItemJoin2.PlantItem - 412_419_575_25_375_374
+   Cable.PowerSource.Equipment - 412_419_575_654
+   Cable.SchematicBlock - 412_419_575_25_597
+   Cable.SchematicMacro - 412_419_575_25_614
+
+Child :
+
+   AuxiliaryContact.ConnectionSide1.Cable - 786_396_650_576_25_518
+   AuxiliaryContact.ConnectionSide2.Cable - 786_396_650_576_25_513
+   BatteryBank.ConnectionSide1.Cable - 622_576_25_518
+   BatteryBank.ConnectionSide2.Cable - 622_576_25_513
+   BatteryCharger.ConnectionSide1.Cable - 386_397_576_25_518
+   BatteryCharger.ConnectionSide2.Cable - 386_397_576_25_513
+   Bus.ConnectionSide1.Cable - 411_419_575_25_518
+   Bus.ConnectionSide2.Cable - 411_419_575_25_513
+   Cable.ConnectionSide1.Cable - 412_419_575_25_518
+   Cable.ConnectionSide2.Cable - 412_419_575_25_513
+   CableAssembly.Cable - 776
+   Capacitor.ConnectionSide1.Cable - 573_377_576_25_518
+   Capacitor.ConnectionSide2.Cable - 573_377_576_25_513
+   Cell.ConnectionSide1.Cable - 416_650_576_25_518
+   Cell.ConnectionSide2.Cable - 416_650_576_25_513
+   Circuit.ConnectionSide1.Cable - 633_576_25_518
+   Circuit.ConnectionSide2.Cable - 633_576_25_513
+   CircuitBreaker.ConnectionSide1.Cable - 414_396_650_576_25_518
+   CircuitBreaker.ConnectionSide2.Cable - 414_396_650_576_25_513
+   Conductor.ConnectionSide1.Cable - 651_419_575_25_518
+   Conductor.ConnectionSide2.Cable - 651_419_575_25_513
+   Contactor.ConnectionSide1.Cable - 383_396_650_576_25_518
+   Contactor.ConnectionSide2.Cable - 383_396_650_576_25_513
+   ControlStation.ConnectionSide1.Cable - 403_402_575_25_518
+   ControlStation.ConnectionSide2.Cable - 403_402_575_25_513
+   ConvertingElectEquip.ConnectionSide1.Cable - 397_576_25_518
+   ConvertingElectEquip.ConnectionSide2.Cable - 397_576_25_513
+   ConvertingEquipComponent.ConnectionSide1.Cable - 426_397_576_25_518
+   ConvertingEquipComponent.ConnectionSide2.Cable - 426_397_576_25_513
+   CurrentLimitingReactor.ConnectionSide1.Cable - 759_397_576_25_518
+   CurrentLimitingReactor.ConnectionSide2.Cable - 759_397_576_25_513
+   DisconnectElectEquip.ConnectionSide1.Cable - 396_650_576_25_518
+   DisconnectElectEquip.ConnectionSide2.Cable - 396_650_576_25_513
+   DisconnectSwitch.ConnectionSide1.Cable - 406_396_650_576_25_518
+   DisconnectSwitch.ConnectionSide2.Cable - 406_396_650_576_25_513
+   ElectricalConductor.ConnectionSide1.Cable - 419_575_25_518
+   ElectricalConductor.ConnectionSide2.Cable - 419_575_25_513
+   ElectricalConductor.SubClass.Cable - 412
+   ElectricalEquipment.ConnectionSide1.Cable - 576_25_518
+   ElectricalEquipment.ConnectionSide2.Cable - 576_25_513
+   Equipment.ConnectionSide1.Cable - 25_518
+   Equipment.ConnectionSide2.Cable - 25_513
+   Fuse.ConnectionSide1.Cable - 413_396_650_576_25_518
+   Fuse.ConnectionSide2.Cable - 413_396_650_576_25_513
+   Generator.ConnectionSide1.Cable - 404_576_25_518
+   Generator.ConnectionSide2.Cable - 404_576_25_513
+   HarmonicFilter.ConnectionSide1.Cable - 572_377_576_25_518
+   HarmonicFilter.ConnectionSide2.Cable - 572_377_576_25_513
+   Heater.ConnectionSide1.Cable - 570_377_576_25_518
+   Heater.ConnectionSide2.Cable - 570_377_576_25_513
+   HeatTrace.ConnectionSide1.Cable - 577_377_576_25_518
+   HeatTrace.ConnectionSide2.Cable - 577_377_576_25_513
+   Junctionbox.ConnectionSide1.Cable - 401_402_575_25_518
+   Junctionbox.ConnectionSide2.Cable - 401_402_575_25_513
+   Load.ConnectionSide1.Cable - 377_576_25_518
+   Load.ConnectionSide2.Cable - 377_576_25_513
+   LocalPanel.ConnectionSide1.Cable - 400_402_575_25_518
+   LocalPanel.ConnectionSide2.Cable - 400_402_575_25_513
+   Motor.ConnectionSide1.Cable - 410_377_576_25_518
+   Motor.ConnectionSide2.Cable - 410_377_576_25_513
+   OffSitePower.ConnectionSide1.Cable - 673_576_25_518
+   OffSitePower.ConnectionSide2.Cable - 673_576_25_513
+   OtherConvertingEquipment.ConnectionSide1.Cable - 423_397_576_25_518
+   OtherConvertingEquipment.ConnectionSide2.Cable - 423_397_576_25_513
+   OtherDisconnectEquip.ConnectionSide1.Cable - 581_396_650_576_25_518
+   OtherDisconnectEquip.ConnectionSide2.Cable - 581_396_650_576_25_513
+   OtherElectEquipment.ConnectionSide1.Cable - 420_377_576_25_518
+   OtherElectEquipment.ConnectionSide2.Cable - 420_377_576_25_513
+   OverloadRelay.ConnectionSide1.Cable - 385_396_650_576_25_518
+   OverloadRelay.ConnectionSide2.Cable - 385_396_650_576_25_513
+   Panel.ConnectionSide1.Cable - 402_575_25_518
+   Panel.ConnectionSide2.Cable - 402_575_25_513
+   PlantItem.ConnectionSide1.Cable - 518
+   PlantItem.ConnectionSide2.Cable - 513
+   PlantItemGroup.ConnectionSide1.Cable - 645_518
+   PlantItemGroup.ConnectionSide2.Cable - 645_513
+   PowerDistributionBoard.ConnectionSide1.Cable - 409_650_576_25_518
+   PowerDistributionBoard.ConnectionSide2.Cable - 409_650_576_25_513
+   PowerDistributionEquip.ConnectionSide1.Cable - 650_576_25_518
+   PowerDistributionEquip.ConnectionSide2.Cable - 650_576_25_513
+   ProtectionRelay.ConnectionSide1.Cable - 407_710_396_650_576_25_518
+   ProtectionRelay.ConnectionSide2.Cable - 407_710_396_650_576_25_513
+   RefCable.CalcRefCable.Cable - 600
+   RefColorPattern.Cable - 653
+   RefGland.GlandSide1.Cable - 730
+   RefGland.GlandSide2.Cable - 731
+   Resistor.ConnectionSide1.Cable - 571_377_576_25_518
+   Resistor.ConnectionSide2.Cable - 571_377_576_25_513
+   Starter.ConnectionSide1.Cable - 408_396_650_576_25_518
+   Starter.ConnectionSide2.Cable - 408_396_650_576_25_513
+   Strip.ConnectionSide1.Cable - 415_575_25_518
+   Strip.ConnectionSide2.Cable - 415_575_25_513
+   Terminal.ConnectionSide1.Cable - 395_575_25_518
+   Terminal.ConnectionSide2.Cable - 395_575_25_513
+   Transformer.ConnectionSide1.Cable - 387_397_576_25_518
+   Transformer.ConnectionSide2.Cable - 387_397_576_25_513
+   TransformerComponent.ConnectionSide1.Cable - 425_426_397_576_25_518
+   TransformerComponent.ConnectionSide2.Cable - 425_426_397_576_25_513
+   Tray.Cable - 516
+   Tray.ConnectionSide1.Cable - 381_575_25_518
+   Tray.ConnectionSide2.Cable - 381_575_25_513
+   UPS.ConnectionSide1.Cable - 389_397_576_25_518
+   UPS.ConnectionSide2.Cable - 389_397_576_25_513
+   VariableFrequencyDrive.ConnectionSide1.Cable - 388_397_576_25_518
+   VariableFrequencyDrive.ConnectionSide2.Cable - 388_397_576_25_513
+   WiringEquipment.ConnectionSide1.Cable - 575_25_518
+   WiringEquipment.ConnectionSide2.Cable - 575_25_513
+
+==========
+
+Item : CableAssembly
+
+Parent :
+
+   CableAssembly.Cable - 776
+
+Child :
+
+   PlantItemGroup.SubClass.CableAssembly - 774
+
+==========
+
+Item : CableDrum
+
+Parent :
+
+   CableDrum.CableSpliceDrum - 765
+
+Child :
+
+   Cable.CableDrum - 764_765
+   MiscellaneousElement.SubClass.CableDrum - 687
+   RefCable.CableDrum - 689
+
+==========
+
+Item : CableRouting
+
+Parent :
+
+   CableRouting.CableRoutingSegmentPartition - 739
+
+Child :
+
+   MiscellaneousElement.SubClass.CableRouting - 741
+
+==========
+
+Item : CableRoutingSegPartition
+
+
+Child :
+
+   CableRouting.CableRoutingSegmentPartition - 739
+   SegmentPartition.CableRoutingSegmentPartition - 740
+
+==========
+
+Item : CableSegmentPartition
+
+
+Child :
+
+   Cable.CableSegmentPartition - 694
+   CableSegment.CableSegmentPartition - 695
+
+==========
+
+Item : CableSet
+
+Parent :
+
+   CableSet.Conductor - 680
+
+Child :
+
+   Cable.CableSet - 678
+   ElectricalConductor.SubClass.CableSet - 676
+
+==========
+
+Item : CableSpliceDrum
+
+
+Child :
+
+   Cable.CableSpliceDrum - 764
+   CableDrum.CableSpliceDrum - 765
+
+==========
+
+Item : CableWay
+
+Parent :
+
+   CableWay.CableWaySegment - 692
+
+Child :
+
+   MiscellaneousElement.SubClass.CableWay - 690
+
+==========
+
+Item : CableWaySegment
+
+Parent :
+
+   CableWaySegment.CableSegment - 693
+
+Child :
+
+   CableWay.CableWaySegment - 692
+   MiscellaneousElement.SubClass.CableWaySegment - 691
+   RefRaceWayComponent.CableWaySegment - 696
+
+==========
+
+Item : Capacitor
+
+Parent :
+
+   Capacitor.Alternate.Circuit - 573_377_576_734
+   Capacitor.AlternatePowerSource.Equipment - 573_377_576_733
+   Capacitor.ConnectionSide1.Cable - 573_377_576_25_518
+   Capacitor.ConnectionSide2.Cable - 573_377_576_25_513
+   Capacitor.Document - 573_377_576_25_496_497
+   Capacitor.Heater - 573_377_576_793
+   Capacitor.Panel - 573_377_670
+   Capacitor.PlantItemJoin1.PlantItem - 573_377_576_25_374_375
+   Capacitor.PlantItemJoin2.PlantItem - 573_377_576_25_375_374
+   Capacitor.PowerSource.Equipment - 573_377_576_654
+   Capacitor.SchematicBlock - 573_377_576_25_597
+   Capacitor.SchematicMacro - 573_377_576_25_614
+   Capacitor.Strip - 573_377_576_763
+
+Child :
+
+   Load.SubClass.Capacitor - 573
+
+==========
+
+Item : Cell
+
+Parent :
+
+   Cell.Alternate.Circuit - 416_650_576_734
+   Cell.AlternatePowerSource.Equipment - 416_650_576_733
+   Cell.ConnectionSide1.Cable - 416_650_576_25_518
+   Cell.ConnectionSide2.Cable - 416_650_576_25_513
+   Cell.Document - 416_650_576_25_496_497
+   Cell.Equipment - 652
+   Cell.Heater - 416_650_576_793
+   Cell.Panel - 416_650_670
+   Cell.PlantItemJoin1.PlantItem - 416_650_576_25_374_375
+   Cell.PlantItemJoin2.PlantItem - 416_650_576_25_375_374
+   Cell.PowerSource.Equipment - 416_650_576_654
+   Cell.SchematicBlock - 416_650_576_25_597
+   Cell.SchematicMacro - 416_650_576_25_614
+   Cell.Strip - 416_650_576_763
+
+Child :
+
+   PDBRow.Cell - 772
+   PDBSection.Cell - 771
+   PowerDistributionEquip.SubClass.Cell - 416
+
+==========
+
+Item : Circuit
+
+Parent :
+
+   AlternateCircuit.Equipment - 734
+   Circuit.Alternate.Circuit - 633_576_734
+   Circuit.AlternatePowerSource.Equipment - 633_576_733
+   Circuit.ConnectionSide1.Cable - 633_576_25_518
+   Circuit.ConnectionSide2.Cable - 633_576_25_513
+   Circuit.ConvertingElectEquip - 602_576_397
+   Circuit.Document - 633_576_25_496_497
+   Circuit.Equipment - 602
+   Circuit.Load - 602_576_377
+   Circuit.Panel - 633_670
+   Circuit.PlantItemJoin1.PlantItem - 633_576_25_374_375
+   Circuit.PlantItemJoin2.PlantItem - 633_576_25_375_374
+   Circuit.PowerSource.Equipment - 633_576_654
+   Circuit.SchematicBlock - 633_576_25_597
+   Circuit.SchematicMacro - 633_576_25_614
+   Circuit.Strip - 633_576_763
+
+Child :
+
+   AuxiliaryContact.Alternate.Circuit - 786_396_650_576_734
+   BatteryBank.Alternate.Circuit - 622_576_734
+   BatteryCharger.Alternate.Circuit - 386_397_576_734
+   Bus.Circuit - 603_576_633
+   Capacitor.Alternate.Circuit - 573_377_576_734
+   Cell.Alternate.Circuit - 416_650_576_734
+   Circuit.Alternate.Circuit - 633_576_734
+   CircuitBreaker.Alternate.Circuit - 414_396_650_576_734
+   Contactor.Alternate.Circuit - 383_396_650_576_734
+   ControlStation.Alternate.Circuit - 403_402_575_734
+   ControlStation.Circuit - 403_508
+   ConvertingElectEquip.Alternate.Circuit - 397_576_734
+   ConvertingEquipComponent.Alternate.Circuit - 426_397_576_734
+   CurrentLimitingReactor.Alternate.Circuit - 759_397_576_734
+   DisconnectElectEquip.Alternate.Circuit - 396_650_576_734
+   DisconnectElectEquip.Circuit - 396_650_576_602
+   DisconnectSwitch.Alternate.Circuit - 406_396_650_576_734
+   ElectricalEquipment.Alternate.Circuit - 576_734
+   ElectricalEquipment.SubClass.Circuit - 633
+   Equipment.Alternate.Circuit - 734
+   Fuse.Alternate.Circuit - 413_396_650_576_734
+   Generator.Alternate.Circuit - 404_576_734
+   HarmonicFilter.Alternate.Circuit - 572_377_576_734
+   Heater.Alternate.Circuit - 570_377_576_734
+   HeatTrace.Alternate.Circuit - 577_377_576_734
+   Junctionbox.Alternate.Circuit - 401_402_575_734
+   Junctionbox.Circuit - 401_508
+   Load.Alternate.Circuit - 377_576_734
+   LocalPanel.Alternate.Circuit - 400_402_575_734
+   LocalPanel.Circuit - 400_508
+   Motor.Alternate.Circuit - 410_377_576_734
+   Motor.Circuit - 410_377_576_602
+   OffSitePower.Alternate.Circuit - 673_576_734
+   OtherConvertingEquipment.Alternate.Circuit - 423_397_576_734
+   OtherDisconnectEquip.Alternate.Circuit - 581_396_650_576_734
+   OtherElectEquipment.Alternate.Circuit - 420_377_576_734
+   OverloadRelay.Alternate.Circuit - 385_396_650_576_734
+   Panel.Alternate.Circuit - 402_575_734
+   Panel.Circuit - 508
+   PowerDistributionBoard.Alternate.Circuit - 409_650_576_734
+   PowerDistributionBoard.Circut - 601_576_633
+   PowerDistributionEquip.Alternate.Circuit - 650_576_734
+   ProtectionRelay.Alternate.Circuit - 407_710_396_650_576_734
+   Resistor.Alternate.Circuit - 571_377_576_734
+   Starter.Alternate.Circuit - 408_396_650_576_734
+   Transformer.Alternate.Circuit - 387_397_576_734
+   TransformerComponent.Alternate.Circuit - 425_426_397_576_734
+   UPS.Alternate.Circuit - 389_397_576_734
+   VariableFrequencyDrive.Alternate.Circuit - 388_397_576_734
+
+==========
+
+Item : CircuitBreaker
+
+Parent :
+
+   CircuitBreaker.Alternate.Circuit - 414_396_650_576_734
+   CircuitBreaker.AlternatePowerSource.Equipment - 414_396_650_576_733
+   CircuitBreaker.AuxiliaryContact - 414_787
+   CircuitBreaker.ConnectionSide1.Cable - 414_396_650_576_25_518
+   CircuitBreaker.ConnectionSide2.Cable - 414_396_650_576_25_513
+   CircuitBreaker.Document - 414_396_650_576_25_496_497
+   CircuitBreaker.Panel - 414_396_650_670
+   CircuitBreaker.PlantItemJoin1.PlantItem - 414_396_650_576_25_374_375
+   CircuitBreaker.PlantItemJoin2.PlantItem - 414_396_650_576_25_375_374
+   CircuitBreaker.PowerSource.Equipment - 414_396_650_576_654
+   CircuitBreaker.SchematicBlock - 414_396_650_576_25_597
+   CircuitBreaker.SchematicMacro - 414_396_650_576_25_614
+   CircuitBreaker.Strip - 414_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.CircuitBreaker - 414
+
+==========
+
+Item : Conductor
+
+Parent :
+
+   Conductor.AlternatePowerSource.Equipment - 651_419_575_733
+   Conductor.ConductorTerminal - 761
+   Conductor.ConnectionSide1.Cable - 651_419_575_25_518
+   Conductor.ConnectionSide2.Cable - 651_419_575_25_513
+   Conductor.Document - 651_419_575_25_496_497
+   Conductor.PlantItemJoin1.PlantItem - 651_419_575_25_374_375
+   Conductor.PlantItemJoin2.PlantItem - 651_419_575_25_375_374
+   Conductor.PowerSource.Equipment - 651_419_575_654
+   Conductor.SchematicBlock - 651_419_575_25_597
+   Conductor.SchematicMacro - 651_419_575_25_614
+   Conductor.Side1.Terminal - -1_762
+   Conductor.Side2.Terminal - -2_762
+   Conductor.Terminal - 761_762
+
+Child :
+
+   Cable.Conductor - 524
+   CableSet.Conductor - 680
+   ElectricalConductor.SubClass.Conductor - 651
+   Terminal.ConnectionSide1.Conductor - 525
+   Terminal.ConnectionSide2.Conductor - 526
+
+==========
+
+Item : ConductorTerminal
+
+
+Child :
+
+   Conductor.ConductorTerminal - 761
+   Terminal.ConductorTerminal - 762
+
+==========
+
+Item : Connector
+
+Parent :
+
+   Connector.Representation - 757
+
+Child :
+
+   ConnectorVertex.Connector - 758
+
+==========
+
+Item : ConnectorVertex
+
+Parent :
+
+   ConnectorVertex.Connector - 758
+
+
+==========
+
+Item : Contactor
+
+Parent :
+
+   Contactor.Alternate.Circuit - 383_396_650_576_734
+   Contactor.AlternatePowerSource.Equipment - 383_396_650_576_733
+   Contactor.AuxiliaryContact - 383_787
+   Contactor.ConnectionSide1.Cable - 383_396_650_576_25_518
+   Contactor.ConnectionSide2.Cable - 383_396_650_576_25_513
+   Contactor.Document - 383_396_650_576_25_496_497
+   Contactor.Panel - 383_396_650_670
+   Contactor.PlantItemJoin1.PlantItem - 383_396_650_576_25_374_375
+   Contactor.PlantItemJoin2.PlantItem - 383_396_650_576_25_375_374
+   Contactor.PowerSource.Equipment - 383_396_650_576_654
+   Contactor.SchematicBlock - 383_396_650_576_25_597
+   Contactor.SchematicMacro - 383_396_650_576_25_614
+   Contactor.Strip - 383_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.Contactor - 383
+
+==========
+
+Item : ControlStation
+
+Parent :
+
+   ControlStation.Alternate.Circuit - 403_402_575_734
+   ControlStation.AlternatePowerSource.Equipment - 403_402_575_733
+   ControlStation.Circuit - 403_508
+   ControlStation.ConnectionSide1.Cable - 403_402_575_25_518
+   ControlStation.ConnectionSide2.Cable - 403_402_575_25_513
+   ControlStation.Document - 403_402_575_25_496_497
+   ControlStation.PlantItemJoin1.PlantItem - 403_402_575_25_374_375
+   ControlStation.PlantItemJoin2.PlantItem - 403_402_575_25_375_374
+   ControlStation.PowerSource.Equipment - 403_402_575_654
+   ControlStation.SchematicBlock - 403_402_575_25_597
+   ControlStation.SchematicMacro - 403_402_575_25_614
+   ControlStation.Strip - 403_402_575_763
+
+Child :
+
+   ElectricalEquipment.Panel.ControlStation - 670_403
+   Panel.SubClass.ControlStation - 403
+
+==========
+
+Item : ConvertingElectEquip
+
+Parent :
+
+   ConvertingElectEquip.Alternate.Circuit - 397_576_734
+   ConvertingElectEquip.AlternatePowerSource.Equipment - 397_576_733
+   ConvertingElectEquip.ConnectionSide1.Cable - 397_576_25_518
+   ConvertingElectEquip.ConnectionSide2.Cable - 397_576_25_513
+   ConvertingElectEquip.ConvertingEquipComponent - 625
+   ConvertingElectEquip.Document - 397_576_25_496_497
+   ConvertingElectEquip.PlantItemJoin1.PlantItem - 397_576_25_374_375
+   ConvertingElectEquip.PlantItemJoin2.PlantItem - 397_576_25_375_374
+   ConvertingElectEquip.PowerSource.Equipment - 397_576_654
+   ConvertingElectEquip.SchematicBlock - 397_576_25_597
+   ConvertingElectEquip.SchematicMacro - 397_576_25_614
+   ConvertingElectEquip.Strip - 397_576_763
+   ConvertingElectEquip.SubClass.BatteryCharger - 386
+   ConvertingElectEquip.SubClass.ConvertingEquipComponent - 426
+   ConvertingElectEquip.SubClass.CurrentLimitingReactor - 759
+   ConvertingElectEquip.SubClass.OtherConvertingEquipment - 423
+   ConvertingElectEquip.SubClass.Transformer - 387
+   ConvertingElectEquip.SubClass.UPS - 389
+   ConvertingElectEquip.SubClass.VariableFrequencyDrive - 388
+
+Child :
+
+   Circuit.ConvertingElectEquip - 602_576_397
+   ElectricalEquipment.SubClass.ConvertingElectEquip - 397
+
+==========
+
+Item : ConvertingEquipComponent
+
+Parent :
+
+   ConvertingEquipComponent.Alternate.Circuit - 426_397_576_734
+   ConvertingEquipComponent.AlternatePowerSource.Equipment - 426_397_576_733
+   ConvertingEquipComponent.ConnectionSide1.Cable - 426_397_576_25_518
+   ConvertingEquipComponent.ConnectionSide2.Cable - 426_397_576_25_513
+   ConvertingEquipComponent.ConvertingEquipComponent - 426_625
+   ConvertingEquipComponent.Document - 426_397_576_25_496_497
+   ConvertingEquipComponent.PlantItemJoin1.PlantItem - 426_397_576_25_374_375
+   ConvertingEquipComponent.PlantItemJoin2.PlantItem - 426_397_576_25_375_374
+   ConvertingEquipComponent.PowerSource.Equipment - 426_397_576_654
+   ConvertingEquipComponent.SchematicBlock - 426_397_576_25_597
+   ConvertingEquipComponent.SchematicMacro - 426_397_576_25_614
+   ConvertingEquipComponent.Strip - 426_397_576_763
+   ConvertingEquipComponent.SubClass.TransformerComponent - 425
+
+Child :
+
+   BatteryCharger.ConvertingEquipComponent - 386_625
+   ConvertingElectEquip.ConvertingEquipComponent - 625
+   ConvertingElectEquip.SubClass.ConvertingEquipComponent - 426
+   ConvertingEquipComponent.ConvertingEquipComponent - 426_625
+   CurrentLimitingReactor.ConvertingEquipComponent - 759_625
+   OtherConvertingEquipment.ConvertingEquipComponent - 423_625
+   Transformer.ConvertingEquipComponent - 387_625
+   TransformerComponent.ConvertingEquipComponent - 425_426_625
+   UPS.ConvertingEquipComponent - 389_625
+   VariableFrequencyDrive.ConvertingEquipComponent - 388_625
+
+==========
+
+Item : CurrentLimitingReactor
+
+Parent :
+
+   CurrentLimitingReactor.Alternate.Circuit - 759_397_576_734
+   CurrentLimitingReactor.AlternatePowerSource.Equipment - 759_397_576_733
+   CurrentLimitingReactor.ConnectionSide1.Cable - 759_397_576_25_518
+   CurrentLimitingReactor.ConnectionSide2.Cable - 759_397_576_25_513
+   CurrentLimitingReactor.ConvertingEquipComponent - 759_625
+   CurrentLimitingReactor.Document - 759_397_576_25_496_497
+   CurrentLimitingReactor.Heater - 759_397_576_793
+   CurrentLimitingReactor.Panel - 759_397_670
+   CurrentLimitingReactor.PlantItemJoin1.PlantItem - 759_397_576_25_374_375
+   CurrentLimitingReactor.PlantItemJoin2.PlantItem - 759_397_576_25_375_374
+   CurrentLimitingReactor.PowerSource.Equipment - 759_397_576_654
+   CurrentLimitingReactor.Strip - 759_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.CurrentLimitingReactor - 759
+
+==========
+
+Item : CurrentTransformer
+
+
+Child :
+
+   MeteringEquipment.SubClass.CurrentTransformer - 708
+
+==========
+
+Item : DisconnectElectEquip
+
+Parent :
+
+   DisconnectElectEquip.Alternate.Circuit - 396_650_576_734
+   DisconnectElectEquip.AlternatePowerSource.Equipment - 396_650_576_733
+   DisconnectElectEquip.AuxiliaryContact - 787
+   DisconnectElectEquip.Circuit - 396_650_576_602
+   DisconnectElectEquip.ConnectionSide1.Cable - 396_650_576_25_518
+   DisconnectElectEquip.ConnectionSide2.Cable - 396_650_576_25_513
+   DisconnectElectEquip.Document - 396_650_576_25_496_497
+   DisconnectElectEquip.EquipmentDisconnectElectEquip - 728
+   DisconnectElectEquip.PlantItemJoin1.PlantItem - 396_650_576_25_374_375
+   DisconnectElectEquip.PlantItemJoin2.PlantItem - 396_650_576_25_375_374
+   DisconnectElectEquip.PowerSource.Equipment - 396_650_576_654
+   DisconnectElectEquip.SchematicBlock - 396_650_576_25_597
+   DisconnectElectEquip.SchematicMacro - 396_650_576_25_614
+   DisconnectElectEquip.Strip - 396_650_576_763
+   DisconnectElectEquip.SubClass.AuxiliaryContact - 786
+   DisconnectElectEquip.SubClass.CircuitBreaker - 414
+   DisconnectElectEquip.SubClass.Contactor - 383
+   DisconnectElectEquip.SubClass.DisconnectSwitch - 406
+   DisconnectElectEquip.SubClass.Fuse - 413
+   DisconnectElectEquip.SubClass.MeteringEquipment - 710
+   DisconnectElectEquip.SubClass.OtherDisconnectEquip - 581
+   DisconnectElectEquip.SubClass.OverloadRelay - 385
+   DisconnectElectEquip.SubClass.Starter - 408
+
+Child :
+
+   Equipment.DisconnectElectEquip - 726
+   PowerDistributionEquip.SubClass.DisconnectElectEquip - 396
+
+==========
+
+Item : DisconnectSwitch
+
+Parent :
+
+   DisconnectSwitch.Alternate.Circuit - 406_396_650_576_734
+   DisconnectSwitch.AlternatePowerSource.Equipment - 406_396_650_576_733
+   DisconnectSwitch.AuxiliaryContact - 406_787
+   DisconnectSwitch.ConnectionSide1.Cable - 406_396_650_576_25_518
+   DisconnectSwitch.ConnectionSide2.Cable - 406_396_650_576_25_513
+   DisconnectSwitch.Document - 406_396_650_576_25_496_497
+   DisconnectSwitch.Panel - 406_396_650_670
+   DisconnectSwitch.PlantItemJoin1.PlantItem - 406_396_650_576_25_374_375
+   DisconnectSwitch.PlantItemJoin2.PlantItem - 406_396_650_576_25_375_374
+   DisconnectSwitch.PowerSource.Equipment - 406_396_650_576_654
+   DisconnectSwitch.SchematicBlock - 406_396_650_576_25_597
+   DisconnectSwitch.SchematicMacro - 406_396_650_576_25_614
+   DisconnectSwitch.Strip - 406_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.DisconnectSwitch - 406
+
+==========
+
+Item : Document
+
+Parent :
+
+   Document.PlantItem - 497_496
+   Document.PlantItemDocJoin - 497
+   Document.Revision - 619
+   Document.SubClass.CBDDrawing - 751
+   Document.SubClass.Drawing - 567
+   Document.SubClass.ExternalDocument - 580
+   Document.SubClass.PDBLayoutDrawing - 623
+   Document.SubClass.SchematicDrawing - 579
+   Document.SubClass.SLDDrawing - 578
+   Document.SubClass.SystemReport - 672
+   Document.SubClass.WiringDrawing - 752
+
+Child :
+
+   AuxiliaryContact.Document - 786_396_650_576_25_496_497
+   BatteryBank.Document - 622_576_25_496_497
+   BatteryCharger.Document - 386_397_576_25_496_497
+   Bus.Document - 411_419_575_25_496_497
+   Cable.Document - 412_419_575_25_496_497
+   Capacitor.Document - 573_377_576_25_496_497
+   Cell.Document - 416_650_576_25_496_497
+   Circuit.Document - 633_576_25_496_497
+   CircuitBreaker.Document - 414_396_650_576_25_496_497
+   Conductor.Document - 651_419_575_25_496_497
+   Contactor.Document - 383_396_650_576_25_496_497
+   ControlStation.Document - 403_402_575_25_496_497
+   ConvertingElectEquip.Document - 397_576_25_496_497
+   ConvertingEquipComponent.Document - 426_397_576_25_496_497
+   CurrentLimitingReactor.Document - 759_397_576_25_496_497
+   DisconnectElectEquip.Document - 396_650_576_25_496_497
+   DisconnectSwitch.Document - 406_396_650_576_25_496_497
+   Document.FocalEquipment - 779
+   ElectricalConductor.Document - 419_575_25_496_497
+   ElectricalEquipment.Document - 576_25_496_497
+   Equipment.Document - 25_496_497
+   Fuse.Document - 413_396_650_576_25_496_497
+   Generator.Document - 404_576_25_496_497
+   HarmonicFilter.Document - 572_377_576_25_496_497
+   Heater.Document - 570_377_576_25_496_497
+   HeatTrace.Document - 577_377_576_25_496_497
+   Junctionbox.Document - 401_402_575_25_496_497
+   Load.Document - 377_576_25_496_497
+   LocalPanel.Document - 400_402_575_25_496_497
+   Motor.Document - 410_377_576_25_496_497
+   OffSitePower.Document - 673_576_25_496_497
+   OtherConvertingEquipment.Document - 423_397_576_25_496_497
+   OtherDisconnectEquip.Document - 581_396_650_576_25_496_497
+   OtherElectEquipment.Document - 420_377_576_25_496_497
+   OverloadRelay.Document - 385_396_650_576_25_496_497
+   Panel.Document - 402_575_25_496_497
+   PlantItem.Document - 496_497
+   PlantItemGroup.Document - 645_496_497
+   PowerDistributionBoard.Document - 409_650_576_25_496_497
+   PowerDistributionEquip.Document - 650_576_25_496_497
+   ProtectionRelay.Document - 407_710_396_650_576_25_496_497
+   Representation.Document - 753
+   Resistor.Document - 571_377_576_25_496_497
+   Starter.Document - 408_396_650_576_25_496_497
+   Strip.Document - 415_575_25_496_497
+   Terminal.Document - 395_575_25_496_497
+   Transformer.Document - 387_397_576_25_496_497
+   TransformerComponent.Document - 425_426_397_576_25_496_497
+   Tray.Document - 381_575_25_496_497
+   UPS.Document - 389_397_576_25_496_497
+   VariableFrequencyDrive.Document - 388_397_576_25_496_497
+   WiringEquipment.Document - 575_25_496_497
+
+==========
+
+Item : Drawing
+
+Parent :
+
+   Drawing.PlantItem - 567_497_496
+   Drawing.Revision - 567_619
+   Drawing.Status - 180
+
+Child :
+
+   Document.SubClass.Drawing - 567
+
+==========
+
+Item : DrawingComponent
+
+Parent :
+
+   Representation.SubClass.SchematicBlock - 643
+   Representation.SubClass.SchematicMacro - 646
+   Representation.SubClass.SLDLabel - 644
+
+
+==========
+
+Item : ElectricalConductor
+
+Parent :
+
+   ElectricalConductor.AlternatePowerSource.Equipment - 419_575_733
+   ElectricalConductor.ConnectionSide1.Cable - 419_575_25_518
+   ElectricalConductor.ConnectionSide2.Cable - 419_575_25_513
+   ElectricalConductor.Document - 419_575_25_496_497
+   ElectricalConductor.PlantItemJoin1.PlantItem - 419_575_25_374_375
+   ElectricalConductor.PlantItemJoin2.PlantItem - 419_575_25_375_374
+   ElectricalConductor.PowerSource.Equipment - 419_575_654
+   ElectricalConductor.SchematicBlock - 419_575_25_597
+   ElectricalConductor.SchematicMacro - 419_575_25_614
+   ElectricalConductor.SubClass.Bus - 411
+   ElectricalConductor.SubClass.BusWay - 703
+   ElectricalConductor.SubClass.Cable - 412
+   ElectricalConductor.SubClass.CableSet - 676
+   ElectricalConductor.SubClass.Conductor - 651
+
+Child :
+
+   WiringEquipment.SubClass.ElectricalConductor - 419
+
+==========
+
+Item : ElectricalEquipment
+
+Parent :
+
+   ElectricalEquipment.Alternate.Circuit - 576_734
+   ElectricalEquipment.AlternatePowerSource.Equipment - 576_733
+   ElectricalEquipment.ConnectionSide1.Cable - 576_25_518
+   ElectricalEquipment.ConnectionSide2.Cable - 576_25_513
+   ElectricalEquipment.Document - 576_25_496_497
+   ElectricalEquipment.Panel - 670
+   ElectricalEquipment.Panel.ControlStation - 670_403
+   ElectricalEquipment.Panel.JunctionBox - 670_401
+   ElectricalEquipment.Panel.LocalPanel - 670_400
+   ElectricalEquipment.PlantItemJoin1.PlantItem - 576_25_374_375
+   ElectricalEquipment.PlantItemJoin2.PlantItem - 576_25_375_374
+   ElectricalEquipment.PowerSource.Equipment - 576_654
+   ElectricalEquipment.SchematicBlock - 576_25_597
+   ElectricalEquipment.SchematicMacro - 576_25_614
+   ElectricalEquipment.Strip - 576_763
+   ElectricalEquipment.SubClass.BatteryBank - 622
+   ElectricalEquipment.SubClass.Circuit - 633
+   ElectricalEquipment.SubClass.ConvertingElectEquip - 397
+   ElectricalEquipment.SubClass.Generator - 404
+   ElectricalEquipment.SubClass.Load - 377
+   ElectricalEquipment.SubClass.OffSitePower - 673
+   ElectricalEquipment.SubClass.PowerDistributionEquip - 650
+
+Child :
+
+   Equipment.SubClass.ElectricalEquipment - 576
+   ProcessEquipment.ElectricalEquipment - 747
+   RefCircuit.ElectricalEquipment - 531
+   RefControlStation.ElectricalEquipment - 705
+   RefProfile.ElectricalEquipment - 635
+   Rsistor.ElectricalEquipment - 702
+
+==========
+
+Item : EquipDisconnectElectEquip
+
+
+Child :
+
+   DisconnectElectEquip.EquipmentDisconnectElectEquip - 728
+   Equipment.EquipmentDisconnectElectEquip - 727
+
+==========
+
+Item : Equipment
+
+Parent :
+
+   Document.FocalEquipment - 779
+   Equipment.Alternate.Circuit - 734
+   Equipment.AlternatePowerSource.Equipment - 733
+   Equipment.ConnectionSide1.Cable - 25_518
+   Equipment.ConnectionSide2.Cable - 25_513
+   Equipment.DisconnectElectEquip - 726
+   Equipment.Document - 25_496_497
+   Equipment.EquipmentDisconnectElectEquip - 727
+   Equipment.Instrument - 682
+   Equipment.PlantItemJoin1.PlantItem - 25_374_375
+   Equipment.PlantItemJoin2.PlantItem - 25_375_374
+   Equipment.PowerSource.Equipment - 654
+   Equipment.PowerSource.Load - 654_576_377
+   Equipment.PowerSource.Load.Insturments - 654_671
+   Equipment.PowerSource.Load.Motor - 654_576_377_410
+   Equipment.SchematicBlock - 25_597
+   Equipment.SchematicMacro - 25_614
+   Equipment.SignalRun - 657
+   Equipment.Strip - 763
+   Equipment.SubClass.ElectricalEquipment - 576
+   Equipment.SubClass.Instrument - 671
+   Equipment.SubClass.MiscellaneousElement - 686
+   Equipment.SubClass.ProcessEquipment - 746
+   Equipment.SubClass.WiringEquipment - 575
+   RefSignalGroup.Equipment - 669
+
+Child :
+
+   AlternateCircuit.Equipment - 734
+   AuxiliaryContact.AlternatePowerSource.Equipment - 786_396_650_576_733
+   AuxiliaryContact.PowerSource.Equipment - 786_396_650_576_654
+   BatteryBank.AlternatePowerSource.Equipment - 622_576_733
+   BatteryBank.PowerSource.Equipment - 622_576_654
+   BatteryCharger.AlternatePowerSource.Equipment - 386_397_576_733
+   BatteryCharger.PowerSource.Equipment - 386_397_576_654
+   Bus.AlternatePowerSource.Equipment - 411_419_575_733
+   Bus.Equipment - 603
+   Bus.PowerSource.Equipment - 411_419_575_654
+   Cable.AlternatePowerSource.Equipment - 412_419_575_733
+   Cable.PowerSource.Equipment - 412_419_575_654
+   Capacitor.AlternatePowerSource.Equipment - 573_377_576_733
+   Capacitor.PowerSource.Equipment - 573_377_576_654
+   Cell.AlternatePowerSource.Equipment - 416_650_576_733
+   Cell.Equipment - 652
+   Cell.PowerSource.Equipment - 416_650_576_654
+   Circuit.AlternatePowerSource.Equipment - 633_576_733
+   Circuit.Equipment - 602
+   Circuit.PowerSource.Equipment - 633_576_654
+   CircuitBreaker.AlternatePowerSource.Equipment - 414_396_650_576_733
+   CircuitBreaker.PowerSource.Equipment - 414_396_650_576_654
+   Conductor.AlternatePowerSource.Equipment - 651_419_575_733
+   Conductor.PowerSource.Equipment - 651_419_575_654
+   Contactor.AlternatePowerSource.Equipment - 383_396_650_576_733
+   Contactor.PowerSource.Equipment - 383_396_650_576_654
+   ControlStation.AlternatePowerSource.Equipment - 403_402_575_733
+   ControlStation.PowerSource.Equipment - 403_402_575_654
+   ConvertingElectEquip.AlternatePowerSource.Equipment - 397_576_733
+   ConvertingElectEquip.PowerSource.Equipment - 397_576_654
+   ConvertingEquipComponent.AlternatePowerSource.Equipment - 426_397_576_733
+   ConvertingEquipComponent.PowerSource.Equipment - 426_397_576_654
+   CurrentLimitingReactor.AlternatePowerSource.Equipment - 759_397_576_733
+   CurrentLimitingReactor.PowerSource.Equipment - 759_397_576_654
+   DisconnectElectEquip.AlternatePowerSource.Equipment - 396_650_576_733
+   DisconnectElectEquip.PowerSource.Equipment - 396_650_576_654
+   DisconnectSwitch.AlternatePowerSource.Equipment - 406_396_650_576_733
+   DisconnectSwitch.PowerSource.Equipment - 406_396_650_576_654
+   ElectricalConductor.AlternatePowerSource.Equipment - 419_575_733
+   ElectricalConductor.PowerSource.Equipment - 419_575_654
+   ElectricalEquipment.AlternatePowerSource.Equipment - 576_733
+   ElectricalEquipment.PowerSource.Equipment - 576_654
+   Equipment.AlternatePowerSource.Equipment - 733
+   Equipment.PowerSource.Equipment - 654
+   Fuse.AlternatePowerSource.Equipment - 413_396_650_576_733
+   Fuse.PowerSource.Equipment - 413_396_650_576_654
+   Generator.AlternatePowerSource.Equipment - 404_576_733
+   Generator.PowerSource.Equipment - 404_576_654
+   HarmonicFilter.AlternatePowerSource.Equipment - 572_377_576_733
+   HarmonicFilter.PowerSource.Equipment - 572_377_576_654
+   Heater.AlternatePowerSource.Equipment - 570_377_576_733
+   Heater.PowerSource.Equipment - 570_377_576_654
+   HeatTrace.AlternatePowerSource.Equipment - 577_377_576_733
+   HeatTrace.PowerSource.Equipment - 577_377_576_654
+   Junctionbox.AlternatePowerSource.Equipment - 401_402_575_733
+   Junctionbox.PowerSource.Equipment - 401_402_575_654
+   Load.AlternatePowerSource.Equipment - 377_576_733
+   Load.PowerSource.Equipment - 377_576_654
+   LocalPanel.AlternatePowerSource.Equipment - 400_402_575_733
+   LocalPanel.PowerSource.Equipment - 400_402_575_654
+   Motor.AlternatePowerSource.Equipment - 410_377_576_733
+   Motor.PowerSource.Equipment - 410_377_576_654
+   OffSitePower.AlternatePowerSource.Equipment - 673_576_733
+   OffSitePower.PowerSource.Equipment - 673_576_654
+   OtherConvertingEquipment.AlternatePowerSource.Equipment - 423_397_576_733
+   OtherConvertingEquipment.PowerSource.Equipment - 423_397_576_654
+   OtherDisconnectEquip.AlternatePowerSource.Equipment - 581_396_650_576_733
+   OtherDisconnectEquip.PowerSource.Equipment - 581_396_650_576_654
+   OtherElectEquipment.AlternatePowerSource.Equipment - 420_377_576_733
+   OtherElectEquipment.PowerSource.Equipment - 420_377_576_654
+   OverloadRelay.AlternatePowerSource.Equipment - 385_396_650_576_733
+   OverloadRelay.PowerSource.Equipment - 385_396_650_576_654
+   Panel.AlternatePowerSource.Equipment - 402_575_733
+   Panel.PowerSource.Equipment - 402_575_654
+   PlantItem.SubClass.Equipment - 25
+   PowerDistributionBoard.AlternatePowerSource.Equipment - 409_650_576_733
+   PowerDistributionBoard.Equipment - 601
+   PowerDistributionBoard.PowerSource.Equipment - 409_650_576_654
+   PowerDistributionEquip.AlternatePowerSource.Equipment - 650_576_733
+   PowerDistributionEquip.PowerSource.Equipment - 650_576_654
+   ProtectionRelay.AlternatePowerSource.Equipment - 407_710_396_650_576_733
+   ProtectionRelay.PowerSource.Equipment - 407_710_396_650_576_654
+   RefAuxiliaryContact.Equipment - 789_470_435_588_604
+   RefBatteryBank.Equipment - 624_588_604
+   RefBatteryCharger.Equipment - 443_452_588_604
+   RefBus.Equipment - 465_431_582_604
+   RefCable.Equipment - 429_431_582_604
+   RefCapacitor.Equipment - 586_434_588_604
+   RefCell.Equipment - 469_435_588_604
+   RefCircuit.Equipment - 634_588_604
+   RefCircuitBreaker.Equipment - 467_470_435_588_604
+   RefConductor.Equipment - 430_431_582_604
+   RefContactor.Equipment - 440_470_435_588_604
+   RefControlStation.Equipment - 457_456_582_604
+   RefConvertingElectEquip.Equipment - 452_588_604
+   RefConvertingEquipCompt.Equipment - 590_452_588_604
+   RefCurrentLimitingReactor.Equipment - 760_452_588_604
+   RefDisconnectElectEquip.Equipment - 470_435_588_604
+   RefDisconnectSwitch.Equipment - 460_470_435_588_604
+   RefElectricalConductor.Equipment - 431_582_604
+   RefElectricalEquipment.Equipment - 588_604
+   RefEquipment.Equipment - 604
+   RefFuse.Equipment - 466_470_435_588_604
+   RefGenerator.Equipment - 458_588_604
+   RefHarmonicFilter.Equipment - 585_434_588_604
+   RefHeater.Equipment - 583_434_588_604
+   RefHeatTrace.Equipment - 589_434_588_604
+   RefJunctionbox.Equipment - 455_456_582_604
+   RefLoad.Equipment - 434_588_604
+   RefLocalPanel.Equipment - 454_456_582_604
+   RefLookUpTable.Equipment - 732
+   RefMotor.Equipment - 464_434_588_604
+   RefOffSitePower.Equipment - 674_588_604
+   RefOtherConvertingEquip.Equipment - 473_452_588_604
+   RefOtherDisconnectEquip.Equipment - 592_470_435_588_604
+   RefOtherElectEquipment.Equipment - 483_434_588_604
+   RefOverloadRelay.Equipment - 442_470_435_588_604
+   RefPanel.Equipment - 456_582_604
+   RefPowerDistributionBoard.Equipment - 463_435_588_604
+   RefPowerDistributionEquip.Equipment - 435_588_604
+   RefProtectionRelay.Equipment - 461_716_470_435_588_604
+   RefResistor.Equipment - 584_434_588_604
+   RefStarter.Equipment - 462_470_435_588_604
+   RefStrip.Equipment - 468_582_604
+   RefTerminal.Equipment - 451_582_604
+   RefTransformer.Equipment - 444_452_588_604
+   RefTransformerComponent.Equipment - 591_590_452_588_604
+   RefTypicalSchematic.Equipment - 605
+   RefUPS.Equipment - 446_452_588_604
+   RefVariableFrequencyDrive.Equipment - 445_452_588_604
+   RefWiringEquipment.Equipment - 582_604
+   Resistor.AlternatePowerSource.Equipment - 571_377_576_733
+   Resistor.PowerSource.Equipment - 571_377_576_654
+   Starter.AlternatePowerSource.Equipment - 408_396_650_576_733
+   Starter.PowerSource.Equipment - 408_396_650_576_654
+   Strip.AlternatePowerSource.Equipment - 415_575_733
+   Strip.PowerSource.Equipment - 415_575_654
+   Terminal.AlternatePowerSource.Equipment - 395_575_733
+   Terminal.PowerSource.Equipment - 395_575_654
+   Transformer.AlternatePowerSource.Equipment - 387_397_576_733
+   Transformer.PowerSource.Equipment - 387_397_576_654
+   TransformerComponent.AlternatePowerSource.Equipment - 425_426_397_576_733
+   TransformerComponent.PowerSource.Equipment - 425_426_397_576_654
+   Tray.AlternatePowerSource.Equipment - 381_575_733
+   Tray.PowerSource.Equipment - 381_575_654
+   UPS.AlternatePowerSource.Equipment - 389_397_576_733
+   UPS.PowerSource.Equipment - 389_397_576_654
+   VariableFrequencyDrive.AlternatePowerSource.Equipment - 388_397_576_733
+   VariableFrequencyDrive.PowerSource.Equipment - 388_397_576_654
+   WiringEquipment.AlternatePowerSource.Equipment - 575_733
+   WiringEquipment.PowerSource.Equipment - 575_654
+
+==========
+
+Item : ExternalDocument
+
+Parent :
+
+   ExternalDocument.PlantItem - 580_497_496
+   ExternalDocument.Revision - 580_619
+
+Child :
+
+   Document.SubClass.ExternalDocument - 580
+
+==========
+
+Item : Fuse
+
+Parent :
+
+   Fuse.Alternate.Circuit - 413_396_650_576_734
+   Fuse.AlternatePowerSource.Equipment - 413_396_650_576_733
+   Fuse.AuxiliaryContact - 413_787
+   Fuse.ConnectionSide1.Cable - 413_396_650_576_25_518
+   Fuse.ConnectionSide2.Cable - 413_396_650_576_25_513
+   Fuse.Document - 413_396_650_576_25_496_497
+   Fuse.Panel - 413_396_650_670
+   Fuse.PlantItemJoin1.PlantItem - 413_396_650_576_25_374_375
+   Fuse.PlantItemJoin2.PlantItem - 413_396_650_576_25_375_374
+   Fuse.PowerSource.Equipment - 413_396_650_576_654
+   Fuse.SchematicBlock - 413_396_650_576_25_597
+   Fuse.SchematicMacro - 413_396_650_576_25_614
+   Fuse.Strip - 413_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.Fuse - 413
+
+==========
+
+Item : Generator
+
+Parent :
+
+   Generator.Alternate.Circuit - 404_576_734
+   Generator.AlternatePowerSource.Equipment - 404_576_733
+   Generator.ConnectionSide1.Cable - 404_576_25_518
+   Generator.ConnectionSide2.Cable - 404_576_25_513
+   Generator.Document - 404_576_25_496_497
+   Generator.Heater - 404_576_793
+   Generator.Panel - 404_670
+   Generator.PlantItemJoin1.PlantItem - 404_576_25_374_375
+   Generator.PlantItemJoin2.PlantItem - 404_576_25_375_374
+   Generator.PowerSource.Equipment - 404_576_654
+   Generator.SchematicBlock - 404_576_25_597
+   Generator.SchematicMacro - 404_576_25_614
+   Generator.Strip - 404_576_763
+
+Child :
+
+   ElectricalEquipment.SubClass.Generator - 404
+
+==========
+
+Item : Group
+
+
+Child :
+
+   Representation.SubClass.Group - 792
+
+==========
+
+Item : HarmonicFilter
+
+Parent :
+
+   HarmonicFilter.Alternate.Circuit - 572_377_576_734
+   HarmonicFilter.AlternatePowerSource.Equipment - 572_377_576_733
+   HarmonicFilter.ConnectionSide1.Cable - 572_377_576_25_518
+   HarmonicFilter.ConnectionSide2.Cable - 572_377_576_25_513
+   HarmonicFilter.Document - 572_377_576_25_496_497
+   HarmonicFilter.Heater - 572_377_576_793
+   HarmonicFilter.Panel - 572_377_670
+   HarmonicFilter.PlantItemJoin1.PlantItem - 572_377_576_25_374_375
+   HarmonicFilter.PlantItemJoin2.PlantItem - 572_377_576_25_375_374
+   HarmonicFilter.PowerSource.Equipment - 572_377_576_654
+   HarmonicFilter.SchematicBlock - 572_377_576_25_597
+   HarmonicFilter.SchematicMacro - 572_377_576_25_614
+   HarmonicFilter.Strip - 572_377_576_763
+
+Child :
+
+   Load.SubClass.HarmonicFilter - 572
+
+==========
+
+Item : HeatTrace
+
+Parent :
+
+   HeatTrace.Alternate.Circuit - 577_377_576_734
+   HeatTrace.AlternatePowerSource.Equipment - 577_377_576_733
+   HeatTrace.ConnectionSide1.Cable - 577_377_576_25_518
+   HeatTrace.ConnectionSide2.Cable - 577_377_576_25_513
+   HeatTrace.Document - 577_377_576_25_496_497
+   HeatTrace.Panel - 577_377_670
+   HeatTrace.PlantItemJoin1.PlantItem - 577_377_576_25_374_375
+   HeatTrace.PlantItemJoin2.PlantItem - 577_377_576_25_375_374
+   HeatTrace.PowerSource.Equipment - 577_377_576_654
+   HeatTrace.SchematicBlock - 577_377_576_25_597
+   HeatTrace.SchematicMacro - 577_377_576_25_614
+   HeatTrace.Strip - 577_377_576_763
+
+Child :
+
+   Load.SubClass.HeatTrace - 577
+
+==========
+
+Item : Heater
+
+Parent :
+
+   Heater.Alternate.Circuit - 570_377_576_734
+   Heater.AlternatePowerSource.Equipment - 570_377_576_733
+   Heater.ConnectionSide1.Cable - 570_377_576_25_518
+   Heater.ConnectionSide2.Cable - 570_377_576_25_513
+   Heater.Document - 570_377_576_25_496_497
+   Heater.Heater - 570_377_576_793
+   Heater.Panel - 570_377_670
+   Heater.PlantItemJoin1.PlantItem - 570_377_576_25_374_375
+   Heater.PlantItemJoin2.PlantItem - 570_377_576_25_375_374
+   Heater.PowerSource.Equipment - 570_377_576_654
+   Heater.SchematicBlock - 570_377_576_25_597
+   Heater.SchematicMacro - 570_377_576_25_614
+   Heater.Strip - 570_377_576_763
+
+Child :
+
+   BatteryBank.Heater - 622_576_793
+   BatteryCharger.Heater - 386_397_576_793
+   Cabinet.Heater - 683_402_575_793
+   Capacitor.Heater - 573_377_576_793
+   Cell.Heater - 416_650_576_793
+   CurrentLimitingReactor.Heater - 759_397_576_793
+   Generator.Heater - 404_576_793
+   HarmonicFilter.Heater - 572_377_576_793
+   Heater.Heater - 570_377_576_793
+   Instrument.Heater - 671_793
+   Junctionbox.Heater - 401_402_575_793
+   Load.SubClass.Heater - 570
+   LocalPanel.Heater - 400_402_575_793
+   Motor.Heater - 410_377_576_793
+   OtherConvertingEquipment.Heater - 423_397_576_793
+   PowerDistributionBoard.Heater - 409_650_576_793
+   Transformer.Heater - 387_397_576_793
+   UPS.Heater - 389_397_576_793
+   VariableFrequencyDrive.Heater - 388_397_576_793
+
+==========
+
+Item : Instrument
+
+Parent :
+
+   Instrument.Heater - 671_793
+   Instrument.Strip - 671_763
+
+Child :
+
+   Equipment.Instrument - 682
+   Equipment.PowerSource.Load.Insturments - 654_671
+   Equipment.SubClass.Instrument - 671
+
+==========
+
+Item : Junctionbox
+
+Parent :
+
+   Junctionbox.Alternate.Circuit - 401_402_575_734
+   Junctionbox.AlternatePowerSource.Equipment - 401_402_575_733
+   Junctionbox.Circuit - 401_508
+   Junctionbox.ConnectionSide1.Cable - 401_402_575_25_518
+   Junctionbox.ConnectionSide2.Cable - 401_402_575_25_513
+   Junctionbox.Document - 401_402_575_25_496_497
+   Junctionbox.Heater - 401_402_575_793
+   Junctionbox.PlantItemJoin1.PlantItem - 401_402_575_25_374_375
+   Junctionbox.PlantItemJoin2.PlantItem - 401_402_575_25_375_374
+   Junctionbox.PowerSource.Equipment - 401_402_575_654
+   Junctionbox.SchematicBlock - 401_402_575_25_597
+   Junctionbox.SchematicMacro - 401_402_575_25_614
+   Junctionbox.Strip - 401_402_575_763
+
+Child :
+
+   ElectricalEquipment.Panel.JunctionBox - 670_401
+   Panel.SubClass.Junctionbox - 401
+
+==========
+
+Item : LabelPersist
+
+
+Child :
+
+   Representation.LabelPersist - 768
+   Representation.SubClass.LabelPersist - 767
+
+==========
+
+Item : LabelProperty
+
+
+Child :
+
+   SmartText.LabelProperty - 795
+
+==========
+
+Item : Load
+
+Parent :
+
+   Load.Alternate.Circuit - 377_576_734
+   Load.AlternatePowerSource.Equipment - 377_576_733
+   Load.ConnectionSide1.Cable - 377_576_25_518
+   Load.ConnectionSide2.Cable - 377_576_25_513
+   Load.Document - 377_576_25_496_497
+   Load.PlantItemJoin1.PlantItem - 377_576_25_374_375
+   Load.PlantItemJoin2.PlantItem - 377_576_25_375_374
+   Load.PowerSource.Equipment - 377_576_654
+   Load.SchematicBlock - 377_576_25_597
+   Load.SchematicMacro - 377_576_25_614
+   Load.Strip - 377_576_763
+   Load.SubClass.Capacitor - 573
+   Load.SubClass.HarmonicFilter - 572
+   Load.SubClass.Heater - 570
+   Load.SubClass.HeatTrace - 577
+   Load.SubClass.Motor - 410
+   Load.SubClass.OtherElectEquipment - 420
+   Load.SubClass.Resistor - 571
+
+Child :
+
+   Bus.Load - 603_576_377
+   Circuit.Load - 602_576_377
+   ElectricalEquipment.SubClass.Load - 377
+   Equipment.PowerSource.Load - 654_576_377
+
+==========
+
+Item : LocalPanel
+
+Parent :
+
+   LocalPanel.Alternate.Circuit - 400_402_575_734
+   LocalPanel.AlternatePowerSource.Equipment - 400_402_575_733
+   LocalPanel.Circuit - 400_508
+   LocalPanel.ConnectionSide1.Cable - 400_402_575_25_518
+   LocalPanel.ConnectionSide2.Cable - 400_402_575_25_513
+   LocalPanel.Document - 400_402_575_25_496_497
+   LocalPanel.Heater - 400_402_575_793
+   LocalPanel.PlantItemJoin1.PlantItem - 400_402_575_25_374_375
+   LocalPanel.PlantItemJoin2.PlantItem - 400_402_575_25_375_374
+   LocalPanel.PowerSource.Equipment - 400_402_575_654
+   LocalPanel.SchematicBlock - 400_402_575_25_597
+   LocalPanel.SchematicMacro - 400_402_575_25_614
+   LocalPanel.Strip - 400_402_575_763
+
+Child :
+
+   ElectricalEquipment.Panel.LocalPanel - 670_400
+   Panel.SubClass.LocalPanel - 400
+
+==========
+
+Item : MeteringEquipment
+
+Parent :
+
+   MeteringEquipment.SubClass.Ammeter - 712
+   MeteringEquipment.SubClass.CurrentTransformer - 708
+   MeteringEquipment.SubClass.Multimeter - 713
+   MeteringEquipment.SubClass.PotentialTransformer - 709
+   MeteringEquipment.SubClass.ProtectionRelay - 407
+   MeteringEquipment.SubClass.Voltmeter - 711
+
+Child :
+
+   DisconnectElectEquip.SubClass.MeteringEquipment - 710
+
+==========
+
+Item : MiscellaneousElement
+
+Parent :
+
+   MiscellaneousElement.SubClass.CableDrum - 687
+   MiscellaneousElement.SubClass.CableRouting - 741
+   MiscellaneousElement.SubClass.CableWay - 690
+   MiscellaneousElement.SubClass.CableWaySegment - 691
+
+Child :
+
+   Equipment.SubClass.MiscellaneousElement - 686
+
+==========
+
+Item : ModelItem
+
+Parent :
+
+   ModelItem.SubClass.PlantItem - 42
+
+
+==========
+
+Item : Motor
+
+Parent :
+
+   Motor.Alternate.Circuit - 410_377_576_734
+   Motor.AlternatePowerSource.Equipment - 410_377_576_733
+   Motor.Circuit - 410_377_576_602
+   Motor.ConnectionSide1.Cable - 410_377_576_25_518
+   Motor.ConnectionSide2.Cable - 410_377_576_25_513
+   Motor.Document - 410_377_576_25_496_497
+   Motor.Heater - 410_377_576_793
+   Motor.Panel - 410_377_670
+   Motor.PlantItemJoin1.PlantItem - 410_377_576_25_374_375
+   Motor.PlantItemJoin2.PlantItem - 410_377_576_25_375_374
+   Motor.PowerSource.Equipment - 410_377_576_654
+   Motor.SchematicBlock - 410_377_576_25_597
+   Motor.SchematicMacro - 410_377_576_25_614
+   Motor.Strip - 410_377_576_763
+
+Child :
+
+   Equipment.PowerSource.Load.Motor - 654_576_377_410
+   Load.SubClass.Motor - 410
+
+==========
+
+Item : Multimeter
+
+
+Child :
+
+   MeteringEquipment.SubClass.Multimeter - 713
+
+==========
+
+Item : NamingConvention
+
+Parent :
+
+   NamingConvention.NamingConventionComp - 615
+
+Child :
+
+   RefItemTypeStorage.NamingConvention - 617
+
+==========
+
+Item : NamingConventionComp
+
+
+Child :
+
+   NamingConvention.NamingConventionComp - 615
+
+==========
+
+Item : OffSitePower
+
+Parent :
+
+   OffSitePower.Alternate.Circuit - 673_576_734
+   OffSitePower.AlternatePowerSource.Equipment - 673_576_733
+   OffSitePower.ConnectionSide1.Cable - 673_576_25_518
+   OffSitePower.ConnectionSide2.Cable - 673_576_25_513
+   OffSitePower.Document - 673_576_25_496_497
+   OffSitePower.Panel - 673_670
+   OffSitePower.PlantItemJoin1.PlantItem - 673_576_25_374_375
+   OffSitePower.PlantItemJoin2.PlantItem - 673_576_25_375_374
+   OffSitePower.PowerSource.Equipment - 673_576_654
+   OffSitePower.SchematicBlock - 673_576_25_597
+   OffSitePower.SchematicMacro - 673_576_25_614
+   OffSitePower.Strip - 673_576_763
+
+Child :
+
+   ElectricalEquipment.SubClass.OffSitePower - 673
+
+==========
+
+Item : OptionDispSetFolder
+
+Parent :
+
+   OptionDispSetFolder.OptionDispSet - 804
+
+Child :
+
+   OptionDispSetFolder.OptionDispSet - 804
+
+==========
+
+Item : OtherConvertingEquipment
+
+Parent :
+
+   OtherConvertingEquipment.Alternate.Circuit - 423_397_576_734
+   OtherConvertingEquipment.AlternatePowerSource.Equipment - 423_397_576_733
+   OtherConvertingEquipment.ConnectionSide1.Cable - 423_397_576_25_518
+   OtherConvertingEquipment.ConnectionSide2.Cable - 423_397_576_25_513
+   OtherConvertingEquipment.ConvertingEquipComponent - 423_625
+   OtherConvertingEquipment.Document - 423_397_576_25_496_497
+   OtherConvertingEquipment.Heater - 423_397_576_793
+   OtherConvertingEquipment.Panel - 423_397_670
+   OtherConvertingEquipment.PlantItemJoin1.PlantItem - 423_397_576_25_374_375
+   OtherConvertingEquipment.PlantItemJoin2.PlantItem - 423_397_576_25_375_374
+   OtherConvertingEquipment.PowerSource.Equipment - 423_397_576_654
+   OtherConvertingEquipment.SchematicBlock - 423_397_576_25_597
+   OtherConvertingEquipment.SchematicMacro - 423_397_576_25_614
+   OtherConvertingEquipment.Strip - 423_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.OtherConvertingEquipment - 423
+
+==========
+
+Item : OtherDisconnectEquip
+
+Parent :
+
+   OtherDisconnectEquip.Alternate.Circuit - 581_396_650_576_734
+   OtherDisconnectEquip.AlternatePowerSource.Equipment - 581_396_650_576_733
+   OtherDisconnectEquip.AuxiliaryContact - 581_787
+   OtherDisconnectEquip.ConnectionSide1.Cable - 581_396_650_576_25_518
+   OtherDisconnectEquip.ConnectionSide2.Cable - 581_396_650_576_25_513
+   OtherDisconnectEquip.Document - 581_396_650_576_25_496_497
+   OtherDisconnectEquip.Panel - 581_396_650_670
+   OtherDisconnectEquip.PlantItemJoin1.PlantItem - 581_396_650_576_25_374_375
+   OtherDisconnectEquip.PlantItemJoin2.PlantItem - 581_396_650_576_25_375_374
+   OtherDisconnectEquip.PowerSource.Equipment - 581_396_650_576_654
+   OtherDisconnectEquip.SchematicBlock - 581_396_650_576_25_597
+   OtherDisconnectEquip.SchematicMacro - 581_396_650_576_25_614
+   OtherDisconnectEquip.Strip - 581_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.OtherDisconnectEquip - 581
+
+==========
+
+Item : OtherElectEquipment
+
+Parent :
+
+   OtherElectEquipment.Alternate.Circuit - 420_377_576_734
+   OtherElectEquipment.AlternatePowerSource.Equipment - 420_377_576_733
+   OtherElectEquipment.ConnectionSide1.Cable - 420_377_576_25_518
+   OtherElectEquipment.ConnectionSide2.Cable - 420_377_576_25_513
+   OtherElectEquipment.Document - 420_377_576_25_496_497
+   OtherElectEquipment.Panel - 420_377_670
+   OtherElectEquipment.PlantItemJoin1.PlantItem - 420_377_576_25_374_375
+   OtherElectEquipment.PlantItemJoin2.PlantItem - 420_377_576_25_375_374
+   OtherElectEquipment.PowerSource.Equipment - 420_377_576_654
+   OtherElectEquipment.SchematicBlock - 420_377_576_25_597
+   OtherElectEquipment.SchematicMacro - 420_377_576_25_614
+   OtherElectEquipment.Strip - 420_377_576_763
+
+Child :
+
+   Load.SubClass.OtherElectEquipment - 420
+
+==========
+
+Item : OverloadRelay
+
+Parent :
+
+   OverloadRelay.Alternate.Circuit - 385_396_650_576_734
+   OverloadRelay.AlternatePowerSource.Equipment - 385_396_650_576_733
+   OverloadRelay.AuxiliaryContact - 385_787
+   OverloadRelay.ConnectionSide1.Cable - 385_396_650_576_25_518
+   OverloadRelay.ConnectionSide2.Cable - 385_396_650_576_25_513
+   OverloadRelay.Document - 385_396_650_576_25_496_497
+   OverloadRelay.Panel - 385_396_650_670
+   OverloadRelay.PlantItemJoin1.PlantItem - 385_396_650_576_25_374_375
+   OverloadRelay.PlantItemJoin2.PlantItem - 385_396_650_576_25_375_374
+   OverloadRelay.PowerSource.Equipment - 385_396_650_576_654
+   OverloadRelay.SchematicBlock - 385_396_650_576_25_597
+   OverloadRelay.SchematicMacro - 385_396_650_576_25_614
+   OverloadRelay.Strip - 385_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.OverloadRelay - 385
+
+==========
+
+Item : PDBLayoutDrawing
+
+Parent :
+
+   PDBLayoutDrawing.PlantItem - 623_497_496
+   PDBLayoutDrawing.Revision - 623_619
+
+Child :
+
+   Document.SubClass.PDBLayoutDrawing - 623
+
+==========
+
+Item : PDBRow
+
+Parent :
+
+   PDBRow.Cell - 772
+
+Child :
+
+   PowerDistributionBoard.PDBRow - 601_576_650_770
+
+==========
+
+Item : PDBSection
+
+Parent :
+
+   PDBSection.Cell - 771
+
+Child :
+
+   PowerDistributionBoard.PDBSection - 601_576_650_769
+
+==========
+
+Item : Panel
+
+Parent :
+
+   Panel.Alternate.Circuit - 402_575_734
+   Panel.AlternatePowerSource.Equipment - 402_575_733
+   Panel.Circuit - 508
+   Panel.ConnectionSide1.Cable - 402_575_25_518
+   Panel.ConnectionSide2.Cable - 402_575_25_513
+   Panel.Document - 402_575_25_496_497
+   Panel.PlantItemJoin1.PlantItem - 402_575_25_374_375
+   Panel.PlantItemJoin2.PlantItem - 402_575_25_375_374
+   Panel.PowerSource.Equipment - 402_575_654
+   Panel.SchematicBlock - 402_575_25_597
+   Panel.SchematicMacro - 402_575_25_614
+   Panel.Strip - 402_575_763
+   Panel.SubClass.Cabinet - 683
+   Panel.SubClass.ControlStation - 403
+   Panel.SubClass.Junctionbox - 401
+   Panel.SubClass.LocalPanel - 400
+
+Child :
+
+   AuxiliaryContact.Panel - 786_396_650_670
+   BatteryBank.Panel - 622_670
+   BatteryCharge.Panel - 386_397_670
+   Capacitor.Panel - 573_377_670
+   Cell.Panel - 416_650_670
+   Circuit.Panel - 633_670
+   CircuitBreaker.Panel - 414_396_650_670
+   Contactor.Panel - 383_396_650_670
+   CurrentLimitingReactor.Panel - 759_397_670
+   DisconnectSwitch.Panel - 406_396_650_670
+   ElectricalEquipment.Panel - 670
+   Fuse.Panel - 413_396_650_670
+   Generator.Panel - 404_670
+   HarmonicFilter.Panel - 572_377_670
+   Heater.Panel - 570_377_670
+   HeatTrace.Panel - 577_377_670
+   Motor.Panel - 410_377_670
+   OffSitePower.Panel - 673_670
+   OtherConvertingEquipment.Panel - 423_397_670
+   OtherDisconnectEquip.Panel - 581_396_650_670
+   OtherElectEquipment.Panel - 420_377_670
+   OverloadRelay.Panel - 385_396_650_670
+   PowerDistributionBoard.Panel - 409_650_670
+   ProtectionRelay.Panel - 407_710_396_650_670
+   Resistor.Panel - 571_377_670
+   Starter.Panel - 408_396_650_670
+   Transformer.Panel - 387_397_670
+   TransformerComponent.Panel - 425_426_397_670
+   UPS.Panel - 389_397_670
+   VariableFrequencyDrive.Panel - 388_397_670
+   WiringEquipment.SubClass.Panel - 402
+
+==========
+
+Item : PlantItem
+
+Parent :
+
+   MainPlantItem.SchematicBlock - 701
+   PlantItem.ConnectionSide1.Cable - 518
+   PlantItem.ConnectionSide2.Cable - 513
+   PlantItem.Document - 496_497
+   PlantItem.PlantItemJoin1.PlantItem - 374_375
+   PlantItem.PlantItemJoin2.PlantItem - 375_374
+   PlantItem.PlantItemSymbol - 748
+   PlantItem.SchematicBlock - 597
+   PlantItem.SchematicMacro - 614
+   PlantItem.SubClass.Equipment - 25
+   PlantItem.SubClass.PlantItemGroup - 645
+   PlantItem.SubClass.RelayFunction - 724
+
+Child :
+
+   AuxiliaryContact.PlantItemJoin1.PlantItem - 786_396_650_576_25_374_375
+   AuxiliaryContact.PlantItemJoin2.PlantItem - 786_396_650_576_25_375_374
+   BatteryBank.PlantItemJoin1.PlantItem - 622_576_25_374_375
+   BatteryBank.PlantItemJoin2.PlantItem - 622_576_25_375_374
+   BatteryCharger.PlantItemJoin1.PlantItem - 386_397_576_25_374_375
+   BatteryCharger.PlantItemJoin2.PlantItem - 386_397_576_25_375_374
+   Bus.PlantItemJoin1.PlantItem - 411_419_575_25_374_375
+   Bus.PlantItemJoin2.PlantItem - 411_419_575_25_375_374
+   Busway.PlantItemJoin1.PlantItem - 703_419_575_25_374_375
+   Busway.PlantItemJoin2.PlantItem - 703_419_575_25_375_374
+   Cable.PlantItemJoin1.PlantItem - 412_419_575_25_374_375
+   Cable.PlantItemJoin2.PlantItem - 412_419_575_25_375_374
+   Capacitor.PlantItemJoin1.PlantItem - 573_377_576_25_374_375
+   Capacitor.PlantItemJoin2.PlantItem - 573_377_576_25_375_374
+   Cell.PlantItemJoin1.PlantItem - 416_650_576_25_374_375
+   Cell.PlantItemJoin2.PlantItem - 416_650_576_25_375_374
+   Circuit.PlantItemJoin1.PlantItem - 633_576_25_374_375
+   Circuit.PlantItemJoin2.PlantItem - 633_576_25_375_374
+   CircuitBreaker.PlantItemJoin1.PlantItem - 414_396_650_576_25_374_375
+   CircuitBreaker.PlantItemJoin2.PlantItem - 414_396_650_576_25_375_374
+   Conductor.PlantItemJoin1.PlantItem - 651_419_575_25_374_375
+   Conductor.PlantItemJoin2.PlantItem - 651_419_575_25_375_374
+   Contactor.PlantItemJoin1.PlantItem - 383_396_650_576_25_374_375
+   Contactor.PlantItemJoin2.PlantItem - 383_396_650_576_25_375_374
+   ControlStation.PlantItemJoin1.PlantItem - 403_402_575_25_374_375
+   ControlStation.PlantItemJoin2.PlantItem - 403_402_575_25_375_374
+   ConvertingElectEquip.PlantItemJoin1.PlantItem - 397_576_25_374_375
+   ConvertingElectEquip.PlantItemJoin2.PlantItem - 397_576_25_375_374
+   ConvertingEquipComponent.PlantItemJoin1.PlantItem - 426_397_576_25_374_375
+   ConvertingEquipComponent.PlantItemJoin2.PlantItem - 426_397_576_25_375_374
+   CurrentLimitingReactor.PlantItemJoin1.PlantItem - 759_397_576_25_374_375
+   CurrentLimitingReactor.PlantItemJoin2.PlantItem - 759_397_576_25_375_374
+   DisconnectElectEquip.PlantItemJoin1.PlantItem - 396_650_576_25_374_375
+   DisconnectElectEquip.PlantItemJoin2.PlantItem - 396_650_576_25_375_374
+   DisconnectSwitch.PlantItemJoin1.PlantItem - 406_396_650_576_25_374_375
+   DisconnectSwitch.PlantItemJoin2.PlantItem - 406_396_650_576_25_375_374
+   Document.PlantItem - 497_496
+   Drawing.PlantItem - 567_497_496
+   ElectricalConductor.PlantItemJoin1.PlantItem - 419_575_25_374_375
+   ElectricalConductor.PlantItemJoin2.PlantItem - 419_575_25_375_374
+   ElectricalEquipment.PlantItemJoin1.PlantItem - 576_25_374_375
+   ElectricalEquipment.PlantItemJoin2.PlantItem - 576_25_375_374
+   Equipment.PlantItemJoin1.PlantItem - 25_374_375
+   Equipment.PlantItemJoin2.PlantItem - 25_375_374
+   ExternalDocument.PlantItem - 580_497_496
+   Fuse.PlantItemJoin1.PlantItem - 413_396_650_576_25_374_375
+   Fuse.PlantItemJoin2.PlantItem - 413_396_650_576_25_375_374
+   Generator.PlantItemJoin1.PlantItem - 404_576_25_374_375
+   Generator.PlantItemJoin2.PlantItem - 404_576_25_375_374
+   HarmonicFilter.PlantItemJoin1.PlantItem - 572_377_576_25_374_375
+   HarmonicFilter.PlantItemJoin2.PlantItem - 572_377_576_25_375_374
+   Heater.PlantItemJoin1.PlantItem - 570_377_576_25_374_375
+   Heater.PlantItemJoin2.PlantItem - 570_377_576_25_375_374
+   HeatTrace.PlantItemJoin1.PlantItem - 577_377_576_25_374_375
+   HeatTrace.PlantItemJoin2.PlantItem - 577_377_576_25_375_374
+   Junctionbox.PlantItemJoin1.PlantItem - 401_402_575_25_374_375
+   Junctionbox.PlantItemJoin2.PlantItem - 401_402_575_25_375_374
+   Load.PlantItemJoin1.PlantItem - 377_576_25_374_375
+   Load.PlantItemJoin2.PlantItem - 377_576_25_375_374
+   LocalPanel.PlantItemJoin1.PlantItem - 400_402_575_25_374_375
+   LocalPanel.PlantItemJoin2.PlantItem - 400_402_575_25_375_374
+   ModelItem.SubClass.PlantItem - 42
+   Motor.PlantItemJoin1.PlantItem - 410_377_576_25_374_375
+   Motor.PlantItemJoin2.PlantItem - 410_377_576_25_375_374
+   OffSitePower.PlantItemJoin1.PlantItem - 673_576_25_374_375
+   OffSitePower.PlantItemJoin2.PlantItem - 673_576_25_375_374
+   OtherConvertingEquipment.PlantItemJoin1.PlantItem - 423_397_576_25_374_375
+   OtherConvertingEquipment.PlantItemJoin2.PlantItem - 423_397_576_25_375_374
+   OtherDisconnectEquip.PlantItemJoin1.PlantItem - 581_396_650_576_25_374_375
+   OtherDisconnectEquip.PlantItemJoin2.PlantItem - 581_396_650_576_25_375_374
+   OtherElectEquipment.PlantItemJoin1.PlantItem - 420_377_576_25_374_375
+   OtherElectEquipment.PlantItemJoin2.PlantItem - 420_377_576_25_375_374
+   OverloadRelay.PlantItemJoin1.PlantItem - 385_396_650_576_25_374_375
+   OverloadRelay.PlantItemJoin2.PlantItem - 385_396_650_576_25_375_374
+   Panel.PlantItemJoin1.PlantItem - 402_575_25_374_375
+   Panel.PlantItemJoin2.PlantItem - 402_575_25_375_374
+   PDBLayoutDrawing.PlantItem - 623_497_496
+   PlantItem.PlantItemJoin1.PlantItem - 374_375
+   PlantItem.PlantItemJoin2.PlantItem - 375_374
+   PlantItemGroup.PlantItem - 655
+   PlantItemGroup.PlantItemJoin1.PlantItem - 645_374_375
+   PlantItemGroup.PlantItemJoin2.PlantItem - 645_375_374
+   PowerDistributionBoard.PlantItemJoin1.PlantItem - 409_650_576_25_374_375
+   PowerDistributionBoard.PlantItemJoin2.PlantItem - 409_650_576_25_375_374
+   PowerDistributionEquip.PlantItemJoin1.PlantItem - 650_576_25_374_375
+   PowerDistributionEquip.PlantItemJoin2.PlantItem - 650_576_25_375_374
+   ProtectionRelay.PlantItemJoin1.PlantItem - 407_710_396_650_576_25_374_375
+   ProtectionRelay.PlantItemJoin2.PlantItem - 407_710_396_650_576_25_375_374
+   Representation.PlantItem - 754
+   Resistor.PlantItemJoin1.PlantItem - 571_377_576_25_374_375
+   Resistor.PlantItemJoin2.PlantItem - 571_377_576_25_375_374
+   SchematicDrawing.PlantItem - 579_497_496
+   SignalRun.PlantItem - 656
+   SLDDrawing.PlantItem - 578_497_496
+   Starter.PlantItemJoin1.PlantItem - 408_396_650_576_25_374_375
+   Starter.PlantItemJoin2.PlantItem - 408_396_650_576_25_375_374
+   Strip.PlantItemJoin1.PlantItem - 415_575_25_374_375
+   Strip.PlantItemJoin2.PlantItem - 415_575_25_375_374
+   Terminal.PlantItemJoin1.PlantItem - 395_575_25_374_375
+   Terminal.PlantItemJoin2.PlantItem - 395_575_25_375_374
+   Transformer.PlantItemJoin1.PlantItem - 387_397_576_25_374_375
+   Transformer.PlantItemJoin2.PlantItem - 387_397_576_25_375_374
+   TransformerComponent.PlantItemJoin1.PlantItem - 425_426_397_576_25_374_375
+   TransformerComponent.PlantItemJoin2.PlantItem - 425_426_397_576_25_375_374
+   Tray.PlantItemJoin1.PlantItem - 381_575_25_374_375
+   Tray.PlantItemJoin2.PlantItem - 381_575_25_375_374
+   UPS.PlantItemJoin1.PlantItem - 389_397_576_25_374_375
+   UPS.PlantItemJoin2.PlantItem - 389_397_576_25_375_374
+   VariableFrequencyDrive.PlantItemJoin1.PlantItem - 388_397_576_25_374_375
+   VariableFrequencyDrive.PlantItemJoin2.PlantItem - 388_397_576_25_375_374
+   WiringEquipment.PlantItemJoin1.PlantItem - 575_25_374_375
+   WiringEquipment.PlantItemJoin2.PlantItem - 575_25_375_374
+
+==========
+
+Item : PlantItemDocJoin
+
+
+Child :
+
+   Document.PlantItemDocJoin - 497
+
+==========
+
+Item : PlantItemGroup
+
+Parent :
+
+   PlantItemGroup.ConnectionSide1.Cable - 645_518
+   PlantItemGroup.ConnectionSide2.Cable - 645_513
+   PlantItemGroup.Document - 645_496_497
+   PlantItemGroup.PlantItem - 655
+   PlantItemGroup.PlantItemJoin1.PlantItem - 645_374_375
+   PlantItemGroup.PlantItemJoin2.PlantItem - 645_375_374
+   PlantItemGroup.SchematicBlock - 645_597
+   PlantItemGroup.SchematicMacro - 645_614
+   PlantItemGroup.SubClass.CableAssembly - 774
+
+Child :
+
+   PlantItem.SubClass.PlantItemGroup - 645
+
+==========
+
+Item : PlantItemSymbol
+
+
+Child :
+
+   PlantItem.PlantItemSymbol - 748
+
+==========
+
+Item : PotentialTransformer
+
+
+Child :
+
+   MeteringEquipment.SubClass.PotentialTransformer - 709
+
+==========
+
+Item : PowerDistributionBoard
+
+Parent :
+
+   PowerDistributionBoard.Alternate.Circuit - 409_650_576_734
+   PowerDistributionBoard.AlternatePowerSource.Equipment - 409_650_576_733
+   PowerDistributionBoard.Bus - 601_575_419_411
+   PowerDistributionBoard.Circut - 601_576_633
+   PowerDistributionBoard.ConnectionSide1.Cable - 409_650_576_25_518
+   PowerDistributionBoard.ConnectionSide2.Cable - 409_650_576_25_513
+   PowerDistributionBoard.Document - 409_650_576_25_496_497
+   PowerDistributionBoard.Equipment - 601
+   PowerDistributionBoard.Heater - 409_650_576_793
+   PowerDistributionBoard.Panel - 409_650_670
+   PowerDistributionBoard.PDBRow - 601_576_650_770
+   PowerDistributionBoard.PDBSection - 601_576_650_769
+   PowerDistributionBoard.PlantItemJoin1.PlantItem - 409_650_576_25_374_375
+   PowerDistributionBoard.PlantItemJoin2.PlantItem - 409_650_576_25_375_374
+   PowerDistributionBoard.PowerSource.Equipment - 409_650_576_654
+   PowerDistributionBoard.SchematicBlock - 409_650_576_25_597
+   PowerDistributionBoard.SchematicMacro - 409_650_576_25_614
+   PowerDistributionBoard.Strip - 409_650_576_763
+
+Child :
+
+   PowerDistributionEquip.SubClass.PowerDistributionBoard - 409
+
+==========
+
+Item : PowerDistributionEquip
+
+Parent :
+
+   PowerDistributionEquip.Alternate.Circuit - 650_576_734
+   PowerDistributionEquip.AlternatePowerSource.Equipment - 650_576_733
+   PowerDistributionEquip.ConnectionSide1.Cable - 650_576_25_518
+   PowerDistributionEquip.ConnectionSide2.Cable - 650_576_25_513
+   PowerDistributionEquip.Document - 650_576_25_496_497
+   PowerDistributionEquip.PlantItemJoin1.PlantItem - 650_576_25_374_375
+   PowerDistributionEquip.PlantItemJoin2.PlantItem - 650_576_25_375_374
+   PowerDistributionEquip.PowerSource.Equipment - 650_576_654
+   PowerDistributionEquip.SchematicBlock - 650_576_25_597
+   PowerDistributionEquip.SchematicMacro - 650_576_25_614
+   PowerDistributionEquip.Strip - 650_576_763
+   PowerDistributionEquip.SubClass.Cell - 416
+   PowerDistributionEquip.SubClass.DisconnectElectEquip - 396
+   PowerDistributionEquip.SubClass.PowerDistributionBoard - 409
+
+Child :
+
+   ElectricalEquipment.SubClass.PowerDistributionEquip - 650
+
+==========
+
+Item : ProcessEquipment
+
+Parent :
+
+   ProcessEquipment.ElectricalEquipment - 747
+
+Child :
+
+   Equipment.SubClass.ProcessEquipment - 746
+
+==========
+
+Item : ProtectionRelay
+
+Parent :
+
+   ProtectionRelay.Alternate.Circuit - 407_710_396_650_576_734
+   ProtectionRelay.AlternatePowerSource.Equipment - 407_710_396_650_576_733
+   ProtectionRelay.ConnectionSide1.Cable - 407_710_396_650_576_25_518
+   ProtectionRelay.ConnectionSide2.Cable - 407_710_396_650_576_25_513
+   ProtectionRelay.Document - 407_710_396_650_576_25_496_497
+   ProtectionRelay.Panel - 407_710_396_650_670
+   ProtectionRelay.PlantItemJoin1.PlantItem - 407_710_396_650_576_25_374_375
+   ProtectionRelay.PlantItemJoin2.PlantItem - 407_710_396_650_576_25_375_374
+   ProtectionRelay.PowerSource.Equipment - 407_710_396_650_576_654
+   ProtectionRelay.RelayFunction - 735
+   ProtectionRelay.SchematicBlock - 407_710_396_650_576_25_597
+   ProtectionRelay.SchematicMacro - 407_710_396_650_576_25_614
+   ProtectionRelay.Strip - 407_710_396_650_576_763
+
+Child :
+
+   MeteringEquipment.SubClass.ProtectionRelay - 407
+
+==========
+
+Item : RefAmmeter
+
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefAmmeter - 718
+
+==========
+
+Item : RefAuxiliaryContact
+
+Parent :
+
+   RefAuxiliaryContact.ConnectionSide1.RefCable - 789_470_435_588_594_538
+   RefAuxiliaryContact.ConnectionSide2.RefCable - 789_470_435_588_594_539
+   RefAuxiliaryContact.Equipment - 789_470_435_588_604
+   RefAuxiliaryContact.RefPlantItem.RefProfile - 789_470_435_588_594_612_611
+   RefAuxiliaryContact.RefStrip - 789_470_435_588_766
+
+Child :
+
+   RefCircuitBreaker.RefAuxiliaryContact - 467_790
+   RefContactor.RefAuxiliaryContact - 440_790
+   RefDisconnectElectEquip.RefAuxiliaryContact - 790
+   RefDisconnectElectEquip.SubClass.RefAuxiliaryContact - 789
+   RefDisconnectSwitch.RefAuxiliaryContact - 460_790
+   RefFuse.RefAuxiliaryContact - 466_790
+   RefOtherDisconnectEquip.RefAuxiliaryContact - 592_790
+   RefOverloadRelay.RefAuxiliaryContact - 442_790
+   RefStarter.RefAuxiliaryContact - 462_790
+
+==========
+
+Item : RefBatteryBank
+
+Parent :
+
+   RefBatteryBank.ConnectionSide1.RefCable - 624_588_594_538
+   RefBatteryBank.ConnectionSide2.RefCable - 624_588_594_539
+   RefBatteryBank.Equipment - 624_588_604
+   RefBatteryBank.RefHeater - 624_588_794
+   RefBatteryBank.RefPlantItem.RefProfile - 624_588_594_612_611
+   RefBatteryBank.RefStrip - 624_588_766
+
+Child :
+
+   RefElectricalEquipment.SubClass.RefBatteryBank - 624
+
+==========
+
+Item : RefBatteryCharger
+
+Parent :
+
+   RefBatteryCharger.ConnectionSide1.RefCable - 443_452_588_594_538
+   RefBatteryCharger.ConnectionSide2.RefCable - 443_452_588_594_539
+   RefBatteryCharger.Equipment - 443_452_588_604
+   RefBatteryCharger.RefConvertingEquipCompt - 443_629
+   RefBatteryCharger.RefHeater - 443_452_588_794
+   RefBatteryCharger.RefPlantItem.RefProfile - 443_452_588_594_612_611
+   RefBatteryCharger.RefStrip - 443_452_588_766
+
+Child :
+
+   RefConvertingElectEquip.SubClass.RefBatteryCharger - 443
+
+==========
+
+Item : RefBus
+
+Parent :
+
+   RefBus.ConnectionSide1.RefCable - 465_431_582_594_538
+   RefBus.ConnectionSide2.RefCable - 465_431_582_594_539
+   RefBus.Equipment - 465_431_582_604
+   RefBus.RefEquipment - 640
+   RefBus.RefPlantItem.RefProfile - 465_431_582_594_612_611
+
+Child :
+
+   RefElectricalConductor.SubClass.RefBus - 465
+
+==========
+
+Item : RefBusway
+
+
+Child :
+
+   RefElectricalConductor.SubClass.RefBusWay - 704
+
+==========
+
+Item : RefCBDDrawing
+
+
+Child :
+
+   RefDocument.SubClass.RefCBDDrawing - 780
+
+==========
+
+Item : RefCabinet
+
+Parent :
+
+   RefCabinet.RefHeater - 684_456_582_794
+   RefCabinet.RefStrip - 684_456_582_766
+
+Child :
+
+   RefPanel.SubClass.RefCabinet - 684
+
+==========
+
+Item : RefCable
+
+Parent :
+
+   RefCable.CableDrum - 689
+   RefCable.CalcRefCable.Cable - 600
+   RefCable.ConnectionSide1.RefCable - 429_431_582_594_538
+   RefCable.ConnectionSide2.RefCable - 429_431_582_594_539
+   RefCable.Equipment - 429_431_582_604
+   RefCable.RefCableDrumType - 777
+   RefCable.RefCableSet - 679
+   RefCable.RefConductor - 540
+   RefCable.RefPlantItem.RefProfile - 429_431_582_594_612_611
+
+Child :
+
+   RefAuxiliaryContact.ConnectionSide1.RefCable - 789_470_435_588_594_538
+   RefAuxiliaryContact.ConnectionSide2.RefCable - 789_470_435_588_594_539
+   RefBatteryBank.ConnectionSide1.RefCable - 624_588_594_538
+   RefBatteryBank.ConnectionSide2.RefCable - 624_588_594_539
+   RefBatteryCharger.ConnectionSide1.RefCable - 443_452_588_594_538
+   RefBatteryCharger.ConnectionSide2.RefCable - 443_452_588_594_539
+   RefBus.ConnectionSide1.RefCable - 465_431_582_594_538
+   RefBus.ConnectionSide2.RefCable - 465_431_582_594_539
+   RefCable.ConnectionSide1.RefCable - 429_431_582_594_538
+   RefCable.ConnectionSide2.RefCable - 429_431_582_594_539
+   RefCapacitor.ConnectionSide1.RefCable - 586_434_588_594_538
+   RefCapacitor.ConnectionSide2.RefCable - 586_434_588_594_539
+   RefCell.ConnectionSide1.RefCable - 469_435_588_594_538
+   RefCell.ConnectionSide2.RefCable - 469_435_588_594_539
+   RefCircuit.ConnectionSide1.RefCable - 634_588_594_538
+   RefCircuit.ConnectionSide2.RefCable - 634_588_594_539
+   RefCircuitBreaker.ConnectionSide1.RefCable - 467_470_435_588_594_538
+   RefCircuitBreaker.ConnectionSide2.RefCable - 467_470_435_588_594_539
+   RefColorPattern.RefCable - 537
+   RefConductor.ConnectionSide1.RefCable - 430_431_582_594_538
+   RefConductor.ConnectionSide2.RefCable - 430_431_582_594_539
+   RefContactor.ConnectionSide1.RefCable - 440_470_435_588_594_538
+   RefContactor.ConnectionSide2.RefCable - 440_470_435_588_594_539
+   RefControlStation.ConnectionSide1.RefCable - 457_456_582_594_538
+   RefControlStation.ConnectionSide2.RefCable - 457_456_582_594_539
+   RefConvertingElectEquip.ConnectionSide1.RefCable - 452_588_594_538
+   RefConvertingElectEquip.ConnectionSide2.RefCable - 452_588_594_539
+   RefConvertingEquipCompt.ConnectionSide1.RefCable - 590_452_588_594_538
+   RefConvertingEquipCompt.ConnectionSide2.RefCable - 590_452_588_594_539
+   RefCurrentLimitingReactor.ConnectionSide1.RefCable - 760_452_588_594_538
+   RefCurrentLimitingReactor.ConnectionSide2.RefCable - 760_452_588_594_539
+   RefDisconnectElectEquip.ConnectionSide1.RefCable - 470_435_588_594_538
+   RefDisconnectElectEquip.ConnectionSide2.RefCable - 470_435_588_594_539
+   RefDisconnectSwitch.ConnectionSide1.RefCable - 460_470_435_588_594_538
+   RefDisconnectSwitch.ConnectionSide2.RefCable - 460_470_435_588_594_539
+   RefElectricalConductor.ConnectionSide1.RefCable - 431_582_594_538
+   RefElectricalConductor.ConnectionSide2.RefCable - 431_582_594_539
+   RefElectricalConductor.SubClass.RefCable - 429
+   RefElectricalEquipment.ConnectionSide1.RefCable - 588_594_538
+   RefElectricalEquipment.ConnectionSide2.RefCable - 588_594_539
+   RefEquipment.ConnectionSide1.RefCable - 594_538
+   RefEquipment.ConnectionSide2.RefCable - 594_539
+   RefFuse.ConnectionSide1.RefCable - 466_470_435_588_594_538
+   RefFuse.ConnectionSide2.RefCable - 466_470_435_588_594_539
+   RefGenerator.ConnectionSide1.RefCable - 458_588_594_538
+   RefGenerator.ConnectionSide2.RefCable - 458_588_594_539
+   RefGland.GlandSide1.RefCable - 737
+   RefGland.GlandSide2.RefCable - 738
+   RefHarmonicFilter.ConnectionSide1.RefCable - 585_434_588_594_538
+   RefHarmonicFilter.ConnectionSide2.RefCable - 585_434_588_594_539
+   RefHeater.ConnectionSide1.RefCable - 583_434_588_594_538
+   RefHeater.ConnectionSide2.RefCable - 583_434_588_594_539
+   RefHeatTrace.ConnectionSide1.RefCable - 589_434_588_594_538
+   RefHeatTrace.ConnectionSide2.RefCable - 589_434_588_594_539
+   RefJunctionbox.ConnectionSide1.RefCable - 455_456_582_594_538
+   RefJunctionbox.ConnectionSide2.RefCable - 455_456_582_594_539
+   RefLoad.ConnectionSide1.RefCable - 434_588_594_538
+   RefLoad.ConnectionSide2.RefCable - 434_588_594_539
+   RefLocalPanel.ConnectionSide1.RefCable - 454_456_582_594_538
+   RefLocalPanel.ConnectionSide2.RefCable - 454_456_582_594_539
+   RefMotor.ConnectionSide1.RefCable - 464_434_588_594_538
+   RefMotor.ConnectionSide2.RefCable - 464_434_588_594_539
+   RefOffSitePower.ConnectionSide1.RefCable - 674_588_594_538
+   RefOffSitePower.ConnectionSide2.RefCable - 674_588_594_539
+   RefOtherConvertingEquip.ConnectionSide1.RefCable - 473_452_588_594_538
+   RefOtherConvertingEquip.ConnectionSide2.RefCable - 473_452_588_594_539
+   RefOtherDisconnectEquip.ConnectionSide1.RefCable - 592_470_435_588_594_538
+   RefOtherDisconnectEquip.ConnectionSide2.RefCable - 592_470_435_588_594_539
+   RefOtherElectEquipment.ConnectionSide1.RefCable - 483_434_588_594_538
+   RefOtherElectEquipment.ConnectionSide2.RefCable - 483_434_588_594_539
+   RefOverloadRelay.ConnectionSide1.RefCable - 442_470_435_588_594_538
+   RefOverloadRelay.ConnectionSide2.RefCable - 442_470_435_588_594_539
+   RefPanel.ConnectionSide1.RefCable - 456_582_594_538
+   RefPanel.ConnectionSide2.RefCable - 456_582_594_539
+   RefPlantItem.ConnectionSide1.RefCable - 538
+   RefPlantItem.ConnectionSide2.RefCable - 539
+   RefPlantItemGroup.ConnectionSide1.RefCable - 481_538
+   RefPlantItemGroup.ConnectionSide2.RefCable - 481_539
+   RefPowerDistributionBoard.ConnectionSide1.RefCable - 463_435_588_594_538
+   RefPowerDistributionBoard.ConnectionSide2.RefCable - 463_435_588_594_539
+   RefPowerDistributionEquip.ConnectionSide1.RefCable - 435_588_594_538
+   RefPowerDistributionEquip.ConnectionSide2.RefCable - 435_588_594_539
+   RefProfile.ConnectionSide1.RefCable - 480_481_538
+   RefProfile.ConnectionSide2.RefCable - 480_481_539
+   RefProtectionRelay.ConnectionSide1.RefCable - 461_716_470_435_588_594_538
+   RefProtectionRelay.ConnectionSide2.RefCable - 461_716_470_435_588_594_539
+   RefResistor.ConnectionSide1.RefCable - 584_434_588_594_538
+   RefResistor.ConnectionSide2.RefCable - 584_434_588_594_539
+   RefSignalGroup.ConnectionSide1.RefCable - 667_481_538
+   RefSignalGroup.ConnectionSide2.RefCable - 667_481_539
+   RefStarter.ConnectionSide1.RefCable - 462_470_435_588_594_538
+   RefStarter.ConnectionSide2.RefCable - 462_470_435_588_594_539
+   RefStrip.ConnectionSide1.RefCable - 468_582_594_538
+   RefStrip.ConnectionSide2.RefCable - 468_582_594_539
+   RefTerminal.ConnectionSide1.RefCable - 451_582_594_538
+   RefTerminal.ConnectionSide2.RefCable - 451_582_594_539
+   RefTransformer.ConnectionSide1.RefCable - 444_452_588_594_538
+   RefTransformer.ConnectionSide2.RefCable - 444_452_588_594_539
+   RefTransformerComponent.ConnectionSide1.RefCable - 591_590_452_588_594_538
+   RefTransformerComponent.ConnectionSide2.RefCable - 591_590_452_588_594_539
+   RefTypicalSchematic.ConnectionSide1.RefCable - 485_481_538
+   RefTypicalSchematic.ConnectionSide2.RefCable - 485_481_539
+   RefUPS.ConnectionSide1.RefCable - 446_452_588_594_538
+   RefUPS.ConnectionSide2.RefCable - 446_452_588_594_539
+   RefVariableFrequencyDrive.ConnectionSide1.RefCable - 445_452_588_594_538
+   RefVariableFrequencyDrive.ConnectionSide2.RefCable - 445_452_588_594_539
+   RefWiringEquipment.ConnectionSide1.RefCable - 582_594_538
+   RefWiringEquipment.ConnectionSide2.RefCable - 582_594_539
+
+==========
+
+Item : RefCableAssembly
+
+
+Child :
+
+   RefProfile.SubClass.RefCableAssembly - 775
+
+==========
+
+Item : RefCableDrumType
+
+
+Child :
+
+   RefCable.RefCableDrumType - 777
+
+==========
+
+Item : RefCableSet
+
+Parent :
+
+   RefCableSet.RefConductor - 681
+
+Child :
+
+   RefCable.RefCableSet - 679
+   RefElectricalConductor.SubClass.RefCableSet - 677
+
+==========
+
+Item : RefCableWayComponent
+
+Parent :
+
+   RefCableWayComponent.SubClass.RefConduit - 720
+   RefCableWayComponent.SubClass.RefRaceWayMiscellaneous - 721
+   RefRaceWayComponent.CableWaySegment - 696
+   RefRaceWayComponent.SubClass.RefTray - 438
+
+
+==========
+
+Item : RefCapacitor
+
+Parent :
+
+   RefCapacitor.ConnectionSide1.RefCable - 586_434_588_594_538
+   RefCapacitor.ConnectionSide2.RefCable - 586_434_588_594_539
+   RefCapacitor.Equipment - 586_434_588_604
+   RefCapacitor.RefHeater - 586_434_588_794
+   RefCapacitor.RefPlantItem.RefProfile - 586_434_588_594_612_611
+   RefCapacitor.RefStrip - 586_434_588_766
+
+Child :
+
+   RefLoad.SubClass.RefCapacitor - 586
+
+==========
+
+Item : RefCell
+
+Parent :
+
+   RefCell.ConnectionSide1.RefCable - 469_435_588_594_538
+   RefCell.ConnectionSide2.RefCable - 469_435_588_594_539
+   RefCell.Equipment - 469_435_588_604
+   RefCell.RefPlantItem.RefProfile - 469_435_588_594_612_611
+   RefCell.RefStrip - 469_435_588_766
+
+Child :
+
+   RefPowerDistributionEquip.SubClass.RefCell - 469
+
+==========
+
+Item : RefCircuit
+
+Parent :
+
+   RefCircuit.ConnectionSide1.RefCable - 634_588_594_538
+   RefCircuit.ConnectionSide2.RefCable - 634_588_594_539
+   RefCircuit.ElectricalEquipment - 531
+   RefCircuit.Equipment - 634_588_604
+   RefCircuit.RefEquipment - 630
+   RefCircuit.RefPlantItem.RefProfile - 634_588_594_612_611
+   RefCircuit.RefStrip - 634_588_766
+
+Child :
+
+   RefControlStation.RefCircuit - 457_628
+   RefElectricalEquipment.SubClass.RefCircuit - 634
+   RefJunctionbox.RefCircuit - 455_628
+   RefLocalPanel.RefCircuit - 454_628
+   RefPanel.RefCircuit - 628
+
+==========
+
+Item : RefCircuitBreaker
+
+Parent :
+
+   RefCircuitBreaker.ConnectionSide1.RefCable - 467_470_435_588_594_538
+   RefCircuitBreaker.ConnectionSide2.RefCable - 467_470_435_588_594_539
+   RefCircuitBreaker.Equipment - 467_470_435_588_604
+   RefCircuitBreaker.RefAuxiliaryContact - 467_790
+   RefCircuitBreaker.RefPlantItem.RefProfile - 467_470_435_588_594_612_611
+   RefCircuitBreaker.RefStrip - 467_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefCircuitBreaker - 467
+
+==========
+
+Item : RefColorInstance
+
+
+Child :
+
+   RefColorPattern.RefColorInstance - 536
+   RefConfiguration.SubClass.RefColorInstance - 428
+
+==========
+
+Item : RefColorPattern
+
+Parent :
+
+   RefColorPattern.Cable - 653
+   RefColorPattern.RefCable - 537
+   RefColorPattern.RefColorInstance - 536
+
+Child :
+
+   RefConfiguration.SubClass.RefColorPattern - 427
+
+==========
+
+Item : RefConductor
+
+Parent :
+
+   RefConductor.ConnectionSide1.RefCable - 430_431_582_594_538
+   RefConductor.ConnectionSide2.RefCable - 430_431_582_594_539
+   RefConductor.Equipment - 430_431_582_604
+   RefConductor.RefPlantItem.RefProfile - 430_431_582_594_612_611
+
+Child :
+
+   RefCable.RefConductor - 540
+   RefCableSet.RefConductor - 681
+   RefElectricalConductor.SubClass.RefConductor - 430
+   RefTerminal.ConnectionSide1.RefConductor - 541
+   RefTerminal.ConnectionSide2.RefConductor - 542
+
+==========
+
+Item : RefConduit
+
+
+Child :
+
+   RefCableWayComponent.SubClass.RefConduit - 720
+
+==========
+
+Item : RefConfiguration
+
+Parent :
+
+   RefConfiguration.SubClass.RefColorInstance - 428
+   RefConfiguration.SubClass.RefColorPattern - 427
+   RefConfiguration.SubClass.RefConnectionType - 478
+   RefConfiguration.SubClass.RefConnectionTypeWire - 477
+   RefConfiguration.SubClass.RefItemTypeStorage - 489
+   RefConfiguration.SubClass.RefLookUpTable - 484
+   RefConfiguration.SubClass.RefLookUpTableAttributes - 487
+   RefConfiguration.SubClass.RefLookUpTableValue - 488
+   RefConfiguration.SubClass.RefRelayFunction - 723
+   RefConfiguration.SubClass.RefRelayFunctionLib - 722
+   RefConfiguration.SubClass.RefStripCableConnection - 479
+   RefConfiguration.SubClass.RefStripConfig - 475
+   RefConfiguration.SubClass.RefStripConfigTerm - 474
+   RefConfiguration.SubClass.RefTypicalSchematicBlock - 492
+   RefConfiguration.SubClass.RefTypicalSchematicItem - 486
+
+Child :
+
+   RefModelItem.SubClass.RefConfiguration - 476
+
+==========
+
+Item : RefConnectionType
+
+Parent :
+
+   RefConnectionType.RefConnectionTypeWire - 553
+
+Child :
+
+   RefConfiguration.SubClass.RefConnectionType - 478
+
+==========
+
+Item : RefConnectionTypeWire
+
+
+Child :
+
+   RefConfiguration.SubClass.RefConnectionTypeWire - 477
+   RefConnectionType.RefConnectionTypeWire - 553
+   RefStrip.StripSideA.RefConnectionTypeWire - 551
+   RefStrip.StripSideB.RefConnectionTypeWire - 552
+
+==========
+
+Item : RefContactor
+
+Parent :
+
+   RefContactor.ConnectionSide1.RefCable - 440_470_435_588_594_538
+   RefContactor.ConnectionSide2.RefCable - 440_470_435_588_594_539
+   RefContactor.Equipment - 440_470_435_588_604
+   RefContactor.RefAuxiliaryContact - 440_790
+   RefContactor.RefPlantItem.RefProfile - 440_470_435_588_594_612_611
+   RefContactor.RefStrip - 440_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefContactor - 440
+
+==========
+
+Item : RefControlStation
+
+Parent :
+
+   RefControlStation.ConnectionSide1.RefCable - 457_456_582_594_538
+   RefControlStation.ConnectionSide2.RefCable - 457_456_582_594_539
+   RefControlStation.ElectricalEquipment - 705
+   RefControlStation.Equipment - 457_456_582_604
+   RefControlStation.RefCircuit - 457_628
+   RefControlStation.RefPlantItem.RefProfile - 457_456_582_594_612_611
+   RefControlStation.RefStrip - 457_456_582_766
+
+Child :
+
+   RefPanel.SubClass.RefControlStation - 457
+
+==========
+
+Item : RefConvertingElectEquip
+
+Parent :
+
+   RefConvertingElectEquip.ConnectionSide1.RefCable - 452_588_594_538
+   RefConvertingElectEquip.ConnectionSide2.RefCable - 452_588_594_539
+   RefConvertingElectEquip.Equipment - 452_588_604
+   RefConvertingElectEquip.RefConvertingEquipCompt - 629
+   RefConvertingElectEquip.RefPlantItem.RefProfile - 452_588_594_612_611
+   RefConvertingElectEquip.RefStrip - 452_588_766
+   RefConvertingElectEquip.SubClass.RefBatteryCharger - 443
+   RefConvertingElectEquip.SubClass.RefConvertingEquipCompt - 590
+   RefConvertingElectEquip.SubClass.RefOtherConvertingEquip - 473
+   RefConvertingElectEquip.SubClass.RefTransformer - 444
+   RefConvertingElectEquip.SubClass.RefUPS - 446
+   RefConvertingElectEquip.SubClass.RefVariableFrequencyDrive - 445
+
+Child :
+
+   RefElectricalEquipment.SubClass.RefConvertingElectEquip - 452
+
+==========
+
+Item : RefConvertingEquipCompt
+
+Parent :
+
+   RefConvertingEquipCompt.ConnectionSide1.RefCable - 590_452_588_594_538
+   RefConvertingEquipCompt.ConnectionSide2.RefCable - 590_452_588_594_539
+   RefConvertingEquipCompt.Equipment - 590_452_588_604
+   RefConvertingEquipCompt.RefConvertingEquipCompt - 590_629
+   RefConvertingEquipCompt.RefPlantItem.RefProfile - 590_452_588_594_612_611
+   RefConvertingEquipCompt.RefStrip - 590_452_588_766
+   RefConvertingEquipCompt.SubClass.RefTransformerComponent - 591
+
+Child :
+
+   RefBatteryCharger.RefConvertingEquipCompt - 443_629
+   RefConvertingElectEquip.RefConvertingEquipCompt - 629
+   RefConvertingElectEquip.SubClass.RefConvertingEquipCompt - 590
+   RefConvertingEquipCompt.RefConvertingEquipCompt - 590_629
+   RefCurrentLimitingReactor.RefConvertingEquipCompt - 760_629
+   RefOtherConvertingEquip.RefConvertingEquipCompt - 473_629
+   RefTransformer.RefConvertingEquipCompt - 444_629
+   RefTransformerComponent.RefConvertingEquipCompt - 591_590_629
+   RefUPS.RefConvertingEquipCompt - 446_629
+   RefVariableFrequencyDrive.RefConvertingEquipCompt - 445_629
+
+==========
+
+Item : RefCurrentLimitingReactor
+
+Parent :
+
+   RefCurrentLimitingReactor.ConnectionSide1.RefCable - 760_452_588_594_538
+   RefCurrentLimitingReactor.ConnectionSide2.RefCable - 760_452_588_594_539
+   RefCurrentLimitingReactor.Equipment - 760_452_588_604
+   RefCurrentLimitingReactor.RefConvertingEquipCompt - 760_629
+   RefCurrentLimitingReactor.RefHeater - 760_435_588_794
+   RefCurrentLimitingReactor.RefPlantItem.RefProfile - 760_452_588_594_612_611
+   RefCurrentLimitingReactor.RefStrip - 760_452_588_766
+
+
+==========
+
+Item : RefCurrentTransformer
+
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefCurrentTransformer - 714
+
+==========
+
+Item : RefDisconnectElectEquip
+
+Parent :
+
+   RefDisconnectElectEquip.ConnectionSide1.RefCable - 470_435_588_594_538
+   RefDisconnectElectEquip.ConnectionSide2.RefCable - 470_435_588_594_539
+   RefDisconnectElectEquip.Equipment - 470_435_588_604
+   RefDisconnectElectEquip.RefAuxiliaryContact - 790
+   RefDisconnectElectEquip.RefPlantItem.RefProfile - 470_435_588_594_612_611
+   RefDisconnectElectEquip.RefStrip - 470_435_588_766
+   RefDisconnectElectEquip.SubClass.RefAuxiliaryContact - 789
+   RefDisconnectElectEquip.SubClass.RefCircuitBreaker - 467
+   RefDisconnectElectEquip.SubClass.RefContactor - 440
+   RefDisconnectElectEquip.SubClass.RefDisconnectSwitch - 460
+   RefDisconnectElectEquip.SubClass.RefFuse - 466
+   RefDisconnectElectEquip.SubClass.RefMeteringEquipment - 716
+   RefDisconnectElectEquip.SubClass.RefOtherDisconnectEquip - 592
+   RefDisconnectElectEquip.SubClass.RefOverloadRelay - 442
+   RefDisconnectElectEquip.SubClass.RefStarter - 462
+
+Child :
+
+   RefPowerDistributionEquip.SubClass.RefDisconnectElectEquip - 470
+
+==========
+
+Item : RefDisconnectSwitch
+
+Parent :
+
+   RefDisconnectSwitch.ConnectionSide1.RefCable - 460_470_435_588_594_538
+   RefDisconnectSwitch.ConnectionSide2.RefCable - 460_470_435_588_594_539
+   RefDisconnectSwitch.Equipment - 460_470_435_588_604
+   RefDisconnectSwitch.RefAuxiliaryContact - 460_790
+   RefDisconnectSwitch.RefPlantItem.RefProfile - 460_470_435_588_594_612_611
+   RefDisconnectSwitch.RefStrip - 460_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefDisconnectSwitch - 460
+
+==========
+
+Item : RefDocument
+
+Parent :
+
+   RefDocument.SubClass.RefCBDDrawing - 780
+
+
+==========
+
+Item : RefElectricalConductor
+
+Parent :
+
+   RefElectricalConductor.ConnectionSide1.RefCable - 431_582_594_538
+   RefElectricalConductor.ConnectionSide2.RefCable - 431_582_594_539
+   RefElectricalConductor.Equipment - 431_582_604
+   RefElectricalConductor.RefPlantItem.RefProfile - 431_582_594_612_611
+   RefElectricalConductor.SubClass.RefBus - 465
+   RefElectricalConductor.SubClass.RefBusWay - 704
+   RefElectricalConductor.SubClass.RefCable - 429
+   RefElectricalConductor.SubClass.RefCableSet - 677
+   RefElectricalConductor.SubClass.RefConductor - 430
+
+Child :
+
+   RefWiringEquipment.SubClass.RefElectricalConductor - 431
+
+==========
+
+Item : RefElectricalEquipment
+
+Parent :
+
+   RefElectricalEquipment.ConnectionSide1.RefCable - 588_594_538
+   RefElectricalEquipment.ConnectionSide2.RefCable - 588_594_539
+   RefElectricalEquipment.Equipment - 588_604
+   RefElectricalEquipment.RefPlantItem.RefProfile - 588_594_612_611
+   RefElectricalEquipment.RefStrip - 588_766
+   RefElectricalEquipment.SubClass.RefBatteryBank - 624
+   RefElectricalEquipment.SubClass.RefCircuit - 634
+   RefElectricalEquipment.SubClass.RefConvertingElectEquip - 452
+   RefElectricalEquipment.SubClass.RefGenerator - 458
+   RefElectricalEquipment.SubClass.RefLoad - 434
+   RefElectricalEquipment.SubClass.RefPowerDistributionEquip - 435
+
+Child :
+
+   RefEquipment.SubClass.RefElectricalEquipment - 588
+
+==========
+
+Item : RefEquipment
+
+Parent :
+
+   RefEquipment.ConnectionSide1.RefCable - 594_538
+   RefEquipment.ConnectionSide2.RefCable - 594_539
+   RefEquipment.Equipment - 604
+   RefEquipment.RefInstrument - 675
+   RefEquipment.RefPlantItem.RefProfile - 594_612_611
+   RefEquipment.RefSignalRun - 659
+   RefEquipment.RefStrip - 766
+   RefEquipment.SubClass.RefElectricalEquipment - 588
+   RefEquipment.SubClass.RefWiringEquipment - 582
+
+Child :
+
+   RefBus.RefEquipment - 640
+   RefCircuit.RefEquipment - 630
+   RefLookUpTable.RefEquipment - 773
+   RefPlantItem.SubClass.RefEquipment - 594
+   RefPowerDistributionBoard.RefEquipment - 632
+
+==========
+
+Item : RefFuse
+
+Parent :
+
+   RefFuse.ConnectionSide1.RefCable - 466_470_435_588_594_538
+   RefFuse.ConnectionSide2.RefCable - 466_470_435_588_594_539
+   RefFuse.Equipment - 466_470_435_588_604
+   RefFuse.RefAuxiliaryContact - 466_790
+   RefFuse.RefPlantItem.RefProfile - 466_470_435_588_594_612_611
+   RefFuse.RefStrip - 466_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefFuse - 466
+
+==========
+
+Item : RefGenerator
+
+Parent :
+
+   RefGenerator.ConnectionSide1.RefCable - 458_588_594_538
+   RefGenerator.ConnectionSide2.RefCable - 458_588_594_539
+   RefGenerator.Equipment - 458_588_604
+   RefGenerator.RefHeater - 458_588_794
+   RefGenerator.RefPlantItem.RefProfile - 458_588_594_612_611
+   RefGenerator.RefStrip - 458_588_766
+
+Child :
+
+   RefElectricalEquipment.SubClass.RefGenerator - 458
+
+==========
+
+Item : RefGland
+
+Parent :
+
+   RefGland.GlandSide1.Cable - 730
+   RefGland.GlandSide1.RefCable - 737
+   RefGland.GlandSide2.Cable - 731
+   RefGland.GlandSide2.RefCable - 738
+
+
+==========
+
+Item : RefHarmonicFilter
+
+Parent :
+
+   RefHarmonicFilter.ConnectionSide1.RefCable - 585_434_588_594_538
+   RefHarmonicFilter.ConnectionSide2.RefCable - 585_434_588_594_539
+   RefHarmonicFilter.Equipment - 585_434_588_604
+   RefHarmonicFilter.RefHeater - 585_434_588_794
+   RefHarmonicFilter.RefPlantItem.RefProfile - 585_434_588_594_612_611
+   RefHarmonicFilter.RefStrip - 585_434_588_766
+
+Child :
+
+   RefLoad.SubClass.RefHarmonicFilter - 585
+
+==========
+
+Item : RefHeatTrace
+
+Parent :
+
+   RefHeatTrace.ConnectionSide1.RefCable - 589_434_588_594_538
+   RefHeatTrace.ConnectionSide2.RefCable - 589_434_588_594_539
+   RefHeatTrace.Equipment - 589_434_588_604
+   RefHeatTrace.RefPlantItem.RefProfile - 589_434_588_594_612_611
+   RefHeatTrace.RefStrip - 589_434_588_766
+
+Child :
+
+   RefLoad.SubClass.RefHeatTrace - 589
+
+==========
+
+Item : RefHeater
+
+Parent :
+
+   RefHeater.ConnectionSide1.RefCable - 583_434_588_594_538
+   RefHeater.ConnectionSide2.RefCable - 583_434_588_594_539
+   RefHeater.Equipment - 583_434_588_604
+   RefHeater.RefHeater - 583_434_588_794
+   RefHeater.RefMotor - 607
+   RefHeater.RefPlantItem.RefProfile - 583_434_588_594_612_611
+   RefHeater.RefStrip - 583_434_588_766
+
+Child :
+
+   RefBatteryBank.RefHeater - 624_588_794
+   RefBatteryCharger.RefHeater - 443_452_588_794
+   RefCabinet.RefHeater - 684_456_582_794
+   RefCapacitor.RefHeater - 586_434_588_794
+   RefCurrentLimitingReactor.RefHeater - 760_435_588_794
+   RefGenerator.RefHeater - 458_588_794
+   RefHarmonicFilter.RefHeater - 585_434_588_794
+   RefHeater.RefHeater - 583_434_588_794
+   RefInstrument.RefHeater - 675_794
+   RefJunctionbox.RefHeater - 455_456_582_794
+   RefLoad.SubClass.RefHeater - 583
+   RefLocalPanel.RefHeater - 454_456_582_794
+   RefMotor.RefHeater - 464_434_588_794
+   RefOtherConvertingEquip.RefHeater - 473_452_588_794
+   RefPowerDistributionBoard.RefHeater - 463_435_588_794
+   RefTransformer.RefHeater - 444_452_794
+   RefUPS.RefHeater - 446_452_588_794
+   RefVariableFrequencyDrive.RefHeater - 444_452_588_794
+
+==========
+
+Item : RefInstrument
+
+Parent :
+
+   RefInstrument.RefHeater - 675_794
+   RefInstrument.RefStrip - 675_766
+
+Child :
+
+   RefEquipment.RefInstrument - 675
+
+==========
+
+Item : RefItemTypeStorage
+
+Parent :
+
+   RefItemTypeStorage.NamingConvention - 617
+   RefItemTypeStorage.RefSymbology - 750
+   RefItemTypeStorage.RefTypicalSchematicBlock - 565
+
+Child :
+
+   RefConfiguration.SubClass.RefItemTypeStorage - 489
+
+==========
+
+Item : RefJunctionbox
+
+Parent :
+
+   RefJunctionbox.ConnectionSide1.RefCable - 455_456_582_594_538
+   RefJunctionbox.ConnectionSide2.RefCable - 455_456_582_594_539
+   RefJunctionbox.Equipment - 455_456_582_604
+   RefJunctionbox.RefCircuit - 455_628
+   RefJunctionbox.RefHeater - 455_456_582_794
+   RefJunctionbox.RefPlantItem.RefProfile - 455_456_582_594_612_611
+   RefJunctionbox.RefStrip - 455_456_582_766
+
+Child :
+
+   RefPanel.SubClass.RefJunctionbox - 455
+
+==========
+
+Item : RefLoad
+
+Parent :
+
+   RefLoad.ConnectionSide1.RefCable - 434_588_594_538
+   RefLoad.ConnectionSide2.RefCable - 434_588_594_539
+   RefLoad.Equipment - 434_588_604
+   RefLoad.RefPlantItem.RefProfile - 434_588_594_612_611
+   RefLoad.RefStrip - 434_588_766
+   RefLoad.SubClass.RefCapacitor - 586
+   RefLoad.SubClass.RefHarmonicFilter - 585
+   RefLoad.SubClass.RefHeater - 583
+   RefLoad.SubClass.RefHeatTrace - 589
+   RefLoad.SubClass.RefMotor - 464
+   RefLoad.SubClass.RefOtherElectEquipment - 483
+   RefLoad.SubClass.RefResistor - 584
+
+Child :
+
+   RefElectricalEquipment.SubClass.RefLoad - 434
+
+==========
+
+Item : RefLocalPanel
+
+Parent :
+
+   RefLocalPanel.ConnectionSide1.RefCable - 454_456_582_594_538
+   RefLocalPanel.ConnectionSide2.RefCable - 454_456_582_594_539
+   RefLocalPanel.Equipment - 454_456_582_604
+   RefLocalPanel.RefCircuit - 454_628
+   RefLocalPanel.RefHeater - 454_456_582_794
+   RefLocalPanel.RefPlantItem.RefProfile - 454_456_582_594_612_611
+   RefLocalPanel.RefStrip - 454_456_582_766
+
+Child :
+
+   RefPanel.SubClass.RefLocalPanel - 454
+
+==========
+
+Item : RefLookUpTable
+
+Parent :
+
+   RefLookUpTable.Equipment - 732
+   RefLookUpTable.RefEquipment - 773
+   RefLookUpTable.RefLookUpTable - 700
+   RefLookUpTable.RefLookUpTableAttributes - 560
+
+Child :
+
+   RefConfiguration.SubClass.RefLookUpTable - 484
+   RefLookUpTable.RefLookUpTable - 700
+
+==========
+
+Item : RefLookUpTableAttributes
+
+Parent :
+
+   RefLookUpTableAttributes.RefLookUpTableValue - 561
+
+Child :
+
+   RefConfiguration.SubClass.RefLookUpTableAttributes - 487
+   RefLookUpTable.RefLookUpTableAttributes - 560
+
+==========
+
+Item : RefLookUpTableValue
+
+
+Child :
+
+   RefConfiguration.SubClass.RefLookUpTableValue - 488
+   RefLookUpTableAttributes.RefLookUpTableValue - 561
+
+==========
+
+Item : RefMeteringEquipment
+
+Parent :
+
+   RefMeteringEquipment.SubClass.RefAmmeter - 718
+   RefMeteringEquipment.SubClass.RefCurrentTransformer - 714
+   RefMeteringEquipment.SubClass.RefMultimeter - 719
+   RefMeteringEquipment.SubClass.RefPotentialTransformer - 715
+   RefMeteringEquipment.SubClass.RefProtectionRelay - 461
+   RefMeteringEquipment.SubClass.RefVoltmeter - 717
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefMeteringEquipment - 716
+
+==========
+
+Item : RefModelItem
+
+Parent :
+
+   RefModelItem.SubClass.RefConfiguration - 476
+   RefModelItem.SubClass.RefPlantItem - 433
+
+
+==========
+
+Item : RefMotor
+
+Parent :
+
+   RefMotor.ConnectionSide1.RefCable - 464_434_588_594_538
+   RefMotor.ConnectionSide2.RefCable - 464_434_588_594_539
+   RefMotor.Equipment - 464_434_588_604
+   RefMotor.RefHeater - 464_434_588_794
+   RefMotor.RefPlantItem.RefProfile - 464_434_588_594_612_611
+   RefMotor.RefStrip - 464_434_588_766
+
+Child :
+
+   RefHeater.RefMotor - 607
+   RefLoad.SubClass.RefMotor - 464
+
+==========
+
+Item : RefMultimeter
+
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefMultimeter - 719
+
+==========
+
+Item : RefOffSitePower
+
+Parent :
+
+   RefOffSitePower.ConnectionSide1.RefCable - 674_588_594_538
+   RefOffSitePower.ConnectionSide2.RefCable - 674_588_594_539
+   RefOffSitePower.Equipment - 674_588_604
+   RefOffSitePower.RefPlantItem.RefProfile - 674_588_594_612_611
+   RefOffSitePower.RefStrip - 674_588_766
+
+
+==========
+
+Item : RefOtherConvertingEquip
+
+Parent :
+
+   RefOtherConvertingEquip.ConnectionSide1.RefCable - 473_452_588_594_538
+   RefOtherConvertingEquip.ConnectionSide2.RefCable - 473_452_588_594_539
+   RefOtherConvertingEquip.Equipment - 473_452_588_604
+   RefOtherConvertingEquip.RefConvertingEquipCompt - 473_629
+   RefOtherConvertingEquip.RefHeater - 473_452_588_794
+   RefOtherConvertingEquip.RefPlantItem.RefProfile - 473_452_588_594_612_611
+   RefOtherConvertingEquip.RefStrip - 473_452_588_766
+
+Child :
+
+   RefConvertingElectEquip.SubClass.RefOtherConvertingEquip - 473
+
+==========
+
+Item : RefOtherDisconnectEquip
+
+Parent :
+
+   RefOtherDisconnectEquip.ConnectionSide1.RefCable - 592_470_435_588_594_538
+   RefOtherDisconnectEquip.ConnectionSide2.RefCable - 592_470_435_588_594_539
+   RefOtherDisconnectEquip.Equipment - 592_470_435_588_604
+   RefOtherDisconnectEquip.RefAuxiliaryContact - 592_790
+   RefOtherDisconnectEquip.RefPlantItem.RefProfile - 592_470_435_588_594_612_611
+   RefOtherDisconnectEquip.RefStrip - 592_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefOtherDisconnectEquip - 592
+
+==========
+
+Item : RefOtherElectEquipment
+
+Parent :
+
+   RefOtherElectEquipment.ConnectionSide1.RefCable - 483_434_588_594_538
+   RefOtherElectEquipment.ConnectionSide2.RefCable - 483_434_588_594_539
+   RefOtherElectEquipment.Equipment - 483_434_588_604
+   RefOtherElectEquipment.RefPlantItem.RefProfile - 483_434_588_594_612_611
+   RefOtherElectEquipment.RefStrip - 483_434_588_766
+
+Child :
+
+   RefLoad.SubClass.RefOtherElectEquipment - 483
+
+==========
+
+Item : RefOverloadRelay
+
+Parent :
+
+   RefOverloadRelay.ConnectionSide1.RefCable - 442_470_435_588_594_538
+   RefOverloadRelay.ConnectionSide2.RefCable - 442_470_435_588_594_539
+   RefOverloadRelay.Equipment - 442_470_435_588_604
+   RefOverloadRelay.RefAuxiliaryContact - 442_790
+   RefOverloadRelay.RefPlantItem.RefProfile - 442_470_435_588_594_612_611
+   RefOverloadRelay.RefStrip - 442_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefOverloadRelay - 442
+
+==========
+
+Item : RefPanel
+
+Parent :
+
+   RefPanel.ConnectionSide1.RefCable - 456_582_594_538
+   RefPanel.ConnectionSide2.RefCable - 456_582_594_539
+   RefPanel.Equipment - 456_582_604
+   RefPanel.RefCircuit - 628
+   RefPanel.RefPlantItem.RefProfile - 456_582_594_612_611
+   RefPanel.RefStrip - 456_582_766
+   RefPanel.SubClass.RefCabinet - 684
+   RefPanel.SubClass.RefControlStation - 457
+   RefPanel.SubClass.RefJunctionbox - 455
+   RefPanel.SubClass.RefLocalPanel - 454
+
+Child :
+
+   RefWiringEquipment.SubClass.RefPanel - 456
+
+==========
+
+Item : RefPlantItem
+
+Parent :
+
+   RefPlantItem.ConnectionSide1.RefCable - 538
+   RefPlantItem.ConnectionSide2.RefCable - 539
+   RefPlantItem.RefPlantItem.RefProfile - 612_611
+   RefPlantItem.RefPlantItemSymbol - 778
+   RefPlantItem.SubClass.RefEquipment - 594
+   RefPlantItem.SubClass.RefPlantItemGroup - 481
+
+Child :
+
+   RefModelItem.SubClass.RefPlantItem - 433
+   RefProfile.RefProfile.RefPlantItem - 611_612
+   RefSignalRun.RefPlantItem - 658
+
+==========
+
+Item : RefPlantItemGroup
+
+Parent :
+
+   RefPlantItemGroup.ConnectionSide1.RefCable - 481_538
+   RefPlantItemGroup.ConnectionSide2.RefCable - 481_539
+   RefPlantItemGroup.RefPlantItem.RefProfile - 481_612_611
+   RefPlantItemGroup.SubClass.RefProfile - 480
+   RefPlantItemGroup.SubClass.RefTypicalSchematic - 485
+
+Child :
+
+   RefPlantItem.SubClass.RefPlantItemGroup - 481
+
+==========
+
+Item : RefPlantItemSymbol
+
+
+Child :
+
+   RefPlantItem.RefPlantItemSymbol - 778
+
+==========
+
+Item : RefPotentialTransformer
+
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefPotentialTransformer - 715
+
+==========
+
+Item : RefPowerDistributionBoard
+
+Parent :
+
+   RefPowerDistributionBoard.ConnectionSide1.RefCable - 463_435_588_594_538
+   RefPowerDistributionBoard.ConnectionSide2.RefCable - 463_435_588_594_539
+   RefPowerDistributionBoard.Equipment - 463_435_588_604
+   RefPowerDistributionBoard.RefEquipment - 632
+   RefPowerDistributionBoard.RefHeater - 463_435_588_794
+   RefPowerDistributionBoard.RefPlantItem.RefProfile - 463_435_588_594_612_611
+   RefPowerDistributionBoard.RefStrip - 463_435_588_766
+
+Child :
+
+   RefPowerDistributionEquip.SubClass.RefPowerDistributionBoard - 463
+
+==========
+
+Item : RefPowerDistributionEquip
+
+Parent :
+
+   RefPowerDistributionEquip.ConnectionSide1.RefCable - 435_588_594_538
+   RefPowerDistributionEquip.ConnectionSide2.RefCable - 435_588_594_539
+   RefPowerDistributionEquip.Equipment - 435_588_604
+   RefPowerDistributionEquip.RefPlantItem.RefProfile - 435_588_594_612_611
+   RefPowerDistributionEquip.RefStrip - 435_588_766
+   RefPowerDistributionEquip.SubClass.RefCell - 469
+   RefPowerDistributionEquip.SubClass.RefDisconnectElectEquip - 470
+   RefPowerDistributionEquip.SubClass.RefPowerDistributionBoard - 463
+
+Child :
+
+   RefElectricalEquipment.SubClass.RefPowerDistributionEquip - 435
+
+==========
+
+Item : RefProfile
+
+Parent :
+
+   RefProfile.ConnectionSide1.RefCable - 480_481_538
+   RefProfile.ConnectionSide2.RefCable - 480_481_539
+   RefProfile.ElectricalEquipment - 635
+   RefProfile.RefPlantItem.RefProfile - 480_481_612_611
+   RefProfile.RefProfile.RefPlantItem - 611_612
+   RefProfile.SubClass.RefCableAssembly - 775
+
+Child :
+
+   RefAuxiliaryContact.RefPlantItem.RefProfile - 789_470_435_588_594_612_611
+   RefBatteryBank.RefPlantItem.RefProfile - 624_588_594_612_611
+   RefBatteryCharger.RefPlantItem.RefProfile - 443_452_588_594_612_611
+   RefBus.RefPlantItem.RefProfile - 465_431_582_594_612_611
+   RefCable.RefPlantItem.RefProfile - 429_431_582_594_612_611
+   RefCapacitor.RefPlantItem.RefProfile - 586_434_588_594_612_611
+   RefCell.RefPlantItem.RefProfile - 469_435_588_594_612_611
+   RefCircuit.RefPlantItem.RefProfile - 634_588_594_612_611
+   RefCircuitBreaker.RefPlantItem.RefProfile - 467_470_435_588_594_612_611
+   RefConductor.RefPlantItem.RefProfile - 430_431_582_594_612_611
+   RefContactor.RefPlantItem.RefProfile - 440_470_435_588_594_612_611
+   RefControlStation.RefPlantItem.RefProfile - 457_456_582_594_612_611
+   RefConvertingElectEquip.RefPlantItem.RefProfile - 452_588_594_612_611
+   RefConvertingEquipCompt.RefPlantItem.RefProfile - 590_452_588_594_612_611
+   RefCurrentLimitingReactor.RefPlantItem.RefProfile - 760_452_588_594_612_611
+   RefDisconnectElectEquip.RefPlantItem.RefProfile - 470_435_588_594_612_611
+   RefDisconnectSwitch.RefPlantItem.RefProfile - 460_470_435_588_594_612_611
+   RefElectricalConductor.RefPlantItem.RefProfile - 431_582_594_612_611
+   RefElectricalEquipment.RefPlantItem.RefProfile - 588_594_612_611
+   RefEquipment.RefPlantItem.RefProfile - 594_612_611
+   RefFuse.RefPlantItem.RefProfile - 466_470_435_588_594_612_611
+   RefGenerator.RefPlantItem.RefProfile - 458_588_594_612_611
+   RefHarmonicFilter.RefPlantItem.RefProfile - 585_434_588_594_612_611
+   RefHeater.RefPlantItem.RefProfile - 583_434_588_594_612_611
+   RefHeatTrace.RefPlantItem.RefProfile - 589_434_588_594_612_611
+   RefJunctionbox.RefPlantItem.RefProfile - 455_456_582_594_612_611
+   RefLoad.RefPlantItem.RefProfile - 434_588_594_612_611
+   RefLocalPanel.RefPlantItem.RefProfile - 454_456_582_594_612_611
+   RefMotor.RefPlantItem.RefProfile - 464_434_588_594_612_611
+   RefOffSitePower.RefPlantItem.RefProfile - 674_588_594_612_611
+   RefOtherConvertingEquip.RefPlantItem.RefProfile - 473_452_588_594_612_611
+   RefOtherDisconnectEquip.RefPlantItem.RefProfile - 592_470_435_588_594_612_611
+   RefOtherElectEquipment.RefPlantItem.RefProfile - 483_434_588_594_612_611
+   RefOverloadRelay.RefPlantItem.RefProfile - 442_470_435_588_594_612_611
+   RefPanel.RefPlantItem.RefProfile - 456_582_594_612_611
+   RefPlantItem.RefPlantItem.RefProfile - 612_611
+   RefPlantItemGroup.RefPlantItem.RefProfile - 481_612_611
+   RefPlantItemGroup.SubClass.RefProfile - 480
+   RefPowerDistributionBoard.RefPlantItem.RefProfile - 463_435_588_594_612_611
+   RefPowerDistributionEquip.RefPlantItem.RefProfile - 435_588_594_612_611
+   RefProfile.RefPlantItem.RefProfile - 480_481_612_611
+   RefProtectionRelay.RefPlantItem.RefProfile - 461_716_470_435_588_594_612_611
+   RefResistor.RefPlantItem.RefProfile - 584_434_588_594_612_611
+   RefSignalGroup.RefPlantItem.RefProfile - 667_481_612_611
+   RefStarter.RefPlantItem.RefProfile - 462_470_435_588_594_612_611
+   RefStrip.RefPlantItem.RefProfile - 468_582_594_612_611
+   RefTerminal.RefPlantItem.RefProfile - 451_582_594_612_611
+   RefTransformer.RefPlantItem.RefProfile - 444_452_588_594_612_611
+   RefTransformerComponent.RefPlantItem.RefProfile - 591_590_452_588_594_612_611
+   RefTypicalSchematic.RefPlantItem.RefProfile - 485_481_612_611
+   RefTypicalSchematic.RefProfile - 556
+   RefUPS.RefPlantItem.RefProfile - 446_452_588_594_612_611
+   RefVariableFrequencyDrive.RefPlantItem.RefProfile - 445_452_588_594_612_611
+   RefWiringEquipment.RefPlantItem.RefProfile - 582_594_612_611
+
+==========
+
+Item : RefProtectionRelay
+
+Parent :
+
+   RefProtectionRelay.ConnectionSide1.RefCable - 461_716_470_435_588_594_538
+   RefProtectionRelay.ConnectionSide2.RefCable - 461_716_470_435_588_594_539
+   RefProtectionRelay.Equipment - 461_716_470_435_588_604
+   RefProtectionRelay.RefPlantItem.RefProfile - 461_716_470_435_588_594_612_611
+   RefProtectionRelay.RefRelayFunction - 725
+   RefProtectionRelay.RefStrip - 461_716_470_435_588_766
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefProtectionRelay - 461
+
+==========
+
+Item : RefRaceWayMiscellaneous
+
+
+Child :
+
+   RefCableWayComponent.SubClass.RefRaceWayMiscellaneous - 721
+
+==========
+
+Item : RefRelayFunction
+
+
+Child :
+
+   RefConfiguration.SubClass.RefRelayFunction - 723
+   RefProtectionRelay.RefRelayFunction - 725
+
+==========
+
+Item : RefRelayFunctionLib
+
+
+Child :
+
+   RefConfiguration.SubClass.RefRelayFunctionLib - 722
+
+==========
+
+Item : RefResistor
+
+Parent :
+
+   RefResistor.ConnectionSide1.RefCable - 584_434_588_594_538
+   RefResistor.ConnectionSide2.RefCable - 584_434_588_594_539
+   RefResistor.Equipment - 584_434_588_604
+   RefResistor.RefPlantItem.RefProfile - 584_434_588_594_612_611
+   RefResistor.RefStrip - 584_434_588_766
+
+Child :
+
+   RefLoad.SubClass.RefResistor - 584
+
+==========
+
+Item : RefSignalGroup
+
+Parent :
+
+   RefSignalGroup.ConnectionSide1.RefCable - 667_481_538
+   RefSignalGroup.ConnectionSide2.RefCable - 667_481_539
+   RefSignalGroup.RefPlantItem.RefProfile - 667_481_612_611
+   RefSignalGroup.RefSignalRun - 668
+
+Child :
+
+   RefSignalGroup.Equipment - 669
+
+==========
+
+Item : RefSignalRun
+
+Parent :
+
+   RefSignalRun.RefPlantItem - 658
+
+Child :
+
+   RefEquipment.RefSignalRun - 659
+   RefSignalGroup.RefSignalRun - 668
+
+==========
+
+Item : RefStarter
+
+Parent :
+
+   RefStarter.ConnectionSide1.RefCable - 462_470_435_588_594_538
+   RefStarter.ConnectionSide2.RefCable - 462_470_435_588_594_539
+   RefStarter.Equipment - 462_470_435_588_604
+   RefStarter.RefAuxiliaryContact - 462_790
+   RefStarter.RefPlantItem.RefProfile - 462_470_435_588_594_612_611
+   RefStarter.RefStrip - 462_470_435_588_766
+
+Child :
+
+   RefDisconnectElectEquip.SubClass.RefStarter - 462
+
+==========
+
+Item : RefStrip
+
+Parent :
+
+   RefStrip.ConnectionSide1.RefCable - 468_582_594_538
+   RefStrip.ConnectionSide2.RefCable - 468_582_594_539
+   RefStrip.Equipment - 468_582_604
+   RefStrip.RefPlantItem.RefProfile - 468_582_594_612_611
+   RefStrip.RefTerminal - 544
+   RefStrip.StripSideA.RefConnectionTypeWire - 551
+   RefStrip.StripSideB.RefConnectionTypeWire - 552
+
+Child :
+
+   RefAuxiliaryContact.RefStrip - 789_470_435_588_766
+   RefBatteryBank.RefStrip - 624_588_766
+   RefBatteryCharger.RefStrip - 443_452_588_766
+   RefCabinet.RefStrip - 684_456_582_766
+   RefCapacitor.RefStrip - 586_434_588_766
+   RefCell.RefStrip - 469_435_588_766
+   RefCircuit.RefStrip - 634_588_766
+   RefCircuitBreaker.RefStrip - 467_470_435_588_766
+   RefContactor.RefStrip - 440_470_435_588_766
+   RefControlStation.RefStrip - 457_456_582_766
+   RefConvertingElectEquip.RefStrip - 452_588_766
+   RefConvertingEquipCompt.RefStrip - 590_452_588_766
+   RefCurrentLimitingReactor.RefStrip - 760_452_588_766
+   RefDisconnectElectEquip.RefStrip - 470_435_588_766
+   RefDisconnectSwitch.RefStrip - 460_470_435_588_766
+   RefElectricalEquipment.RefStrip - 588_766
+   RefEquipment.RefStrip - 766
+   RefFuse.RefStrip - 466_470_435_588_766
+   RefGenerator.RefStrip - 458_588_766
+   RefHarmonicFilter.RefStrip - 585_434_588_766
+   RefHeater.RefStrip - 583_434_588_766
+   RefHeatTrace.RefStrip - 589_434_588_766
+   RefInstrument.RefStrip - 675_766
+   RefJunctionbox.RefStrip - 455_456_582_766
+   RefLoad.RefStrip - 434_588_766
+   RefLocalPanel.RefStrip - 454_456_582_766
+   RefMotor.RefStrip - 464_434_588_766
+   RefOffSitePower.RefStrip - 674_588_766
+   RefOtherConvertingEquip.RefStrip - 473_452_588_766
+   RefOtherDisconnectEquip.RefStrip - 592_470_435_588_766
+   RefOtherElectEquipment.RefStrip - 483_434_588_766
+   RefOverloadRelay.RefStrip - 442_470_435_588_766
+   RefPanel.RefStrip - 456_582_766
+   RefPowerDistributionBoard.RefStrip - 463_435_588_766
+   RefPowerDistributionEquip.RefStrip - 435_588_766
+   RefProtectionRelay.RefStrip - 461_716_470_435_588_766
+   RefResistor.RefStrip - 584_434_588_766
+   RefStarter.RefStrip - 462_470_435_588_766
+   RefStripConfig.RefStrip - 546
+   RefTransformer.RefStrip - 444_452_588_766
+   RefTransformerComponent.RefStrip - 591_590_452_588_766
+   RefUPS.RefStrip - 446_452_588_766
+   RefVariableFrequencyDrive.RefStrip - 445_452_588_766
+   RefWiringEquipment.SubClass.RefStrip - 468
+
+==========
+
+Item : RefStripCableConnection
+
+
+Child :
+
+   RefConfiguration.SubClass.RefStripCableConnection - 479
+
+==========
+
+Item : RefStripConfig
+
+Parent :
+
+   RefStripConfig.RefStrip - 546
+   RefStripConfig.RefStripConfigTerm - 550
+
+Child :
+
+   RefConfiguration.SubClass.RefStripConfig - 475
+
+==========
+
+Item : RefStripConfigTerm
+
+
+Child :
+
+   RefConfiguration.SubClass.RefStripConfigTerm - 474
+   RefStripConfig.RefStripConfigTerm - 550
+
+==========
+
+Item : RefSymbology
+
+
+Child :
+
+   RefItemTypeStorage.RefSymbology - 750
+
+==========
+
+Item : RefTerminal
+
+Parent :
+
+   RefTerminal.ConnectionSide1.RefCable - 451_582_594_538
+   RefTerminal.ConnectionSide1.RefConductor - 541
+   RefTerminal.ConnectionSide2.RefCable - 451_582_594_539
+   RefTerminal.ConnectionSide2.RefConductor - 542
+   RefTerminal.Equipment - 451_582_604
+   RefTerminal.RefPlantItem.RefProfile - 451_582_594_612_611
+
+Child :
+
+   RefStrip.RefTerminal - 544
+   RefWiringEquipment.SubClass.RefTerminal - 451
+
+==========
+
+Item : RefTransformer
+
+Parent :
+
+   RefTransformer.ConnectionSide1.RefCable - 444_452_588_594_538
+   RefTransformer.ConnectionSide2.RefCable - 444_452_588_594_539
+   RefTransformer.Equipment - 444_452_588_604
+   RefTransformer.RefConvertingEquipCompt - 444_629
+   RefTransformer.RefHeater - 444_452_794
+   RefTransformer.RefPlantItem.RefProfile - 444_452_588_594_612_611
+   RefTransformer.RefStrip - 444_452_588_766
+
+Child :
+
+   RefConvertingElectEquip.SubClass.RefTransformer - 444
+
+==========
+
+Item : RefTransformerComponent
+
+Parent :
+
+   RefTransformerComponent.ConnectionSide1.RefCable - 591_590_452_588_594_538
+   RefTransformerComponent.ConnectionSide2.RefCable - 591_590_452_588_594_539
+   RefTransformerComponent.Equipment - 591_590_452_588_604
+   RefTransformerComponent.RefConvertingEquipCompt - 591_590_629
+   RefTransformerComponent.RefPlantItem.RefProfile - 591_590_452_588_594_612_611
+   RefTransformerComponent.RefStrip - 591_590_452_588_766
+
+Child :
+
+   RefConvertingEquipCompt.SubClass.RefTransformerComponent - 591
+
+==========
+
+Item : RefTray
+
+
+Child :
+
+   RefRaceWayComponent.SubClass.RefTray - 438
+
+==========
+
+Item : RefTypicalSchematic
+
+Parent :
+
+   RefTypicalSchematic.ConnectionSide1.RefCable - 485_481_538
+   RefTypicalSchematic.ConnectionSide2.RefCable - 485_481_539
+   RefTypicalSchematic.Equipment - 605
+   RefTypicalSchematic.RefPlantItem.RefProfile - 485_481_612_611
+   RefTypicalSchematic.RefProfile - 556
+   RefTypicalSchematic.RefTypicalSchematicItem - 557
+   RefTypicalSchematic.SchematicDrawing - 736
+
+Child :
+
+   RefPlantItemGroup.SubClass.RefTypicalSchematic - 485
+
+==========
+
+Item : RefTypicalSchematicBlock
+
+Parent :
+
+   RefTypicalSchematicBlock.RefTypicalSchematicItem - 558
+
+Child :
+
+   RefConfiguration.SubClass.RefTypicalSchematicBlock - 492
+   RefItemTypeStorage.RefTypicalSchematicBlock - 565
+
+==========
+
+Item : RefTypicalSchematicItem
+
+Parent :
+
+   RefTypicalSchematicItem.SchematicBlock - 596
+
+Child :
+
+   RefConfiguration.SubClass.RefTypicalSchematicItem - 486
+   RefTypicalSchematic.RefTypicalSchematicItem - 557
+   RefTypicalSchematicBlock.RefTypicalSchematicItem - 558
+
+==========
+
+Item : RefUPS
+
+Parent :
+
+   RefUPS.ConnectionSide1.RefCable - 446_452_588_594_538
+   RefUPS.ConnectionSide2.RefCable - 446_452_588_594_539
+   RefUPS.Equipment - 446_452_588_604
+   RefUPS.RefConvertingEquipCompt - 446_629
+   RefUPS.RefHeater - 446_452_588_794
+   RefUPS.RefPlantItem.RefProfile - 446_452_588_594_612_611
+   RefUPS.RefStrip - 446_452_588_766
+
+Child :
+
+   RefConvertingElectEquip.SubClass.RefUPS - 446
+
+==========
+
+Item : RefVariableFrequencyDrive
+
+Parent :
+
+   RefVariableFrequencyDrive.ConnectionSide1.RefCable - 445_452_588_594_538
+   RefVariableFrequencyDrive.ConnectionSide2.RefCable - 445_452_588_594_539
+   RefVariableFrequencyDrive.Equipment - 445_452_588_604
+   RefVariableFrequencyDrive.RefConvertingEquipCompt - 445_629
+   RefVariableFrequencyDrive.RefHeater - 444_452_588_794
+   RefVariableFrequencyDrive.RefPlantItem.RefProfile - 445_452_588_594_612_611
+   RefVariableFrequencyDrive.RefStrip - 445_452_588_766
+
+Child :
+
+   RefConvertingElectEquip.SubClass.RefVariableFrequencyDrive - 445
+
+==========
+
+Item : RefVoltmeter
+
+
+Child :
+
+   RefMeteringEquipment.SubClass.RefVoltmeter - 717
+
+==========
+
+Item : RefWiringEquipment
+
+Parent :
+
+   RefWiringEquipment.ConnectionSide1.RefCable - 582_594_538
+   RefWiringEquipment.ConnectionSide2.RefCable - 582_594_539
+   RefWiringEquipment.Equipment - 582_604
+   RefWiringEquipment.RefPlantItem.RefProfile - 582_594_612_611
+   RefWiringEquipment.SubClass.RefElectricalConductor - 431
+   RefWiringEquipment.SubClass.RefPanel - 456
+   RefWiringEquipment.SubClass.RefStrip - 468
+   RefWiringEquipment.SubClass.RefTerminal - 451
+
+Child :
+
+   RefEquipment.SubClass.RefWiringEquipment - 582
+
+==========
+
+Item : RelayFunction
+
+
+Child :
+
+   PlantItem.SubClass.RelayFunction - 724
+   ProtectionRelay.RelayFunction - 735
+
+==========
+
+Item : Representation
+
+Parent :
+
+   Representation.Document - 753
+   Representation.LabelPersist - 768
+   Representation.PlantItem - 754
+   Representation.SubClass.Group - 792
+   Representation.SubClass.LabelPersist - 767
+   Representation.SubClass.Shape - 791
+   Representation.SubClass.SmartText - 798
+
+Child :
+
+   Connector.Representation - 757
+   Symbol.Representation - 756
+
+==========
+
+Item : Resistor
+
+Parent :
+
+   Resistor.Alternate.Circuit - 571_377_576_734
+   Resistor.AlternatePowerSource.Equipment - 571_377_576_733
+   Resistor.ConnectionSide1.Cable - 571_377_576_25_518
+   Resistor.ConnectionSide2.Cable - 571_377_576_25_513
+   Resistor.Document - 571_377_576_25_496_497
+   Resistor.Panel - 571_377_670
+   Resistor.PlantItemJoin1.PlantItem - 571_377_576_25_374_375
+   Resistor.PlantItemJoin2.PlantItem - 571_377_576_25_375_374
+   Resistor.PowerSource.Equipment - 571_377_576_654
+   Resistor.SchematicBlock - 571_377_576_25_597
+   Resistor.SchematicMacro - 571_377_576_25_614
+   Resistor.Strip - 571_377_576_763
+   Rsistor.ElectricalEquipment - 702
+
+Child :
+
+   Load.SubClass.Resistor - 571
+
+==========
+
+Item : Revision
+
+
+Child :
+
+   Document.Revision - 619
+   Drawing.Revision - 567_619
+   ExternalDocument.Revision - 580_619
+   PDBLayoutDrawing.Revision - 623_619
+   SchematicDrawing.Revision - 579_619
+   SLDDrawing.Revision - 578_619
+
+==========
+
+Item : SLDDrawing
+
+Parent :
+
+   SLDDrawing.PlantItem - 578_497_496
+   SLDDrawing.Revision - 578_619
+
+Child :
+
+   Document.SubClass.SLDDrawing - 578
+
+==========
+
+Item : SLDLabel
+
+
+Child :
+
+   Representation.SubClass.SLDLabel - 644
+
+==========
+
+Item : SchematicBlock
+
+Parent :
+
+   SchematicBlock.SchematicMacro - 613
+
+Child :
+
+   AuxiliaryContact.SchematicBlock - 786_396_650_576_25_597
+   BatteryBank.SchematicBlock - 622_576_25_597
+   BatteryCharger.SchematicBlock - 386_397_576_25_597
+   Bus.SchematicBlock - 411_419_575_25_597
+   Cable.SchematicBlock - 412_419_575_25_597
+   Capacitor.SchematicBlock - 573_377_576_25_597
+   Cell.SchematicBlock - 416_650_576_25_597
+   Circuit.SchematicBlock - 633_576_25_597
+   CircuitBreaker.SchematicBlock - 414_396_650_576_25_597
+   Conductor.SchematicBlock - 651_419_575_25_597
+   Contactor.SchematicBlock - 383_396_650_576_25_597
+   ControlStation.SchematicBlock - 403_402_575_25_597
+   ConvertingElectEquip.SchematicBlock - 397_576_25_597
+   ConvertingEquipComponent.SchematicBlock - 426_397_576_25_597
+   DisconnectElectEquip.SchematicBlock - 396_650_576_25_597
+   DisconnectSwitch.SchematicBlock - 406_396_650_576_25_597
+   ElectricalConductor.SchematicBlock - 419_575_25_597
+   ElectricalEquipment.SchematicBlock - 576_25_597
+   Equipment.SchematicBlock - 25_597
+   Fuse.SchematicBlock - 413_396_650_576_25_597
+   Generator.SchematicBlock - 404_576_25_597
+   HarmonicFilter.SchematicBlock - 572_377_576_25_597
+   Heater.SchematicBlock - 570_377_576_25_597
+   HeatTrace.SchematicBlock - 577_377_576_25_597
+   Junctionbox.SchematicBlock - 401_402_575_25_597
+   Load.SchematicBlock - 377_576_25_597
+   LocalPanel.SchematicBlock - 400_402_575_25_597
+   MainPlantItem.SchematicBlock - 701
+   Motor.SchematicBlock - 410_377_576_25_597
+   OffSitePower.SchematicBlock - 673_576_25_597
+   OtherConvertingEquipment.SchematicBlock - 423_397_576_25_597
+   OtherDisconnectEquip.SchematicBlock - 581_396_650_576_25_597
+   OtherElectEquipment.SchematicBlock - 420_377_576_25_597
+   OverloadRelay.SchematicBlock - 385_396_650_576_25_597
+   Panel.SchematicBlock - 402_575_25_597
+   PlantItem.SchematicBlock - 597
+   PlantItemGroup.SchematicBlock - 645_597
+   PowerDistributionBoard.SchematicBlock - 409_650_576_25_597
+   PowerDistributionEquip.SchematicBlock - 650_576_25_597
+   ProtectionRelay.SchematicBlock - 407_710_396_650_576_25_597
+   RefTypicalSchematicItem.SchematicBlock - 596
+   Representation.SubClass.SchematicBlock - 643
+   Resistor.SchematicBlock - 571_377_576_25_597
+   SchematicDrawing.SchematicBlock - 595
+   Starter.SchematicBlock - 408_396_650_576_25_597
+   Strip.SchematicBlock - 415_575_25_597
+   Terminal.SchematicBlock - 395_575_25_597
+   Transformer.SchematicBlock - 387_397_576_25_597
+   TransformerComponent.SchematicBlock - 425_426_397_576_25_597
+   Tray.SchematicBlock - 381_575_25_597
+   UPS.SchematicBlock - 389_397_576_25_597
+   VariableFrequencyDrive.SchematicBlock - 388_397_576_25_597
+   WiringEquipment.SchematicBlock - 575_25_597
+
+==========
+
+Item : SchematicDrawing
+
+Parent :
+
+   SchematicDrawing.PlantItem - 579_497_496
+   SchematicDrawing.Revision - 579_619
+   SchematicDrawing.SchematicBlock - 595
+
+Child :
+
+   Document.SubClass.SchematicDrawing - 579
+   RefTypicalSchematic.SchematicDrawing - 736
+
+==========
+
+Item : SchematicMacro
+
+
+Child :
+
+   AuxiliaryContact.SchematicMacro - 786_396_650_576_25_614
+   BatteryBank.SchematicMacro - 622_576_25_614
+   BatteryCharger.SchematicMacro - 386_397_576_25_614
+   Bus.SchematicMacro - 411_419_575_25_614
+   Cable.SchematicMacro - 412_419_575_25_614
+   Capacitor.SchematicMacro - 573_377_576_25_614
+   Cell.SchematicMacro - 416_650_576_25_614
+   Circuit.SchematicMacro - 633_576_25_614
+   CircuitBreaker.SchematicMacro - 414_396_650_576_25_614
+   Conductor.SchematicMacro - 651_419_575_25_614
+   Contactor.SchematicMacro - 383_396_650_576_25_614
+   ControlStation.SchematicMacro - 403_402_575_25_614
+   ConvertingElectEquip.SchematicMacro - 397_576_25_614
+   ConvertingEquipComponent.SchematicMacro - 426_397_576_25_614
+   DisconnectElectEquip.SchematicMacro - 396_650_576_25_614
+   DisconnectSwitch.SchematicMacro - 406_396_650_576_25_614
+   ElectricalConductor.SchematicMacro - 419_575_25_614
+   ElectricalEquipment.SchematicMacro - 576_25_614
+   Equipment.SchematicMacro - 25_614
+   Fuse.SchematicMacro - 413_396_650_576_25_614
+   Generator.SchematicMacro - 404_576_25_614
+   HarmonicFilter.SchematicMacro - 572_377_576_25_614
+   Heater.SchematicMacro - 570_377_576_25_614
+   HeatTrace.SchematicMacro - 577_377_576_25_614
+   Junctionbox.SchematicMacro - 401_402_575_25_614
+   Load.SchematicMacro - 377_576_25_614
+   LocalPanel.SchematicMacro - 400_402_575_25_614
+   Motor.SchematicMacro - 410_377_576_25_614
+   OffSitePower.SchematicMacro - 673_576_25_614
+   OtherConvertingEquipment.SchematicMacro - 423_397_576_25_614
+   OtherDisconnectEquip.SchematicMacro - 581_396_650_576_25_614
+   OtherElectEquipment.SchematicMacro - 420_377_576_25_614
+   OverloadRelay.SchematicMacro - 385_396_650_576_25_614
+   Panel.SchematicMacro - 402_575_25_614
+   PlantItem.SchematicMacro - 614
+   PlantItemGroup.SchematicMacro - 645_614
+   PowerDistributionBoard.SchematicMacro - 409_650_576_25_614
+   PowerDistributionEquip.SchematicMacro - 650_576_25_614
+   ProtectionRelay.SchematicMacro - 407_710_396_650_576_25_614
+   Representation.SubClass.SchematicMacro - 646
+   Resistor.SchematicMacro - 571_377_576_25_614
+   SchematicBlock.SchematicMacro - 613
+   Starter.SchematicMacro - 408_396_650_576_25_614
+   Strip.SchematicMacro - 415_575_25_614
+   Terminal.SchematicMacro - 395_575_25_614
+   Transformer.SchematicMacro - 387_397_576_25_614
+   TransformerComponent.SchematicMacro - 425_426_397_576_25_614
+   Tray.SchematicMacro - 381_575_25_614
+   UPS.SchematicMacro - 389_397_576_25_614
+   VariableFrequencyDrive.SchematicMacro - 388_397_576_25_614
+   WiringEquipment.SchematicMacro - 575_25_614
+
+==========
+
+Item : SegmentPartition
+
+Parent :
+
+   CableSegment.CableSegmentPartition - 695
+   SegmentPartition.CableRoutingSegmentPartition - 740
+
+Child :
+
+   CableWaySegment.CableSegment - 693
+
+==========
+
+Item : Shape
+
+
+Child :
+
+   Representation.SubClass.Shape - 791
+
+==========
+
+Item : SignalRun
+
+Parent :
+
+   SignalRun.PlantItem - 656
+
+Child :
+
+   Equipment.SignalRun - 657
+
+==========
+
+Item : SmartText
+
+Parent :
+
+   SmartText.LabelProperty - 795
+
+Child :
+
+   Representation.SubClass.SmartText - 798
+
+==========
+
+Item : Starter
+
+Parent :
+
+   Starter.Alternate.Circuit - 408_396_650_576_734
+   Starter.AlternatePowerSource.Equipment - 408_396_650_576_733
+   Starter.AuxiliaryContact - 408_787
+   Starter.ConnectionSide1.Cable - 408_396_650_576_25_518
+   Starter.ConnectionSide2.Cable - 408_396_650_576_25_513
+   Starter.Document - 408_396_650_576_25_496_497
+   Starter.Panel - 408_396_650_670
+   Starter.PlantItemJoin1.PlantItem - 408_396_650_576_25_374_375
+   Starter.PlantItemJoin2.PlantItem - 408_396_650_576_25_375_374
+   Starter.PowerSource.Equipment - 408_396_650_576_654
+   Starter.SchematicBlock - 408_396_650_576_25_597
+   Starter.SchematicMacro - 408_396_650_576_25_614
+   Starter.Strip - 408_396_650_576_763
+
+Child :
+
+   DisconnectElectEquip.SubClass.Starter - 408
+
+==========
+
+Item : Status
+
+
+Child :
+
+   Drawing.Status - 180
+
+==========
+
+Item : Strip
+
+Parent :
+
+   Strip.AlternatePowerSource.Equipment - 415_575_733
+   Strip.ConnectionSide1.Cable - 415_575_25_518
+   Strip.ConnectionSide2.Cable - 415_575_25_513
+   Strip.Document - 415_575_25_496_497
+   Strip.PlantItemJoin1.PlantItem - 415_575_25_374_375
+   Strip.PlantItemJoin2.PlantItem - 415_575_25_375_374
+   Strip.PowerSource.Equipment - 415_575_654
+   Strip.SchematicBlock - 415_575_25_597
+   Strip.SchematicMacro - 415_575_25_614
+   Strip.Terminal - 504
+
+Child :
+
+   AuxiliaryContact.Strip - 786_396_650_576_763
+   BatteryBank.Strip - 622_576_763
+   BatteryCharger.Strip - 386_397_576_763
+   Cabinet.Strip - 683_402_575_763
+   Capacitor.Strip - 573_377_576_763
+   Cell.Strip - 416_650_576_763
+   Circuit.Strip - 633_576_763
+   CircuitBreaker.Strip - 414_396_650_576_763
+   Contactor.Strip - 383_396_650_576_763
+   ControlStation.Strip - 403_402_575_763
+   ConvertingElectEquip.Strip - 397_576_763
+   ConvertingEquipComponent.Strip - 426_397_576_763
+   CurrentLimitingReactor.Strip - 759_397_576_763
+   DisconnectElectEquip.Strip - 396_650_576_763
+   DisconnectSwitch.Strip - 406_396_650_576_763
+   ElectricalEquipment.Strip - 576_763
+   Equipment.Strip - 763
+   Fuse.Strip - 413_396_650_576_763
+   Generator.Strip - 404_576_763
+   HarmonicFilter.Strip - 572_377_576_763
+   Heater.Strip - 570_377_576_763
+   HeatTrace.Strip - 577_377_576_763
+   Instrument.Strip - 671_763
+   Junctionbox.Strip - 401_402_575_763
+   Load.Strip - 377_576_763
+   LocalPanel.Strip - 400_402_575_763
+   Motor.Strip - 410_377_576_763
+   OffSitePower.Strip - 673_576_763
+   OtherConvertingEquipment.Strip - 423_397_576_763
+   OtherDisconnectEquip.Strip - 581_396_650_576_763
+   OtherElectEquipment.Strip - 420_377_576_763
+   OverloadRelay.Strip - 385_396_650_576_763
+   Panel.Strip - 402_575_763
+   PowerDistributionBoard.Strip - 409_650_576_763
+   PowerDistributionEquip.Strip - 650_576_763
+   ProtectionRelay.Strip - 407_710_396_650_576_763
+   Resistor.Strip - 571_377_576_763
+   Starter.Strip - 408_396_650_576_763
+   Transformer.Strip - 387_397_576_763
+   TransformerComponent.Strip - 425_426_397_576_763
+   UPS.Strip - 389_397_576_763
+   VariableFrequencyDrive.Strip - 388_397_576_763
+   WiringEquipment.SubClass.Strip - 415
+
+==========
+
+Item : Symbol
+
+Parent :
+
+   Symbol.Representation - 756
+
+
+==========
+
+Item : SystemReport
+
+
+Child :
+
+   Document.SubClass.SystemReport - 672
+
+==========
+
+Item : Task
+
+
+Child :
+
+   Task.TaskItemProperty - 267
+
+==========
+
+Item : TaskItemProperty
+
+Parent :
+
+   Task.TaskItemProperty - 267
+
+
+==========
+
+Item : Terminal
+
+Parent :
+
+   Terminal.AlternatePowerSource.Equipment - 395_575_733
+   Terminal.ConductorTerminal - 762
+   Terminal.ConnectionSide1.Cable - 395_575_25_518
+   Terminal.ConnectionSide1.Conductor - 525
+   Terminal.ConnectionSide2.Cable - 395_575_25_513
+   Terminal.ConnectionSide2.Conductor - 526
+   Terminal.Document - 395_575_25_496_497
+   Terminal.PlantItemJoin1.PlantItem - 395_575_25_374_375
+   Terminal.PlantItemJoin2.PlantItem - 395_575_25_375_374
+   Terminal.PowerSource.Equipment - 395_575_654
+   Terminal.SchematicBlock - 395_575_25_597
+   Terminal.SchematicMacro - 395_575_25_614
+
+Child :
+
+   Conductor.Side1.Terminal - -1_762
+   Conductor.Side2.Terminal - -2_762
+   Conductor.Terminal - 761_762
+   Strip.Terminal - 504
+   WiringEquipment.SubClass.Terminal - 395
+
+==========
+
+Item : Transformer
+
+Parent :
+
+   Transformer.Alternate.Circuit - 387_397_576_734
+   Transformer.AlternatePowerSource.Equipment - 387_397_576_733
+   Transformer.ConnectionSide1.Cable - 387_397_576_25_518
+   Transformer.ConnectionSide2.Cable - 387_397_576_25_513
+   Transformer.ConvertingEquipComponent - 387_625
+   Transformer.Document - 387_397_576_25_496_497
+   Transformer.Heater - 387_397_576_793
+   Transformer.Panel - 387_397_670
+   Transformer.PlantItemJoin1.PlantItem - 387_397_576_25_374_375
+   Transformer.PlantItemJoin2.PlantItem - 387_397_576_25_375_374
+   Transformer.PowerSource.Equipment - 387_397_576_654
+   Transformer.SchematicBlock - 387_397_576_25_597
+   Transformer.SchematicMacro - 387_397_576_25_614
+   Transformer.Strip - 387_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.Transformer - 387
+
+==========
+
+Item : TransformerComponent
+
+Parent :
+
+   TransformerComponent.Alternate.Circuit - 425_426_397_576_734
+   TransformerComponent.AlternatePowerSource.Equipment - 425_426_397_576_733
+   TransformerComponent.ConnectionSide1.Cable - 425_426_397_576_25_518
+   TransformerComponent.ConnectionSide2.Cable - 425_426_397_576_25_513
+   TransformerComponent.ConvertingEquipComponent - 425_426_625
+   TransformerComponent.Document - 425_426_397_576_25_496_497
+   TransformerComponent.Panel - 425_426_397_670
+   TransformerComponent.PlantItemJoin1.PlantItem - 425_426_397_576_25_374_375
+   TransformerComponent.PlantItemJoin2.PlantItem - 425_426_397_576_25_375_374
+   TransformerComponent.PowerSource.Equipment - 425_426_397_576_654
+   TransformerComponent.SchematicBlock - 425_426_397_576_25_597
+   TransformerComponent.SchematicMacro - 425_426_397_576_25_614
+   TransformerComponent.Strip - 425_426_397_576_763
+
+Child :
+
+   ConvertingEquipComponent.SubClass.TransformerComponent - 425
+
+==========
+
+Item : Tray
+
+Parent :
+
+   Tray.AlternatePowerSource.Equipment - 381_575_733
+   Tray.Cable - 516
+   Tray.ConnectionSide1.Cable - 381_575_25_518
+   Tray.ConnectionSide2.Cable - 381_575_25_513
+   Tray.Document - 381_575_25_496_497
+   Tray.PlantItemJoin1.PlantItem - 381_575_25_374_375
+   Tray.PlantItemJoin2.PlantItem - 381_575_25_375_374
+   Tray.PowerSource.Equipment - 381_575_654
+   Tray.SchematicBlock - 381_575_25_597
+   Tray.SchematicMacro - 381_575_25_614
+
+Child :
+
+   WiringEquipment.SubClass.Tray - 381
+
+==========
+
+Item : UPS
+
+Parent :
+
+   UPS.Alternate.Circuit - 389_397_576_734
+   UPS.AlternatePowerSource.Equipment - 389_397_576_733
+   UPS.ConnectionSide1.Cable - 389_397_576_25_518
+   UPS.ConnectionSide2.Cable - 389_397_576_25_513
+   UPS.ConvertingEquipComponent - 389_625
+   UPS.Document - 389_397_576_25_496_497
+   UPS.Heater - 389_397_576_793
+   UPS.Panel - 389_397_670
+   UPS.PlantItemJoin1.PlantItem - 389_397_576_25_374_375
+   UPS.PlantItemJoin2.PlantItem - 389_397_576_25_375_374
+   UPS.PowerSource.Equipment - 389_397_576_654
+   UPS.SchematicBlock - 389_397_576_25_597
+   UPS.SchematicMacro - 389_397_576_25_614
+   UPS.Strip - 389_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.UPS - 389
+
+==========
+
+Item : VariableFrequencyDrive
+
+Parent :
+
+   VariableFrequencyDrive.Alternate.Circuit - 388_397_576_734
+   VariableFrequencyDrive.AlternatePowerSource.Equipment - 388_397_576_733
+   VariableFrequencyDrive.ConnectionSide1.Cable - 388_397_576_25_518
+   VariableFrequencyDrive.ConnectionSide2.Cable - 388_397_576_25_513
+   VariableFrequencyDrive.ConvertingEquipComponent - 388_625
+   VariableFrequencyDrive.Document - 388_397_576_25_496_497
+   VariableFrequencyDrive.Heater - 388_397_576_793
+   VariableFrequencyDrive.Panel - 388_397_670
+   VariableFrequencyDrive.PlantItemJoin1.PlantItem - 388_397_576_25_374_375
+   VariableFrequencyDrive.PlantItemJoin2.PlantItem - 388_397_576_25_375_374
+   VariableFrequencyDrive.PowerSource.Equipment - 388_397_576_654
+   VariableFrequencyDrive.SchematicBlock - 388_397_576_25_597
+   VariableFrequencyDrive.SchematicMacro - 388_397_576_25_614
+   VariableFrequencyDrive.Strip - 388_397_576_763
+
+Child :
+
+   ConvertingElectEquip.SubClass.VariableFrequencyDrive - 388
+
+==========
+
+Item : Voltmeter
+
+
+Child :
+
+   MeteringEquipment.SubClass.Voltmeter - 711
+
+==========
+
+Item : WiringDrawing
+
+
+Child :
+
+   Document.SubClass.WiringDrawing - 752
+
+==========
+
+Item : WiringEquipment
+
+Parent :
+
+   WiringEquipment.AlternatePowerSource.Equipment - 575_733
+   WiringEquipment.ConnectionSide1.Cable - 575_25_518
+   WiringEquipment.ConnectionSide2.Cable - 575_25_513
+   WiringEquipment.Document - 575_25_496_497
+   WiringEquipment.PlantItemJoin1.PlantItem - 575_25_374_375
+   WiringEquipment.PlantItemJoin2.PlantItem - 575_25_375_374
+   WiringEquipment.PowerSource.Equipment - 575_654
+   WiringEquipment.SchematicBlock - 575_25_597
+   WiringEquipment.SchematicMacro - 575_25_614
+   WiringEquipment.SubClass.ElectricalConductor - 419
+   WiringEquipment.SubClass.Panel - 402
+   WiringEquipment.SubClass.Strip - 415
+   WiringEquipment.SubClass.Terminal - 395
+   WiringEquipment.SubClass.Tray - 381
+
+Child :
+
+   Equipment.SubClass.WiringEquipment - 575
+
+==========
+

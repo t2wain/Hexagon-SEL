@@ -191,7 +191,11 @@ Generated ItemAttributions SQL:
 - Site ItemAttributions SQL.txt
 - Plant ItemAttributions SQL.txt
 - SEL ItemAttributions SQL.txt
+
+Object relations:
+- SEL SourceDestObjectRels.txt
 - SEL SourceDestObjectRels SQL.txt
+
 
 Other files are:
 - SEL2018 ERD.pdf
