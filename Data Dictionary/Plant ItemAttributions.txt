@@ -61,6 +61,12 @@ Item : DrawingSite (40), Entity : T_DrawingSite (75)
 
 DrawingNumber - 0
 Name - 0
+SP_DrawingID - 0
+SP_ID - 0
+SP_PlantGroupID - 0
+SP_ToWSSiteID - 0
+SP_WSSiteID - 0
+UpdateCount - 0
 PlantGroup.DateCreated - 276
 PlantGroup.Depth - 276
 PlantGroup.Description - 276
@@ -83,11 +89,6 @@ PlantGroup.WSSite.SP_ID - 276_272
 PlantGroup.WSSite.UNCPath - 276_272
 PlantGroup.WSSite.UpdateCount - 276_272
 PlantGroup.WSSite.WSSiteType - 276_272
-SP_DrawingID - 0
-SP_ID - 0
-SP_PlantGroupID - 0
-SP_ToWSSiteID - 0
-SP_WSSiteID - 0
 ToWSSite.DataAccessType - 277
 ToWSSite.FTPPassword - 277
 ToWSSite.FTPServer - 277
@@ -99,7 +100,6 @@ ToWSSite.SP_ID - 277
 ToWSSite.UNCPath - 277
 ToWSSite.UpdateCount - 277
 ToWSSite.WSSiteType - 277
-UpdateCount - 0
 WSSite.DataAccessType - 269
 WSSite.FTPPassword - 269
 WSSite.FTPServer - 269
@@ -116,6 +116,10 @@ WSSite.WSSiteType - 269
 
 Item : DrawingSubscriber (25), Entity : T_DrawingSubscriber (40)
 
+SP_DrawingSiteID - 0
+SP_ID - 0
+SP_WSSiteID - 0
+UpdateCount - 0
 DrawingSite.DrawingNumber - 275
 DrawingSite.Name - 275
 DrawingSite.PlantGroup.DateCreated - 275_276
@@ -168,10 +172,6 @@ DrawingSite.WSSite.SP_ID - 275_269
 DrawingSite.WSSite.UNCPath - 275_269
 DrawingSite.WSSite.UpdateCount - 275_269
 DrawingSite.WSSite.WSSiteType - 275_269
-SP_DrawingSiteID - 0
-SP_ID - 0
-SP_WSSiteID - 0
-UpdateCount - 0
 WSSite.DataAccessType - 274
 WSSite.FTPPassword - 274
 WSSite.FTPServer - 274
@@ -197,10 +197,6 @@ UpdateCount - 0
 
 Item : Formats (146), Entity : T_Formats (122)
 
-FormatTypes.SP_FormatTypeName - 286
-FormatTypes.SP_ID - 286
-FormatTypes.SP_UnitsOfMeasureTypeID - 286
-FormatTypes.UpdateCount - 286
 SP_Alignment - 0
 SP_DisplayUnits - 0
 SP_FixedStringLength - 0
@@ -220,6 +216,10 @@ SP_SecondaryUnitID - 0
 SP_TertiaryUnitID - 0
 SP_UnitOfMeasureID - 0
 UpdateCount - 0
+FormatTypes.SP_FormatTypeName - 286
+FormatTypes.SP_ID - 286
+FormatTypes.SP_UnitsOfMeasureTypeID - 286
+FormatTypes.UpdateCount - 286
 
 ==========
 
@@ -336,6 +336,10 @@ UpdateCount - 0
 
 Item : ProjectPlantGroup (115), Entity : T_ProjectPlantGroup (91)
 
+SP_ID - 0
+SP_PlantGroupID - 0
+SP_ProjectID - 0
+UpdateCount - 0
 PlantGroup.DateCreated - 283
 PlantGroup.Depth - 283
 PlantGroup.Description - 283
@@ -357,10 +361,6 @@ Project.SP_ProjectStatus - 282
 Project.SP_ProjectType - 282
 Project.SP_RootItemID - 282
 Project.UpdateCount - 282
-SP_ID - 0
-SP_PlantGroupID - 0
-SP_ProjectID - 0
-UpdateCount - 0
 
 ==========
 

@@ -62,6 +62,13 @@ Data_base - 0
 DBServer - 0
 DBType - 0
 Password - 0
+SP_ID - 0
+SP_RootItemID - 0
+SP_Schema_Type - 0
+SysPassword - 0
+SysUID - 0
+UpdateCount - 0
+Username - 0
 RootItem.DateCreated - 224
 RootItem.Description - 224
 RootItem.Name - 224
@@ -70,13 +77,6 @@ RootItem.PlantGroupTypeName - 224
 RootItem.SP_ID - 224
 RootItem.UpdateCount - 224
 RootItem.WSSiteType - 224
-SP_ID - 0
-SP_RootItemID - 0
-SP_Schema_Type - 0
-SysPassword - 0
-SysUID - 0
-UpdateCount - 0
-Username - 0
 
 ==========
 
@@ -91,10 +91,6 @@ UpdateCount - 0
 
 Item : Formats (146), Entity : T_Formats (122)
 
-FormatTypes.SP_FormatTypeName - 286
-FormatTypes.SP_ID - 286
-FormatTypes.SP_UnitsOfMeasureTypeID - 286
-FormatTypes.UpdateCount - 286
 SP_Alignment - 0
 SP_DisplayUnits - 0
 SP_FixedStringLength - 0
@@ -114,6 +110,10 @@ SP_SecondaryUnitID - 0
 SP_TertiaryUnitID - 0
 SP_UnitOfMeasureID - 0
 UpdateCount - 0
+FormatTypes.SP_FormatTypeName - 286
+FormatTypes.SP_ID - 286
+FormatTypes.SP_UnitsOfMeasureTypeID - 286
+FormatTypes.UpdateCount - 286
 
 ==========
 
