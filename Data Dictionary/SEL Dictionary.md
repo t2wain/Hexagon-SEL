@@ -6,6 +6,12 @@ The Data Dictionary defines the following:
 - Mapping between the physical and logical models on how data are stored
 - Relationship between the objects of the logical model
 
+The benefits of understanding the Data Dictionary are:
+- Knowing properties for items helps you plan and create Engineering Data Editor (EDE) in SEL
+- Understand the relationships between items helps you write SEL reports
+- Help you perform the property mappings of Data and Association links in the Import Manager
+- Help you write SQL statements
+
 There are 3 different Data Dictionaries in a SEL application:
 - Site Data Dictionary
 - Plant Data Dictionary
@@ -116,12 +122,12 @@ The generated SQL query with comments is a valid Oracle statement and can be exe
 
 ## Hexagon SEL2018 ERD Diagram
 
-Hexagon documentation includes an ERD diagram that also include the following reference information from the Data Dicationary
+Hexagon documentation includes an ERD (Entity Relational Diagram) diagram that also include the following reference information from the Data Dicationary
 - Relationship ID (in red)
 - Item ID (in pink)
 - Entity ID (in pink)
 
-Therefore, the comments in the generated SQL query is helpful to matchup with the information in the ERD diagram.
+Therefore, the comments in the generated SQL query will help to correlate the information in the ERD diagram.
 
 ## Property relationships
 
@@ -171,7 +177,7 @@ from T_RefGland@spelref
 
 ## SEL Reporting
 
-SEL allows user to create complex report that outputs data to an Excel file. The query in the report starts with a base object type, such as Cable, and can include other related object types as specified in the *SourceDestObjectRels* table.
+SEL allows user to create complex report that outputs data to an Excel file. The query in the report starts with a base item type, such as Cable. From the base item, you can build a hierachy of related items (Define -> New) to retrieve more data. The relationship options for each item in the hierachy are specified in the *SourceDestObjectRels* table.
 
 ## Reference documents
 
