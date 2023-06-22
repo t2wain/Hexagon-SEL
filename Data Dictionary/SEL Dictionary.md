@@ -10,7 +10,7 @@ The benefits of understanding the Data Dictionary are:
 - Knowing properties for items helps you plan and create Engineering Data Editor (EDE) in SEL
 - Understand the relationships between items helps you write SEL reports
 - Help you perform the property mappings of Data and Association links in the Import Manager
-- Help you write SQL statements
+- Help you write SQL statements to export the data to other applications
 
 There are 3 different Data Dictionaries in a SEL application:
 - Site Data Dictionary
@@ -64,6 +64,8 @@ There are 3 different Data Dictionaries in a SEL application:
 *Item* table defines the logical objects. Each logical object is associated with a main database table (*SourceTable*). Examples of SEL logical object are *Motor*, *Cable*, and *Bus*.
 
 *ItemAttributions* table defines the properties (*AttributionID*) of the logical objects. Object's properties are stored across multiple database tables. The properties are grouped together by a common *Path* object which specifies the table that stores the properties. A *Path* is a sequence of *Relationship* objects where each *Relationship* defines an SQL join clause between two database tables. This sequence of table joins between the main table and the related tables is used in an SQL query to retrieve the object's properties.
+
+The Data Dictionary also contains the definitions of all the custom attributes created for the items using the Data Dictionary Manager.
 
 ## Motor example
 
@@ -120,34 +122,34 @@ Comments in the SQL query:
 
 The generated SQL query with comments is a valid Oracle statement and can be executed as-is.
 
+## Item relationships
+
+Some properties (*ItemAttributions*) defined for an item are about itself while other properties are about its other related items. There are several type of relationships between items:
+- Subclass
+- Association
+- Group
+
+*Subclass* describes the relationship of items from general to specific types. In general, all attributes created for a generic item will also be available to the more specific item. Therefore, when creating a custom attributes for an item, you should consider the *Subclass* relationships of the items. An example is:
+- Equipment -> Electrical Equipment -> Load -> Motor 
+
+*Association* describes the dependency between items. Examples are:
+- Equipment -> Equipment (alternate power source)
+- Equipment -> Reference Circuit
+
+Group describes the whole/part relationship between items. Examples are:
+- Power Cables -> Parallel grouping
+- Single-Core Power Cables -> Single-Core Cable Assembly grouping
+
+Each *Relationship* object in the *Path* has a type of relationship defined.
+
 ## Hexagon SEL2018 ERD Diagram
 
-Hexagon documentation includes an ERD (Entity Relational Diagram) diagram that also include the following reference information from the Data Dicationary
+Hexagon documentation includes an ERD (Entity Relationship Diagram) diagram that also include the following reference information from the Data Dicationary
 - Relationship ID (in red)
 - Item ID (in pink)
 - Entity ID (in pink)
 
 Therefore, the comments in the generated SQL query will help to correlate the information in the ERD diagram.
-
-## Property relationships
-
-Some properties (*ItemAttributions*) defined for an object are about itself while other properties are about its other related objects. There are several type of relationships between objects:
-- Subclass
-- Association
-- Group
-
-*Subclass* describes the relationship of objects from general to specific type. An example is:
-- Equipment -> Electrical Equipment -> Load -> Motor 
-
-*Association* describes the dependency between objects. Examples are:
-- Equipment -> Equipment (alternate power source)
-- Equipment -> Reference Circuit
-
-Group describes the whole/part relationship between objects. Examples are:
-- PDB Section -> Cell
-- Cable -> Conductor
-
-Each *Relationship* object in the *Path* has a type of relationship defined.
 
 ## Engineering Data Editor in SEL
 
@@ -179,6 +181,8 @@ from T_RefGland@spelref
 
 SEL allows user to create complex report that outputs data to an Excel file. The query in the report starts with a base item type, such as Cable. From the base item, you can build a hierachy of related items (Define -> New) to retrieve more data. The relationship options for each item in the hierachy are specified in the *SourceDestObjectRels* table.
 
+The relationships in the *SourceDestObjectRels* table are quite abstract. You will need an understanding of the Data Dictionary, a familiarity with the functionalities in SEL, and some experimentation in the SEL report to fully understand the meaning of these relationships. One learning strategy is to systematically correlate a functionality in SEL that generates data for such relationship in the database. Or, view the data of such relationship in the database (with the generated SQL) and correlate it to a functionality in SEL (reverse-engineering).
+
 ## Reference documents
 
 This repository include the following files.
@@ -201,7 +205,6 @@ Generated ItemAttributions SQL:
 Object relations:
 - SEL SourceDestObjectRels.txt
 - SEL SourceDestObjectRels SQL.txt
-
 
 Other files are:
 - SEL2018 ERD.pdf
