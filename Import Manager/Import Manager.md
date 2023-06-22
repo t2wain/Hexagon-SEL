@@ -17,7 +17,7 @@ The import project file is an XML document and can be view in a text editor appl
 - SPI_Import.xml.txt
 
 ```xml
-<Link Name="Motor">
+<Link Name="Motor" Type="Data" >
     <Source>Motor</Source>
     <Target>Motor</Target>
     <Query>
