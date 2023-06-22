@@ -9,13 +9,6 @@ The SEL application folder has the following sample import project files:
 - ReferenceCableWayComponents.xml
 - SPI_Import.xml
 
-The import project file is an XML document and can be view in a text editor application. Alternatively, you can view the generated outlines of the project files listed below:
-
-- Demo.xml.txt
-- Ref_Cable_ImportLink.xml.txt
-- ReferenceCableWayComponents.xml.txt
-- SPI_Import.xml.txt
-
 ```xml
 <Link Name="Motor" Type="Data" >
     <Source>Motor</Source>
@@ -47,6 +40,13 @@ The import project file is an XML document and can be view in a text editor appl
     </Query>
 </Link>
 ```
+
+The import project file is an XML document and can be view in a text editor application. Alternatively, you can view the generated outlines of the project files listed below:
+
+- Demo.xml.txt
+- Ref_Cable_ImportLink.xml.txt
+- ReferenceCableWayComponents.xml.txt
+- SPI_Import.xml.txt
 
 <pre>
 Data Name: Motor
