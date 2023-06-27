@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Item>
+		<Prop source="Object" target="PlantItem"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="AuxiliaryContact"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Generator"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Generator" target="Generator"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<noaction/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OffSitePower" target="Generator"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<noaction/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="Generator"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="OffSitePower"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="TransformerComponent"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="BatteryCharger"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="VariableFrequencyDrive"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="UPS"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="OtherConvertingEquipment"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="CurrentLimitingReactor"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Object" target="BatteryBank"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="OffSitePower"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="VariableFrequencyDrive"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="UPS"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="CurrentLimitingReactor"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Capacitor"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="BatteryBank"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="TransformerComponent"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="BatteryCharger"/>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Circuit"/>
+		<targetattributes conj="or">
+			<targetattribute name="CircuitType" value="3"/>
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Motor" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Instrument" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cabinet" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Heater" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Resistor" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Capacitor" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HarmonicFilter" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="BatteryBank" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HeatTrace" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="UPS" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="CurrentLimitingReactor" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Transformer" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="BatteryCharger" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="VariableFrequencyDrive" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherElectEquipment" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherConvertingEquipment" target="Circuit"/>
+		<targetattributes conj="">
+			<targetattribute name="CircuitType" value="2"/>
+		</targetattributes>
+		<Preconditions conj="">
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Motor" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Resistor" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Heater" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Capacitor" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HarmonicFilter" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="BatteryBank" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HeatTrace" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="UPS" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="CurrentLimitingReactor" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Transformer" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="BatteryCharger" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="VariableFrequencyDrive" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherElectEquipment" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherConvertingEquipment" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Junctionbox" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="LocalPanel" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Instrument" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cabinet" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Junctionbox"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="LocalPanel"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<!-- END -->
+	<Item>
+		<Prop source="Cable" target="CircuitBreaker"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Contactor"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="DisconnectSwitch"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Fuse"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="OtherConvertingEquipment"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="OtherDisconnectEquip"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="OverloadRelay"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="ProtectionRelay"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Cable" target="Starter"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="BatteryBank"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="BatteryCharger"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="Generator"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="OffSitePower"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="OtherConvertingEquipment"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="TransformerComponent"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="UPS"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="CurrentLimitingReactor"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Circuit" target="VariableFrequencyDrive"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="CircuitBreaker" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Contactor" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="DisconnectSwitch" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Fuse" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HeatTrace" target="HeatTrace"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="HeatTrace" target="Junctionbox"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Junctionbox" target="Circuit"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Junctionbox" target="HeatTrace"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Junctionbox" target="OtherElectEquipment"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="LocalPanel" target="Circuit"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherDisconnectEquip" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherElectEquipment" target="Junctionbox"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OtherElectEquipment" target="OtherElectEquipment"/>
+		<Preconditions>
+			<condition name="none"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="OverloadRelay" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+	<Item>
+		<Prop source="Starter" target="Cable"/>
+		<Preconditions conj="and">
+			<condition name="targethaschildren" value="N"/>
+			<condition name="targethascoupler" value="N"/>
+			<actions>
+				<copy/>
+			</actions>
+		</Preconditions>
+	</Item>
+</Root>

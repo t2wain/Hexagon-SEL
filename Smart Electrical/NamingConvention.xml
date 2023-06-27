@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NamingConvention>
+    <ItemTypes Name = "Heater">
+        <ItemType
+            ItemID = "Heater1"
+            Name = "Heater" RelationBased="Y"
+        Description = "Eqiupment.Item Tag">
+            <RelatedItemTypes>
+                <RelatedItemType ItemType = "Heater" RelationName = "Heater.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Motor" RelationName = "Motor.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Instrument" RelationName = "Instrument.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "BatteryCharger" RelationName = "BatteryCharger.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Transformer" RelationName = "Transformer.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "VariableFrequencyDrive" RelationName = "VariableFrequencyDrive.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "UPS" RelationName = "UPS.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Cell" RelationName = "Cell.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "HarmonicFilter" RelationName="HarmonicFilter.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Generator" RelationName = "Generator.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Capacitor" RelationName = "Capacitor.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "BatteryBank" RelationName = "BatteryBank.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "LocalPanel" RelationName = "LocalPanel.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Junctionbox" RelationName = "Junctionbox.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "PowerDistributionBoard" RelationName = "PowerDistributionBoard.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "OtherConvertingEquipment" RelationName = "OtherConvertingEquipment.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "Cabinet" RelationName = "Cabinet.Heater" Attribute="ItemTag"/>
+                <RelatedItemType ItemType = "CurrentLimitingReactor" RelationName = "CurrentLimitingReactor.Heater" Attribute="ItemTag"/>
+            </RelatedItemTypes>
+
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Circuit">
+        <ItemType
+            ItemID = "Circuit1"
+            Name = "Circuit"
+            RelatedItemType = "Equipment"
+            Normal = "False"
+            RelationName = "Circuit.Equipment"
+            Attribution = "Circuit.ItemTag"
+            Description = "Equipment.Item Tag">
+            <Find View = "BatteryBank" WhereView = "BatteryBank" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "BatteryCharger" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "Capacitor" WhereView = "Capacitor" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Heater" WhereView = "Heater" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "HeatTrace" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "HarmonicFilter" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Motor" WhereView = "Motor" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "OtherConvertingEquipment" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "OtherElectEquipment" WhereView = "OtherElectEquipment" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Resistor" WhereView = "Resistor" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Transformer" WhereView = "Transformer" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "UPS" WhereView = "UPS" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "VariableFrequencyDrive" WhereView = "VariableFrequencyDrive" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "CurrentLimitingReactor" WhereView = "CurrentLimitingReactor" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "Instrument" WhereView = "Instrument" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Cabinet" WhereView = "Cabinet" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "Junctionbox" WhereView = "Junctionbox" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+            <Find View = "LocalPanel" WhereView = "LocalPanel" Attribute = "SP_CircuitID" ItemTag = "Circuit.ItemTag"/>
+        </ItemType>
+        <ItemType
+            ItemID = "Circuit2"
+            Name = "Circuit"
+            RelatedItemType = "Cell"
+            Normal = "True"
+            RelationName = "Cell.ItemTag"
+            Attribution = "Cell.ItemTag"
+            Description = "Cell.ItemTag">
+            <Find View = "Cell" WhereView = "Cell" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Cell">
+        <ItemType
+            ItemID = "Cell1"
+            Name = "Cell"
+            RelatedItemType = "Equipment"
+            Normal = "False"
+            RelationName = "Cell.Equipment"
+            Attribution = "Cell.ItemTag"
+            Description = "Equipment.Item Tag">
+            <Find View = "BatteryBank" WhereView = "BatteryBank" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "BatteryCharger" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "Capacitor" WhereView = "Capacitor" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Heater" WhereView = "Heater" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "HeatTrace" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "HarmonicFilter" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Motor" WhereView = "Motor" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "OtherConvertingEquipment" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "OtherElectEquipment" WhereView = "OtherElectEquipment" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Resistor" WhereView = "Resistor" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Transformer" WhereView = "Transformer" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "UPS" WhereView = "UPS" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "CurrentLimitingReactor" WhereView = "UPS" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "VariableFrequencyDrive" WhereView = "VariableFrequencyDrive" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag">
+                <Filter Attribute = "IsCircuitInternal" Operator = "!=" Value = "2" Conj = "-1"/>
+            </Find>
+            <Find View = "Instrument" WhereView = "Instrument" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Cabinet" WhereView = "Cabinet" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "Junctionbox" WhereView = "Junctionbox" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+            <Find View = "LocalPanel" WhereView = "LocalPanel" Attribute = "SP_CellID" ItemTag = "Cell.ItemTag"/>
+        </ItemType>
+        <ItemType
+            ItemID = "Cell2"
+            Name = "Cell"
+            RelatedItemType = "PowerDistributionBoard"
+            Normal = "True"
+            RelationName = "PowerDistributionBoard.Cell"
+            Attribution = "PowerDistributionBoard.ItemTag"
+            Description = "Power Distribution Board.Item Tag">
+            <Find View = "PowerDistributionBoard" WhereView = "Cell" Attribute = "SP_PowerDistributionBoardID" ItemTag = "PowerDistributionBoard.ItemTag"/>
+        </ItemType>
+        <ItemType
+            ItemID = "Cell3"
+            Name = "Cell"
+            RelatedItemType = "PDBRow"
+            Normal = "True"
+            RelationName = "PDBRow.Cell"
+            Attribution = "PDBRow.ItemTag"
+            Description = "PDB Row.Item Tag">
+            <Find View = "PDBRow" WhereView = "Cell" Attribute = "SP_PDBRowID" ItemTag = "PDBRow.ItemTag"/>
+        </ItemType>
+        <ItemType
+            ItemID = "Cell4"
+            Name = "Cell"
+            RelatedItemType = "PDBSection"
+            Normal = "True"
+            RelationName = "PDBSection.Cell"
+            Attribution = "PDBSection.ItemTag"
+            Description = "PDB Section.Item Tag">
+            <Find View = "PDBSection" WhereView = "Cell" Attribute = "SP_PDBSectionID" ItemTag = "PDBSection.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "ControlStation">
+        <ItemType
+            ItemID = "ControlStation1"
+            Name = "ControlStation"
+            RelatedItemType = "ElectricalEquipment"
+            Normal = "True"
+            RelationName = "ElectricalEquipment.Panel"
+            Attribution = "ElectricalEquipment.ItemTag"
+            Description = "Electrical Equipment.Item Tag">
+            <Find View = "BatteryBank" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Capacitor" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "CircuitBreaker" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Contactor" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "DisconnectSwitch" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Fuse" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Generator" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Heater" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Motor" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "OtherDisconnectEquip" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "OtherElectEquipment" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "OverloadRelay" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Resistor" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "Transformer" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "UPS" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "CurrentLimitingReactor" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+            <Find View = "VariableFrequencyDrive" WhereView = "ControlStation" Attribute = "SP_ElectricalEquipmentID" ItemTag = "ElectricalEquipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Instrument">
+        <ItemType
+            ItemID = "Instrument1"
+            Name = "Instrument"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "Equipment.Instrument"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag">
+            <Find View = "BatteryBank" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Capacitor" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "CircuitBreaker" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Contactor" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "DisconnectSwitch" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Fuse" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Generator" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Heater" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Motor" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "OtherDisconnectEquip" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "OtherElectEquipment" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "OverloadRelay" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Resistor" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Transformer" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "UPS" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "CurrentLimitingReactor" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "VariableFrequencyDrive" WhereView = "Instrument" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "CableWaySegment">
+        <ItemType
+            ItemID = "CableWaySegment1"
+            Name = "CableWaySegment"
+            RelatedItemType = "CableWay"
+            Normal = "True"
+            RelationName = "CableWay.CableWaySegment"
+            Attribution = "CableWay.ItemTag"
+            Description = "Cableway.Item Tag">
+            <Find View = "CableWay" WhereView = "CableWaySegment" Attribute = "SP_CableWayID" ItemTag = "CableWay.ItemTag"/>
+        </ItemType>
+        <ItemType
+            ItemID = "RaceWayNominalSize"
+            Name = "CableWaySegment"
+            RelatedItemType = "RefCableWayComponent"
+            Normal = "False"
+            RelationName = "RefRaceWayComponent.CableWaySegment"
+            Attribution = "RefCableWayComponent.RacewayNominalSize"
+            Description = "Raceway Nominal Size" IsItemAttribution="Y">
+            <Find View = "RefCableWayComponent" WhereView = "CableWaySegment" Attribute = "SP_RefCableWayComponentID" ItemTag = "RefCableWayComponent.RacewayNominalSize" />
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Cable">
+        <ItemType
+            ItemID = "Cable1"
+            Name = "Cable"
+            RelatedItemType = "PlantItem"
+            Normal = "True"
+            RelationName = "PlantItem.ConnectionSide1.Cable"
+            Attribution = "ConnectionSide1PlantItem.ItemTag"
+            Description = "Connection Side 1.Item Tag">
+            <Find View = "BatteryBank" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Cabinet" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Capacitor" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Circuit" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "CircuitBreaker" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Contactor" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "ControlStation" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "DisconnectSwitch" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Fuse" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Generator" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Junctionbox" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "LocalPanel" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "OtherDisconnectEquip" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "OverloadRelay" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "ProtectionRelay" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Starter" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "TransformerComponent" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "UPS" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "VariableFrequencyDrive" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "CurrentLimitingReactor" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Heater" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Instrument" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Motor" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "OtherDisconnectEquip" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "OtherElectEquipment" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Resistor" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Starter" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+            <Find View = "Transformer" WhereView = "Cable" Attribute = "SP_ConnectionSide1ID" ItemTag = "ConnectionSide1PlantItem.ItemTag"/>
+
+
+
+        </ItemType>
+        <ItemType
+            ItemID = "Cable2"
+            Name = "Cable"
+            RelatedItemType = "PlantItem"
+            Normal = "True"
+            RelationName = "PlantItem.ConnectionSide2.Cable"
+            Attribution = "ConnectionSide2PlantItem.ItemTag"
+            Description = "Connection Side 2.Item Tag">
+            <Find View = "BatteryBank" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "BatteryCharger" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Cabinet" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Capacitor" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Circuit" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "CircuitBreaker" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Contactor" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "ControlStation" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "DisconnectSwitch" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Fuse" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "HarmonicFilter" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Heater" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "HeatTrace" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Instrument" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Junctionbox" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "LocalPanel" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Motor" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "OtherConvertingEquipment" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "OtherDisconnectEquip" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "OtherElectEquipment" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "OverloadRelay" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "ProtectionRelay" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Resistor" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Starter" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Transformer" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "UPS" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "VariableFrequencyDrive" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "CurrentLimitingReactor" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+            <Find View = "Generator" WhereView = "Cable" Attribute = "SP_ConnectionSide2ID" ItemTag = "ConnectionSide2PlantItem.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "SignalRun">
+        <ItemType
+            ItemID = "SignalRun1"
+            Name = "SignalRun"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "Equipment.SignalRun"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag">
+            <IF
+                Attribute = "ItemTypeName"
+                Operator = "="
+                Value = "ControlStation"
+                FindView = "ControlStation"
+                FindRelationName = "ControlStation1"/>
+            <IF
+                Attribute = "ItemTypeName"
+                Operator = "="
+                Value = "Circuit"
+                FindView = "Circuit"
+                FindRelationName = "Circuit1"/>
+            <Find View = "BatteryBank" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "BatteryCharger" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Capacitor" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "CircuitBreaker" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Contactor" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "DisconnectSwitch" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Fuse" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Generator" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "HarmonicFilter" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else View = "ControlStation" Attribute = "SP_ElectricalEquipmentID" Operator = "=" MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Heater" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "HeatTrace" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Motor" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "OtherConvertingEquipment" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "OtherDisconnectEquip" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "OtherElectEquipment" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else View = "ControlStation" Attribute = "SP_ElectricalEquipmentID" Operator = "=" MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "OverloadRelay" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "ProtectionRelay" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Resistor" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "Starter" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+            <Find View = "Transformer" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "UPS" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "CurrentLimitingReactor" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+            <Find View = "VariableFrequencyDrive" WhereView = "SignalRun" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag">
+                <Else
+                    View = "ControlStation"
+                    Normal = "True"
+                    Attribute = "SP_ElectricalEquipmentID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+                <Else
+                    View = "Circuit"
+                    Normal = "False"
+                    Attribute = "SP_CircuitID"
+                    Operator = "="
+                    MainAttribute = "SP_ID"/>
+            </Find>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "CurrentTransformer">
+        <ItemType
+            ItemID = "CurrentTransformer1"
+            Name = "CurrentTransformer"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "CurrentTransformer.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "PotentialTransformer">
+        <ItemType
+            ItemID = "PotentialTransformer1"
+            Name = "PotentialTransformer"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "PotentialTransformer.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "ProtectionRelay">
+        <ItemType
+            ItemID = "ProtectionRelay1"
+            Name = "ProtectionRelay"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "ProtectionRelay.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Voltmeter">
+        <ItemType
+            ItemID = "Voltmeter1"
+            Name = "Voltmeter"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "Voltmeter.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Ammeter">
+        <ItemType
+            ItemID = "Ammeter1"
+            Name = "Ammeter"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "Ammeter.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Multimeter">
+        <ItemType
+            ItemID = "Multimeter1"
+            Name = "Multimeter"
+            RelatedItemType = "Equipment"
+            Normal = "True"
+            RelationName = "Multimeter.Equipment"
+            Attribution = "Equipment.ItemTag"
+            Description = "Equipment.Item Tag"
+            FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Strip">
+        <ItemType
+        ItemID = "Strip1"
+        Name = "Strip"
+        RelatedItemType = "Equipment"
+        Normal = "True"
+        RelationName = "Equipment.Strip"
+        Attribution = "Equipment.ItemTag"
+        Description = "Equipment.Item Tag"
+        FindItemType = "Equipment">
+            <Find View = "Equipment" WhereView = "Equipment" Attribute = "SP_EquipmentID" ItemTag = "Equipment.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+    <ItemTypes Name = "Bus">
+        <ItemType
+            ItemID = "Bus1"
+            Name = "Bus"
+            RelatedItemType = "PowerDistributionBoard"
+            Normal = "True"
+            RelationName = "PowerDistributionBoard.Bus"
+            Attribution = "PowerDistributionBoard.ItemTag"
+            Description = "Power Distribution Board.Item Tag">
+            <Find View = "PowerDistributionBoard" WhereView = "Bus" Attribute = "SP_PowerDistributionBoardID" ItemTag = "PowerDistributionBoard.ItemTag"/>
+        </ItemType>
+    </ItemTypes>
+
+    <ItemTypes Name="Conductor">
+        <ItemType ItemID="Conductor1" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Cable.Conductor" Attribution="Cable.ItemTag" Description="Cable.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor2" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side1.Strip.ItemTag" Description="Side 1.Terminal Strip.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor3" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side2.Strip.ItemTag" Description="Side 2.Terminal Strip.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor4" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side1.Terminal.ItemTag" Description="Side 1.Terminal.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor5" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side2.Terminal.ItemTag" Description="Side 2.Terminal.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor6" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side1.Strip.Equipment.ItemTag" Description="Side 1.Terminal Strip.Equipment.Item Tag" IsItemAttribution="Y"/>
+        <ItemType ItemID="Conductor7" Name="Conductor" RelatedItemType="Conductor" Normal="False" RelationName="Conductor.ConductorTerminal" Attribution="Side2.Strip.Equipment.ItemTag" Description="Side 2.Terminal Strip.Equipment.Item Tag" IsItemAttribution="Y"/>
+    </ItemTypes>
+    <ItemTypes Name="CableDrum">
+        <ItemType ItemID="CableDrum1" Name="CableDrum" RelatedItemType="RefCable" Normal="False" RelationName="RefCable.Cable" Attribution="RefCable.ItemTag" Description="RefCable.Item Tag" IsItemAttribution="Y"/>
+    </ItemTypes>
+
+</NamingConvention>

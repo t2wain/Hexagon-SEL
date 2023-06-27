@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ParallelItems>
+  <ParallelItem ItemType1="Motor" ItemType2="Motor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="Heater" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="Capacitor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="Resistor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="HeatTrace" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Motor" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="Heater" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="Capacitor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="Resistor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="HeatTrace" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Heater" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <!--insturments-->
+  <ParallelItem ItemType1="Instrument" ItemType2="Instrument" AllowedDirection="In"></ParallelItem>
+  <!-- -->
+  <ParallelItem ItemType1="Capacitor" ItemType2="Capacitor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Capacitor" ItemType2="Resistor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Capacitor" ItemType2="HeatTrace" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Capacitor" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Capacitor" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Resistor" ItemType2="Resistor" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Resistor" ItemType2="HeatTrace" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Resistor" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Resistor" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="HeatTrace" ItemType2="HeatTrace" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="HeatTrace" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="HeatTrace" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="HarmonicFilter" ItemType2="HarmonicFilter" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="HarmonicFilter" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="OtherElectEquipment" ItemType2="OtherElectEquipment" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="Transformer" ItemType2="Transformer" AllowedDirection="In"></ParallelItem>
+  <ParallelItem ItemType1="TransformerComponent" ItemType2="TransformerComponent" AllowedDirection="Out"></ParallelItem>
+  <ParallelItem ItemType1="BatteryCharger" ItemType2="BatteryCharger" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="UPS" ItemType2="UPS" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="OtherConvertingEquipment" ItemType2="OtherConvertingEquipment" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="CurrentLimitingReactor" ItemType2="CurrentLimitingReactor" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="VariableFrequencyDrive" ItemType2="VariableFrequencyDrive" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="Generator" ItemType2="Generator" AllowedDirection="Out"></ParallelItem>
+  <ParallelItem ItemType1="OffSitePower" ItemType2="OffSitePower" AllowedDirection="Out"></ParallelItem>
+  <ParallelItem ItemType1="Junctionbox" ItemType2="Junctionbox" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="LocalPanel" ItemType2="LocalPanel" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="Circuit" ItemType2="Circuit" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="BatteryBank" ItemType2="BatteryBank" AllowedDirection="Both"></ParallelItem>
+  <!--Icomers and Panels only-->
+  <ParallelItem ItemType1="Contactor" ItemType2="Contactor" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="OverloadRelay" ItemType2="OverloadRelay" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="DisconnectSwitch" ItemType2="DisconnectSwitch" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="CircuitBreaker" ItemType2="CircuitBreaker" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="Fuse" ItemType2="Fuse" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="Starter" ItemType2="Starter" AllowedDirection="Both"></ParallelItem>
+  <ParallelItem ItemType1="OtherDisconnectEquip" ItemType2="OtherDisconnectEquip" AllowedDirection="Both"></ParallelItem>
+</ParallelItems>
